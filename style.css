@@ -15,6 +15,30 @@ h1 {
   margin-bottom: 10px;
 }
 
+#progressBar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.step-circle {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.step-circle.active {
+  background-color: #007bff;
+}
+
+
 #controls {
   margin: 20px 0;
   display: flex;

@@ -99,6 +99,7 @@ function updateVisualization() {
             currentScene === 2 ? "Scene 2: Global CO2 Emissions Over Time" :
                 "Scene 3: CO2 vs GDP per Capita (2022)"
     );
+    updateProgressBar();
     d3.select("#yearSlider").style("display", currentScene === 2 ? "flex" : "none");
 }
 
@@ -112,6 +113,14 @@ function formatTooltip(event, html) {
 function hideTooltip() {
     d3.select("#tooltip").style("opacity", 0);
 }
+
+function updateProgressBar() {
+  d3.selectAll(".step-circle")
+    .classed("active", function () {
+      return +this.dataset.step === currentScene;
+    });
+}
+
 
 function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
@@ -272,7 +281,7 @@ function drawScene3() {
     .attr("opacity", 0.5)
     .on("mouseover", (event, d) => {
       formatTooltip(event,
-        `${d.country}<br>CO₂/capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
+        `${d.country}<br>CO₂/Capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
       );
     })
     .on("mouseout", hideTooltip);

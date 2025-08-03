@@ -14,10 +14,19 @@
 <body>
     <h1>Global CO2 Emissions: A Narrative Visualization</h1>
     <h2 id="sceneTitle"></h2>
+    <p id="intro" style="max-width: 900px; margin: 0 auto; font-size: 16px; color: #555;">
+        This visualization explores global CO₂ emissions from three perspectives: geography, history, and economics.
+        Despite major international agreements, emissions remain uneven and closely tied to GDP per capita.
+    </p>
     <div id="controls">
         <button id="prevButton" disabled>Previous</button>
         <span id="stepIndicator">Step 1 of 3</span>
         <button id="nextButton">Next</button>
+    </div>
+    <div id="progressBar">
+        <div class="step-circle active" data-step="1">1</div>
+        <div class="step-circle" data-step="2">2</div>
+        <div class="step-circle" data-step="3">3</div>
     </div>
     <div id="yearSlider" style="display: none;">
         <label>Start Year: <input type="range" id="startYearInput" min="1990" max="2022" value="1990"> <span
