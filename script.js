@@ -90,9 +90,9 @@ function drawScene1() {
   const path = d3.geoPath().projection(projection);
 
   // Filter valid CO2 data and calculate max value
-  const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0 && d.iso_code);
+  const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0 && d.country);
   console.log("=============");
-  console.log(validCO2)
+  console.log(validCO2);
   console.log("=============");
   const maxVal = d3.max(validCO2, d => d.co2);
   const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd)
@@ -106,16 +106,16 @@ function drawScene1() {
     .attr("d", path)
     .attr("fill", d => {
       console.log(d.properties);
-      const countryData = validCO2.find(e => e.iso_code === d.id);
+      const countryData = validCO2.find(e => e.country.toLowerCase() === d.properties.name.toLowerCase());
       return countryData ? colorScale(countryData.co2) : "#eee"; // Default to light gray if no data
     })
     .attr("stroke", "#333")
     .on("click", (event, d) => {
-      selectedCountry = data2022.find(c => c.iso_code === d.id)?.country || null;
+      selectedCountry = data2022.find(e => e.country.toLowerCase() === d.properties.name.toLowerCase())?.country || null;
       if (currentScene === 3) updateVisualization();
     })
     .on("mouseover", (event, d) => {
-      const countryData = validCO2.find(c => c.iso_code === d.id);
+      const countryData = validCO2.find(e => e.country.toLowerCase() === d.properties.name.toLowerCase());
       if (countryData && !isNaN(countryData.co2)) {
         formatTooltip(event, `${countryData.country}<br>CO2: ${Math.round(countryData.co2)} Mt`);
       }
