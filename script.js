@@ -147,11 +147,22 @@ function drawScene2() {
   const margin = { top: 20, right: 20, bottom: 50, left: 60 };
   const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
 
-  const x = d3.scaleLinear().domain([selectedStartYear, selectedEndYear]).range([margin.left, width - margin.right]);
-  const y = d3.scaleLinear().domain([20000, d3.max(filtered, d => +d.co2)]).range([height - margin.bottom, margin.top]);
+  const x = d3.scaleLinear()
+    .domain([selectedStartYear, selectedEndYear])
+    .range([margin.left, width - margin.right])
+    .nice();
+  const y = d3.scaleLinear()
+    .domain([20000, d3.max(filtered, d => +d.co2)])
+    .range([height - margin.bottom, margin.top])
+    .nice();
 
-  svg.append("g").attr("transform", `translate(0,${height - margin.bottom})`).call(d3.axisBottom(x).tickFormat(d3.format("d")));
-  svg.append("g").attr("transform", `translate(${margin.left},0)`).call(d3.axisLeft(y));
+  svg.append("g")
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(Math.max(2, selectedEndYear - selectedStartYear + 1)));
+
+  svg.append("g")
+    .attr("transform", `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y));
 
   svg.append("path")
     .datum(filtered)
