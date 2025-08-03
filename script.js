@@ -243,19 +243,16 @@ function drawScene1() {
 function drawScene2() {
     const margin = { top: 20, right: 20, bottom: 50, left: 60 };
 
-    // Filter data within selected year range
     const filtered = dataGlobal.filter(d => {
         const year = +d.year;
         return year >= selectedStartYear && year <= selectedEndYear;
     });
 
-    // Split data: world vs selected country
     const worldData = filtered.filter(d => d.country.toLowerCase() === "world");
     const countryData = selectedCountry
         ? filtered.filter(d => d.country === selectedCountry)
         : [];
 
-    // Define scales
     const x = d3.scaleLinear()
         .domain([selectedStartYear, selectedEndYear])
         .range([margin.left, width - margin.right])
@@ -269,17 +266,14 @@ function drawScene2() {
         .range([height - margin.bottom, margin.top])
         .nice();
 
-    // X Axis
     svg.append("g")
         .attr("transform", `translate(0,${height - margin.bottom})`)
         .call(d3.axisBottom(x).tickFormat(d3.format("d")));
 
-    // Y Axis
     svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
 
-    // Draw Global line
     svg.append("path")
         .datum(worldData)
         .attr("fill", "none")
@@ -289,7 +283,6 @@ function drawScene2() {
             .x(d => x(+d.year))
             .y(d => y(+d.co2)));
 
-    // Draw selected country line if available
     if (countryData.length > 0) {
         svg.append("path")
             .datum(countryData)
@@ -300,7 +293,6 @@ function drawScene2() {
                 .x(d => x(+d.year))
                 .y(d => y(+d.co2)));
 
-        // Label for selected country
         svg.append("text")
             .attr("x", width - 220)
             .attr("y", margin.top + 20)
@@ -309,7 +301,6 @@ function drawScene2() {
             .text(`Selected: ${selectedCountry}`);
     }
 
-    // Legend for global line
     svg.append("text")
         .attr("x", width - 220)
         .attr("y", margin.top + 40)
@@ -339,12 +330,33 @@ function drawScene2() {
             dx: 0
         });
     }
+    if (!selectedCountry) {
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin.top + 10)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "16px")
+            .attr("fill", "#666")
+            .text("Tip: Click a country in Scene 1 to compare it with global trends.");
+    }
     svg.append("g")
         .call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
 
 
 function drawScene3() {
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 30)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "18px")
+        .attr("fill", "#333")
+        .text(
+            selectedCountry
+                ? `Highlighted Country: ${selectedCountry}`
+                : "Tip: Click a country in Scene 1 to explore it here."
+        );
+
     const margin = { top: 40, right: 20, bottom: 50, left: 60 };
 
     svg.selectAll(".annotation-group").remove();
