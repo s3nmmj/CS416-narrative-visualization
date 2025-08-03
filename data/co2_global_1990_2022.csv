@@ -1,34 +1,8124 @@
-year,co2
-1990,22728.988
-1991,23186.102
-1992,22528.172
-1993,22755.787
-1994,22992.947
-1995,23532.084
-1996,24258.168
-1997,24401.906
-1998,24303.777
-1999,24853.729
-2000,25510.553
-2001,25706.293
-2002,26276.869
-2003,27669.49
-2004,28632.506
-2005,29614.395
-2006,30628.396
-2007,31534.645
-2008,32074.199
-2009,31541.922
-2010,33355.902
-2011,34504.539
-2012,35000.02
-2013,35301.656
-2014,35450.094
-2015,35404.898
-2016,35416.656
-2017,35989.898
-2018,36730.426
-2019,37104.273
-2020,35126.527
-2021,36991.734
-2022,37293.836
+year,co2,country
+1990,2.024,Afghanistan
+1991,1.914,Afghanistan
+1992,1.482,Afghanistan
+1993,1.487,Afghanistan
+1994,1.454,Afghanistan
+1995,1.417,Afghanistan
+1996,1.37,Afghanistan
+1997,1.304,Afghanistan
+1998,1.279,Afghanistan
+1999,1.092,Afghanistan
+2000,1.047,Afghanistan
+2001,1.069,Afghanistan
+2002,1.341,Afghanistan
+2003,1.56,Afghanistan
+2004,1.237,Afghanistan
+2005,1.89,Afghanistan
+2006,2.159,Afghanistan
+2007,2.8,Afghanistan
+2008,4.254,Afghanistan
+2009,6.392,Afghanistan
+2010,8.365,Afghanistan
+2011,11.838,Afghanistan
+2012,10.035,Afghanistan
+2013,9.229,Afghanistan
+2014,9.086,Afghanistan
+2015,9.67,Afghanistan
+2016,8.906,Afghanistan
+2017,9.677,Afghanistan
+2018,10.602,Afghanistan
+2019,10.825,Afghanistan
+2020,11.606,Afghanistan
+2021,10.272,Afghanistan
+2022,10.558,Afghanistan
+1990,658.344,Africa
+1991,687.67,Africa
+1992,666.66,Africa
+1993,706.442,Africa
+1994,790.234,Africa
+1995,844.549,Africa
+1996,872.284,Africa
+1997,893.938,Africa
+1998,912.482,Africa
+1999,899.879,Africa
+2000,930.851,Africa
+2001,920.602,Africa
+2002,899.996,Africa
+2003,989.645,Africa
+2004,1045.726,Africa
+2005,1059.372,Africa
+2006,1091.176,Africa
+2007,1116.9,Africa
+2008,1174.755,Africa
+2009,1168.25,Africa
+2010,1216.669,Africa
+2011,1257.421,Africa
+2012,1268.948,Africa
+2013,1282.542,Africa
+2014,1357.349,Africa
+2015,1332.662,Africa
+2016,1375.131,Africa
+2017,1393.216,Africa
+2018,1386.654,Africa
+2019,1479.412,Africa
+2020,1355.782,Africa
+2021,1441.534,Africa
+2022,1432.503,Africa
+1990,658.336,Africa (GCP)
+1991,687.663,Africa (GCP)
+1992,666.653,Africa (GCP)
+1993,706.431,Africa (GCP)
+1994,790.223,Africa (GCP)
+1995,844.538,Africa (GCP)
+1996,872.273,Africa (GCP)
+1997,893.927,Africa (GCP)
+1998,912.471,Africa (GCP)
+1999,899.868,Africa (GCP)
+2000,930.84,Africa (GCP)
+2001,920.591,Africa (GCP)
+2002,899.985,Africa (GCP)
+2003,989.634,Africa (GCP)
+2004,1045.715,Africa (GCP)
+2005,1059.361,Africa (GCP)
+2006,1091.165,Africa (GCP)
+2007,1116.889,Africa (GCP)
+2008,1174.744,Africa (GCP)
+2009,1168.239,Africa (GCP)
+2010,1216.658,Africa (GCP)
+2011,1257.41,Africa (GCP)
+2012,1268.937,Africa (GCP)
+2013,1282.531,Africa (GCP)
+2014,1357.338,Africa (GCP)
+2015,1332.651,Africa (GCP)
+2016,1375.117,Africa (GCP)
+2017,1393.205,Africa (GCP)
+2018,1386.643,Africa (GCP)
+2019,1479.397,Africa (GCP)
+2020,1355.771,Africa (GCP)
+2021,1441.523,Africa (GCP)
+2022,1432.492,Africa (GCP)
+1990,5.521,Albania
+1991,4.29,Albania
+1992,2.517,Albania
+1993,2.338,Albania
+1994,1.924,Albania
+1995,2.089,Albania
+1996,2.018,Albania
+1997,1.543,Albania
+1998,1.755,Albania
+1999,2.986,Albania
+2000,3.025,Albania
+2001,3.221,Albania
+2002,3.748,Albania
+2003,4.303,Albania
+2004,4.177,Albania
+2005,4.261,Albania
+2006,3.911,Albania
+2007,3.949,Albania
+2008,4.397,Albania
+2009,4.407,Albania
+2010,4.784,Albania
+2011,5.315,Albania
+2012,4.85,Albania
+2013,5.287,Albania
+2014,6.0,Albania
+2015,4.712,Albania
+2016,4.632,Albania
+2017,5.293,Albania
+2018,4.895,Albania
+2019,4.827,Albania
+2020,4.711,Albania
+2021,5.134,Albania
+2022,5.173,Albania
+1990,76.738,Algeria
+1991,78.807,Algeria
+1992,79.883,Algeria
+1993,81.944,Algeria
+1994,88.608,Algeria
+1995,96.777,Algeria
+1996,100.039,Algeria
+1997,88.369,Algeria
+1998,106.537,Algeria
+1999,91.449,Algeria
+2000,85.399,Algeria
+2001,86.839,Algeria
+2002,90.692,Algeria
+2003,94.581,Algeria
+2004,91.714,Algeria
+2005,110.993,Algeria
+2006,105.896,Algeria
+2007,109.889,Algeria
+2008,111.087,Algeria
+2009,118.856,Algeria
+2010,118.353,Algeria
+2011,125.095,Algeria
+2012,135.674,Algeria
+2013,140.786,Algeria
+2014,151.283,Algeria
+2015,160.087,Algeria
+2016,158.482,Algeria
+2017,165.174,Algeria
+2018,172.705,Algeria
+2019,179.907,Algeria
+2020,168.178,Algeria
+2021,179.596,Algeria
+2022,184.558,Algeria
+1990,0.407,Andorra
+1991,0.407,Andorra
+1992,0.407,Andorra
+1993,0.41,Andorra
+1994,0.407,Andorra
+1995,0.425,Andorra
+1996,0.454,Andorra
+1997,0.465,Andorra
+1998,0.491,Andorra
+1999,0.513,Andorra
+2000,0.524,Andorra
+2001,0.524,Andorra
+2002,0.531,Andorra
+2003,0.535,Andorra
+2004,0.561,Andorra
+2005,0.575,Andorra
+2006,0.546,Andorra
+2007,0.539,Andorra
+2008,0.539,Andorra
+2009,0.517,Andorra
+2010,0.517,Andorra
+2011,0.491,Andorra
+2012,0.487,Andorra
+2013,0.476,Andorra
+2014,0.462,Andorra
+2015,0.465,Andorra
+2016,0.469,Andorra
+2017,0.469,Andorra
+2018,0.498,Andorra
+2019,0.491,Andorra
+2020,0.381,Andorra
+2021,0.41,Andorra
+2022,0.42,Andorra
+1990,5.09,Angola
+1991,5.064,Angola
+1992,5.164,Angola
+1993,5.748,Angola
+1994,11.353,Angola
+1995,12.617,Angola
+1996,15.249,Angola
+1997,15.884,Angola
+1998,16.513,Angola
+1999,17.261,Angola
+2000,15.995,Angola
+2001,15.908,Angola
+2002,16.08,Angola
+2003,17.484,Angola
+2004,17.016,Angola
+2005,15.387,Angola
+2006,17.145,Angola
+2007,17.588,Angola
+2008,18.75,Angola
+2009,20.668,Angola
+2010,22.983,Angola
+2011,23.397,Angola
+2012,25.941,Angola
+2013,25.71,Angola
+2014,26.09,Angola
+2015,27.507,Angola
+2016,25.466,Angola
+2017,23.595,Angola
+2018,23.305,Angola
+2019,22.047,Angola
+2020,16.533,Angola
+2021,19.196,Angola
+2022,20.25,Angola
+1990,0.048,Anguilla
+1991,0.048,Anguilla
+1992,0.048,Anguilla
+1993,0.055,Anguilla
+1994,0.055,Anguilla
+1995,0.059,Anguilla
+1996,0.062,Anguilla
+1997,0.062,Anguilla
+1998,0.066,Anguilla
+1999,0.066,Anguilla
+2000,0.077,Anguilla
+2001,0.084,Anguilla
+2002,0.084,Anguilla
+2003,0.088,Anguilla
+2004,0.103,Anguilla
+2005,0.11,Anguilla
+2006,0.121,Anguilla
+2007,0.125,Anguilla
+2008,0.125,Anguilla
+2009,0.125,Anguilla
+2010,0.132,Anguilla
+2011,0.125,Anguilla
+2012,0.121,Anguilla
+2013,0.117,Anguilla
+2014,0.121,Anguilla
+2015,0.139,Anguilla
+2016,0.139,Anguilla
+2017,0.128,Anguilla
+2018,0.132,Anguilla
+2019,0.147,Anguilla
+2020,0.143,Anguilla
+2021,0.143,Anguilla
+2022,0.139,Anguilla
+1990,0.011,Antarctica
+1991,0.015,Antarctica
+1992,0.015,Antarctica
+1993,0.015,Antarctica
+1994,0.015,Antarctica
+1995,0.004,Antarctica
+1996,0.004,Antarctica
+1997,0.004,Antarctica
+1998,0.004,Antarctica
+1999,0.004,Antarctica
+2000,0.004,Antarctica
+2001,0.004,Antarctica
+2002,0.004,Antarctica
+2003,0.004,Antarctica
+2004,0.007,Antarctica
+2005,0.007,Antarctica
+2006,0.007,Antarctica
+2007,0.011,Antarctica
+2008,0.0,Antarctica
+2009,0.0,Antarctica
+2010,0.0,Antarctica
+2011,0.0,Antarctica
+2012,0.0,Antarctica
+2013,0.0,Antarctica
+2014,0.0,Antarctica
+2015,0.0,Antarctica
+2016,0.0,Antarctica
+2017,0.0,Antarctica
+2018,0.0,Antarctica
+2019,0.0,Antarctica
+2020,0.0,Antarctica
+2021,0.0,Antarctica
+2022,0.0,Antarctica
+1990,0.242,Antigua and Barbuda
+1991,0.249,Antigua and Barbuda
+1992,0.249,Antigua and Barbuda
+1993,0.256,Antigua and Barbuda
+1994,0.267,Antigua and Barbuda
+1995,0.271,Antigua and Barbuda
+1996,0.289,Antigua and Barbuda
+1997,0.311,Antigua and Barbuda
+1998,0.322,Antigua and Barbuda
+1999,0.344,Antigua and Barbuda
+2000,0.355,Antigua and Barbuda
+2001,0.37,Antigua and Barbuda
+2002,0.407,Antigua and Barbuda
+2003,0.429,Antigua and Barbuda
+2004,0.451,Antigua and Barbuda
+2005,0.48,Antigua and Barbuda
+2006,0.517,Antigua and Barbuda
+2007,0.535,Antigua and Barbuda
+2008,0.539,Antigua and Barbuda
+2009,0.557,Antigua and Barbuda
+2010,0.55,Antigua and Barbuda
+2011,0.546,Antigua and Barbuda
+2012,0.557,Antigua and Barbuda
+2013,0.557,Antigua and Barbuda
+2014,0.568,Antigua and Barbuda
+2015,0.583,Antigua and Barbuda
+2016,0.597,Antigua and Barbuda
+2017,0.605,Antigua and Barbuda
+2018,0.616,Antigua and Barbuda
+2019,0.641,Antigua and Barbuda
+2020,0.619,Antigua and Barbuda
+2021,0.638,Antigua and Barbuda
+2022,0.618,Antigua and Barbuda
+1990,112.149,Argentina
+1991,117.755,Argentina
+1992,121.535,Argentina
+1993,118.001,Argentina
+1994,118.469,Argentina
+1995,125.277,Argentina
+1996,131.15,Argentina
+1997,136.553,Argentina
+1998,139.32,Argentina
+1999,148.304,Argentina
+2000,143.469,Argentina
+2001,135.137,Argentina
+2002,124.931,Argentina
+2003,134.481,Argentina
+2004,157.049,Argentina
+2005,161.589,Argentina
+2006,174.309,Argentina
+2007,173.581,Argentina
+2008,187.342,Argentina
+2009,178.181,Argentina
+2010,185.946,Argentina
+2011,189.775,Argentina
+2012,191.362,Argentina
+2013,189.538,Argentina
+2014,188.397,Argentina
+2015,191.744,Argentina
+2016,189.92,Argentina
+2017,186.899,Argentina
+2018,180.599,Argentina
+2019,178.508,Argentina
+2020,165.121,Argentina
+2021,191.108,Argentina
+2022,204.081,Argentina
+1990,8.999,Armenia
+1991,7.38,Armenia
+1992,5.724,Armenia
+1993,2.51,Armenia
+1994,2.685,Armenia
+1995,3.363,Armenia
+1996,2.5,Armenia
+1997,3.253,Armenia
+1998,3.419,Armenia
+1999,3.04,Armenia
+2000,3.491,Armenia
+2001,3.533,Armenia
+2002,3.077,Armenia
+2003,3.456,Armenia
+2004,3.691,Armenia
+2005,4.376,Armenia
+2006,4.402,Armenia
+2007,5.1,Armenia
+2008,5.575,Armenia
+2009,4.363,Armenia
+2010,4.253,Armenia
+2011,4.969,Armenia
+2012,5.748,Armenia
+2013,5.535,Armenia
+2014,5.604,Armenia
+2015,5.469,Armenia
+2016,5.203,Armenia
+2017,5.54,Armenia
+2018,5.822,Armenia
+2019,6.284,Armenia
+2020,6.795,Armenia
+2021,7.417,Armenia
+2022,7.165,Armenia
+1990,0.487,Aruba
+1991,0.531,Aruba
+1992,0.539,Aruba
+1993,0.649,Aruba
+1994,0.66,Aruba
+1995,0.707,Aruba
+1996,0.725,Aruba
+1997,0.758,Aruba
+1998,0.806,Aruba
+1999,0.81,Aruba
+2000,2.378,Aruba
+2001,2.407,Aruba
+2002,2.437,Aruba
+2003,2.561,Aruba
+2004,2.616,Aruba
+2005,2.719,Aruba
+2006,2.715,Aruba
+2007,2.821,Aruba
+2008,2.656,Aruba
+2009,2.627,Aruba
+2010,2.506,Aruba
+2011,2.499,Aruba
+2012,1.348,Aruba
+2013,0.861,Aruba
+2014,0.872,Aruba
+2015,0.898,Aruba
+2016,0.883,Aruba
+2017,0.89,Aruba
+2018,0.872,Aruba
+2019,0.828,Aruba
+2020,0.821,Aruba
+2021,0.857,Aruba
+2022,0.831,Aruba
+1990,6584.308,Asia
+1991,7361.138,Asia
+1992,7209.855,Asia
+1993,7540.911,Asia
+1994,7895.757,Asia
+1995,8265.562,Asia
+1996,8605.014,Asia
+1997,8723.257,Asia
+1998,8481.06,Asia
+1999,8971.64,Asia
+2000,9336.837,Asia
+2001,9521.609,Asia
+2002,10040.597,Asia
+2003,11046.249,Asia
+2004,11699.782,Asia
+2005,12552.623,Asia
+2006,13404.329,Asia
+2007,14136.139,Asia
+2008,14858.406,Asia
+2009,15394.146,Asia
+2010,16554.266,Asia
+2011,17787.42,Asia
+2012,18455.439,Asia
+2013,18692.012,Asia
+2014,18940.043,Asia
+2015,19047.488,Asia
+2016,19192.705,Asia
+2017,19737.521,Asia
+2018,20335.523,Asia
+2019,20889.145,Asia
+2020,20634.852,Asia
+2021,21640.396,Asia
+2022,21815.756,Asia
+1990,5767.457,Asia (GCP)
+1991,5996.165,Asia (GCP)
+1992,6231.186,Asia (GCP)
+1993,6477.511,Asia (GCP)
+1994,6773.18,Asia (GCP)
+1995,7132.377,Asia (GCP)
+1996,7453.14,Asia (GCP)
+1997,7587.756,Asia (GCP)
+1998,7306.425,Asia (GCP)
+1999,7706.508,Asia (GCP)
+2000,7937.751,Asia (GCP)
+2001,8087.821,Asia (GCP)
+2002,8595.659,Asia (GCP)
+2003,9506.611,Asia (GCP)
+2004,10054.005,Asia (GCP)
+2005,10838.288,Asia (GCP)
+2006,11583.487,Asia (GCP)
+2007,12304.732,Asia (GCP)
+2008,12884.495,Asia (GCP)
+2009,13338.318,Asia (GCP)
+2010,14384.035,Asia (GCP)
+2011,15564.787,Asia (GCP)
+2012,16082.872,Asia (GCP)
+2013,16365.106,Asia (GCP)
+2014,16570.561,Asia (GCP)
+2015,16588.639,Asia (GCP)
+2016,16681.146,Asia (GCP)
+2017,17163.291,Asia (GCP)
+2018,17738.896,Asia (GCP)
+2019,18221.055,Asia (GCP)
+2020,18029.971,Asia (GCP)
+2021,18894.787,Asia (GCP)
+2022,19010.197,Asia (GCP)
+1990,3521.457,Asia (excl. China and India)
+1991,4139.677,Asia (excl. China and India)
+1992,3823.621,Asia (excl. China and India)
+1993,3941.96,Asia (excl. China and India)
+1994,4077.954,Asia (excl. China and India)
+1995,4143.464,Asia (excl. China and India)
+1996,4272.576,Asia (excl. China and India)
+1997,4349.651,Asia (excl. China and India)
+1998,4240.7,Asia (excl. China and India)
+1999,4453.602,Asia (excl. China and India)
+2000,4701.167,Asia (excl. China and India)
+2001,4792.573,Asia (excl. China and India)
+2002,4905.411,Asia (excl. China and India)
+2003,5137.394,Asia (excl. China and India)
+2004,5348.604,Asia (excl. China and India)
+2005,5475.925,Asia (excl. China and India)
+2006,5617.514,Asia (excl. China and India)
+2007,5760.085,Asia (excl. China and India)
+2008,5867.472,Asia (excl. China and India)
+2009,5890.85,Asia (excl. China and India)
+2010,6256.353,Asia (excl. China and India)
+2011,6490.375,Asia (excl. China and India)
+2012,6750.448,Asia (excl. China and India)
+2013,6740.584,Asia (excl. China and India)
+2014,6801.443,Asia (excl. China and India)
+2015,6949.812,Asia (excl. China and India)
+2016,7075.333,Asia (excl. China and India)
+2017,7304.572,Asia (excl. China and India)
+2018,7409.474,Asia (excl. China and India)
+2019,7562.272,Asia (excl. China and India)
+2020,7307.606,Asia (excl. China and India)
+2021,7518.262,Asia (excl. China and India)
+2022,7634.052,Asia (excl. China and India)
+1990,278.16,Australia
+1991,279.534,Australia
+1992,284.529,Australia
+1993,288.874,Australia
+1994,293.701,Australia
+1995,305.056,Australia
+1996,311.941,Australia
+1997,320.333,Australia
+1998,334.136,Australia
+1999,343.959,Australia
+2000,350.008,Australia
+2001,357.784,Australia
+2002,362.537,Australia
+2003,369.63,Australia
+2004,383.159,Australia
+2005,386.176,Australia
+2006,392.36,Australia
+2007,399.475,Australia
+2008,404.84,Australia
+2009,407.094,Australia
+2010,405.131,Australia
+2011,403.858,Australia
+2012,406.197,Australia
+2013,399.068,Australia
+2014,392.729,Australia
+2015,401.497,Australia
+2016,410.388,Australia
+2017,413.818,Australia
+2018,415.591,Australia
+2019,415.77,Australia
+2020,399.184,Australia
+2021,389.02,Australia
+2022,384.362,Australia
+1990,62.184,Austria
+1991,65.782,Austria
+1992,60.283,Austria
+1993,60.709,Austria
+1994,61.083,Austria
+1995,64.061,Austria
+1996,67.405,Austria
+1997,67.302,Austria
+1998,66.937,Austria
+1999,65.668,Austria
+2000,66.177,Austria
+2001,70.166,Austria
+2002,71.969,Austria
+2003,77.396,Austria
+2004,77.694,Austria
+2005,79.092,Austria
+2006,76.812,Austria
+2007,74.112,Austria
+2008,73.49,Austria
+2009,67.307,Austria
+2010,72.008,Austria
+2011,69.901,Austria
+2012,67.274,Austria
+2013,67.767,Austria
+2014,64.166,Austria
+2015,66.357,Austria
+2016,67.217,Austria
+2017,69.598,Austria
+2018,66.562,Austria
+2019,67.946,Austria
+2020,62.176,Austria
+2021,65.757,Austria
+2022,61.489,Austria
+1990,51.318,Azerbaijan
+1991,50.047,Azerbaijan
+1992,56.174,Azerbaijan
+1993,48.406,Azerbaijan
+1994,41.945,Azerbaijan
+1995,33.309,Azerbaijan
+1996,31.242,Azerbaijan
+1997,29.843,Azerbaijan
+1998,31.785,Azerbaijan
+1999,28.822,Azerbaijan
+2000,29.765,Azerbaijan
+2001,28.415,Azerbaijan
+2002,28.57,Azerbaijan
+2003,30.488,Azerbaijan
+2004,32.253,Azerbaijan
+2005,34.194,Azerbaijan
+2006,34.522,Azerbaijan
+2007,30.037,Azerbaijan
+2008,33.037,Azerbaijan
+2009,29.103,Azerbaijan
+2010,27.549,Azerbaijan
+2011,30.21,Azerbaijan
+2012,32.773,Azerbaijan
+2013,33.555,Azerbaijan
+2014,34.348,Azerbaijan
+2015,34.683,Azerbaijan
+2016,34.727,Azerbaijan
+2017,34.699,Azerbaijan
+2018,34.569,Azerbaijan
+2019,37.746,Azerbaijan
+2020,36.233,Azerbaijan
+2021,38.293,Azerbaijan
+2022,40.391,Azerbaijan
+1990,2.023,Bahamas
+1991,1.997,Bahamas
+1992,1.869,Bahamas
+1993,1.744,Bahamas
+1994,1.77,Bahamas
+1995,1.839,Bahamas
+1996,1.814,Bahamas
+1997,1.608,Bahamas
+1998,1.99,Bahamas
+1999,2.034,Bahamas
+2000,2.026,Bahamas
+2001,1.946,Bahamas
+2002,2.037,Bahamas
+2003,2.07,Bahamas
+2004,2.048,Bahamas
+2005,1.905,Bahamas
+2006,1.854,Bahamas
+2007,1.872,Bahamas
+2008,1.916,Bahamas
+2009,2.154,Bahamas
+2010,2.228,Bahamas
+2011,2.114,Bahamas
+2012,2.052,Bahamas
+2013,1.99,Bahamas
+2014,2.066,Bahamas
+2015,2.228,Bahamas
+2016,2.235,Bahamas
+2017,2.477,Bahamas
+2018,2.437,Bahamas
+2019,2.506,Bahamas
+2020,2.034,Bahamas
+2021,2.477,Bahamas
+2022,2.402,Bahamas
+1990,11.494,Bahrain
+1991,11.329,Bahrain
+1992,10.402,Bahrain
+1993,16.748,Bahrain
+1994,14.352,Bahrain
+1995,14.744,Bahrain
+1996,15.942,Bahrain
+1997,17.221,Bahrain
+1998,18.276,Bahrain
+1999,18.254,Bahrain
+2000,19.199,Bahrain
+2001,19.679,Bahrain
+2002,20.112,Bahrain
+2003,20.976,Bahrain
+2004,21.204,Bahrain
+2005,24.487,Bahrain
+2006,24.036,Bahrain
+2007,26.626,Bahrain
+2008,29.525,Bahrain
+2009,28.098,Bahrain
+2010,29.075,Bahrain
+2011,28.468,Bahrain
+2012,27.119,Bahrain
+2013,31.158,Bahrain
+2014,30.9,Bahrain
+2015,32.46,Bahrain
+2016,31.56,Bahrain
+2017,32.835,Bahrain
+2018,32.633,Bahrain
+2019,37.58,Bahrain
+2020,37.396,Bahrain
+2021,36.196,Bahrain
+2022,35.652,Bahrain
+1990,14.082,Bangladesh
+1991,14.753,Bangladesh
+1992,15.391,Bangladesh
+1993,16.074,Bangladesh
+1994,17.553,Bangladesh
+1995,21.056,Bangladesh
+1996,21.507,Bangladesh
+1997,23.144,Bangladesh
+1998,23.216,Bangladesh
+1999,25.093,Bangladesh
+2000,26.539,Bangladesh
+2001,31.064,Bangladesh
+2002,32.007,Bangladesh
+2003,33.496,Bangladesh
+2004,35.982,Bangladesh
+2005,37.717,Bangladesh
+2006,41.726,Bangladesh
+2007,42.675,Bangladesh
+2008,45.341,Bangladesh
+2009,49.188,Bangladesh
+2010,54.036,Bangladesh
+2011,55.593,Bangladesh
+2012,59.704,Bangladesh
+2013,64.763,Bangladesh
+2014,67.552,Bangladesh
+2015,76.949,Bangladesh
+2016,81.762,Bangladesh
+2017,86.53,Bangladesh
+2018,86.611,Bangladesh
+2019,94.808,Bangladesh
+2020,95.454,Bangladesh
+2021,107.621,Bangladesh
+2022,113.863,Bangladesh
+1990,1.026,Barbados
+1991,1.184,Barbados
+1992,1.164,Barbados
+1993,0.932,Barbados
+1994,0.933,Barbados
+1995,1.019,Barbados
+1996,1.042,Barbados
+1997,1.152,Barbados
+1998,1.224,Barbados
+1999,1.294,Barbados
+2000,1.305,Barbados
+2001,1.304,Barbados
+2002,1.317,Barbados
+2003,1.359,Barbados
+2004,1.383,Barbados
+2005,1.429,Barbados
+2006,1.467,Barbados
+2007,1.473,Barbados
+2008,1.733,Barbados
+2009,1.7,Barbados
+2010,1.563,Barbados
+2011,1.626,Barbados
+2012,1.551,Barbados
+2013,1.533,Barbados
+2014,1.382,Barbados
+2015,1.368,Barbados
+2016,1.408,Barbados
+2017,1.388,Barbados
+2018,1.476,Barbados
+2019,1.429,Barbados
+2020,1.237,Barbados
+2021,1.176,Barbados
+2022,1.143,Barbados
+1990,108.345,Belarus
+1991,104.072,Belarus
+1992,93.483,Belarus
+1993,80.562,Belarus
+1994,67.879,Belarus
+1995,60.906,Belarus
+1996,61.735,Belarus
+1997,61.588,Belarus
+1998,60.073,Belarus
+1999,57.966,Belarus
+2000,54.906,Belarus
+2001,54.003,Belarus
+2002,53.844,Belarus
+2003,55.088,Belarus
+2004,58.254,Belarus
+2005,59.31,Belarus
+2006,61.744,Belarus
+2007,60.218,Belarus
+2008,62.836,Belarus
+2009,60.578,Belarus
+2010,62.445,Belarus
+2011,61.308,Belarus
+2012,62.545,Belarus
+2013,64.126,Belarus
+2014,63.649,Belarus
+2015,58.799,Belarus
+2016,58.134,Belarus
+2017,59.382,Belarus
+2018,62.157,Belarus
+2019,62.096,Belarus
+2020,59.056,Belarus
+2021,60.938,Belarus
+2022,59.384,Belarus
+1990,120.297,Belgium
+1991,123.367,Belgium
+1992,122.492,Belgium
+1993,121.427,Belgium
+1994,124.8,Belgium
+1995,125.939,Belgium
+1996,129.481,Belgium
+1997,123.993,Belgium
+1998,130.225,Belgium
+1999,124.683,Belgium
+2000,126.723,Belgium
+2001,126.067,Belgium
+2002,126.864,Belgium
+2003,128.249,Belgium
+2004,128.782,Belgium
+2005,125.64,Belgium
+2006,123.884,Belgium
+2007,120.481,Belgium
+2008,120.18,Belgium
+2009,107.78,Belgium
+2010,114.49,Belgium
+2011,105.098,Belgium
+2012,102.435,Belgium
+2013,102.762,Belgium
+2014,97.034,Belgium
+2015,101.275,Belgium
+2016,99.742,Belgium
+2017,99.192,Belgium
+2018,100.159,Belgium
+2019,99.684,Belgium
+2020,91.228,Belgium
+2021,94.886,Belgium
+2022,89.002,Belgium
+1990,0.311,Belize
+1991,0.407,Belize
+1992,0.355,Belize
+1993,0.377,Belize
+1994,0.374,Belize
+1995,0.377,Belize
+1996,0.308,Belize
+1997,0.388,Belize
+1998,0.37,Belize
+1999,0.348,Belize
+2000,0.396,Belize
+2001,0.447,Belize
+2002,0.432,Belize
+2003,0.432,Belize
+2004,0.392,Belize
+2005,0.421,Belize
+2006,0.443,Belize
+2007,0.476,Belize
+2008,0.436,Belize
+2009,0.517,Belize
+2010,0.539,Belize
+2011,0.553,Belize
+2012,0.451,Belize
+2013,0.44,Belize
+2014,0.469,Belize
+2015,0.641,Belize
+2016,0.627,Belize
+2017,0.616,Belize
+2018,0.605,Belize
+2019,0.707,Belize
+2020,0.584,Belize
+2021,0.613,Belize
+2022,0.632,Belize
+1990,0.579,Benin
+1991,0.62,Benin
+1992,0.671,Benin
+1993,0.807,Benin
+1994,0.912,Benin
+1995,0.956,Benin
+1996,1.184,Benin
+1997,1.224,Benin
+1998,1.114,Benin
+1999,1.462,Benin
+2000,1.473,Benin
+2001,1.689,Benin
+2002,2.11,Benin
+2003,2.394,Benin
+2004,2.594,Benin
+2005,2.49,Benin
+2006,3.351,Benin
+2007,3.931,Benin
+2008,3.919,Benin
+2009,4.225,Benin
+2010,4.679,Benin
+2011,4.48,Benin
+2012,4.403,Benin
+2013,4.566,Benin
+2014,4.796,Benin
+2015,5.333,Benin
+2016,5.336,Benin
+2017,5.581,Benin
+2018,5.669,Benin
+2019,5.262,Benin
+2020,5.518,Benin
+2021,5.759,Benin
+2022,5.792,Benin
+1990,0.502,Bermuda
+1991,0.539,Bermuda
+1992,0.462,Bermuda
+1993,0.539,Bermuda
+1994,0.531,Bermuda
+1995,0.531,Bermuda
+1996,0.528,Bermuda
+1997,0.524,Bermuda
+1998,0.52,Bermuda
+1999,0.513,Bermuda
+2000,0.517,Bermuda
+2001,0.528,Bermuda
+2002,0.557,Bermuda
+2003,0.561,Bermuda
+2004,0.583,Bermuda
+2005,0.583,Bermuda
+2006,0.652,Bermuda
+2007,0.729,Bermuda
+2008,0.649,Bermuda
+2009,0.476,Bermuda
+2010,0.608,Bermuda
+2011,0.443,Bermuda
+2012,0.366,Bermuda
+2013,0.535,Bermuda
+2014,0.671,Bermuda
+2015,0.539,Bermuda
+2016,0.619,Bermuda
+2017,0.634,Bermuda
+2018,0.696,Bermuda
+2019,0.594,Bermuda
+2020,0.436,Bermuda
+2021,0.517,Bermuda
+2022,0.501,Bermuda
+1990,0.186,Bhutan
+1991,0.186,Bhutan
+1992,0.215,Bhutan
+1993,0.182,Bhutan
+1994,0.212,Bhutan
+1995,0.249,Bhutan
+1996,0.298,Bhutan
+1997,0.39,Bhutan
+1998,0.382,Bhutan
+1999,0.386,Bhutan
+2000,0.397,Bhutan
+2001,0.465,Bhutan
+2002,0.497,Bhutan
+2003,0.493,Bhutan
+2004,0.44,Bhutan
+2005,0.546,Bhutan
+2006,0.415,Bhutan
+2007,0.397,Bhutan
+2008,0.646,Bhutan
+2009,0.679,Bhutan
+2010,0.905,Bhutan
+2011,1.037,Bhutan
+2012,1.187,Bhutan
+2013,1.324,Bhutan
+2014,1.387,Bhutan
+2015,1.485,Bhutan
+2016,1.624,Bhutan
+2017,1.712,Bhutan
+2018,1.734,Bhutan
+2019,1.619,Bhutan
+2020,1.25,Bhutan
+2021,1.596,Bhutan
+2022,1.635,Bhutan
+1990,10.007,Bolivia
+1991,10.495,Bolivia
+1992,11.014,Bolivia
+1993,11.55,Bolivia
+1994,9.638,Bolivia
+1995,9.017,Bolivia
+1996,10.016,Bolivia
+1997,11.721,Bolivia
+1998,11.252,Bolivia
+1999,10.94,Bolivia
+2000,8.434,Bolivia
+2001,8.743,Bolivia
+2002,10.403,Bolivia
+2003,10.968,Bolivia
+2004,11.032,Bolivia
+2005,12.313,Bolivia
+2006,12.332,Bolivia
+2007,12.695,Bolivia
+2008,12.965,Bolivia
+2009,13.538,Bolivia
+2010,14.719,Bolivia
+2011,15.949,Bolivia
+2012,17.535,Bolivia
+2013,17.769,Bolivia
+2014,19.888,Bolivia
+2015,19.887,Bolivia
+2016,21.239,Bolivia
+2017,22.171,Bolivia
+2018,22.498,Bolivia
+2019,22.605,Bolivia
+2020,18.312,Bolivia
+2021,21.756,Bolivia
+2022,22.378,Bolivia
+1990,0.065,Bonaire Sint Eustatius and Saba
+1991,0.052,Bonaire Sint Eustatius and Saba
+1992,0.043,Bonaire Sint Eustatius and Saba
+1993,0.066,Bonaire Sint Eustatius and Saba
+1994,0.063,Bonaire Sint Eustatius and Saba
+1995,0.062,Bonaire Sint Eustatius and Saba
+1996,0.058,Bonaire Sint Eustatius and Saba
+1997,0.061,Bonaire Sint Eustatius and Saba
+1998,0.003,Bonaire Sint Eustatius and Saba
+1999,0.025,Bonaire Sint Eustatius and Saba
+2000,0.067,Bonaire Sint Eustatius and Saba
+2001,0.068,Bonaire Sint Eustatius and Saba
+2002,0.066,Bonaire Sint Eustatius and Saba
+2003,0.066,Bonaire Sint Eustatius and Saba
+2004,0.069,Bonaire Sint Eustatius and Saba
+2005,0.068,Bonaire Sint Eustatius and Saba
+2006,0.071,Bonaire Sint Eustatius and Saba
+2007,0.08,Bonaire Sint Eustatius and Saba
+2008,0.077,Bonaire Sint Eustatius and Saba
+2009,0.079,Bonaire Sint Eustatius and Saba
+2010,0.054,Bonaire Sint Eustatius and Saba
+2011,0.069,Bonaire Sint Eustatius and Saba
+2012,0.084,Bonaire Sint Eustatius and Saba
+2013,0.084,Bonaire Sint Eustatius and Saba
+2014,0.084,Bonaire Sint Eustatius and Saba
+2015,0.095,Bonaire Sint Eustatius and Saba
+2016,0.103,Bonaire Sint Eustatius and Saba
+2017,0.103,Bonaire Sint Eustatius and Saba
+2018,0.099,Bonaire Sint Eustatius and Saba
+2019,0.11,Bonaire Sint Eustatius and Saba
+2020,0.114,Bonaire Sint Eustatius and Saba
+2021,0.114,Bonaire Sint Eustatius and Saba
+2022,0.11,Bonaire Sint Eustatius and Saba
+1990,19.871,Bosnia and Herzegovina
+1991,14.059,Bosnia and Herzegovina
+1992,15.029,Bosnia and Herzegovina
+1993,12.581,Bosnia and Herzegovina
+1994,3.205,Bosnia and Herzegovina
+1995,3.402,Bosnia and Herzegovina
+1996,4.24,Bosnia and Herzegovina
+1997,8.366,Bosnia and Herzegovina
+1998,10.551,Bosnia and Herzegovina
+1999,10.333,Bosnia and Herzegovina
+2000,13.702,Bosnia and Herzegovina
+2001,13.263,Bosnia and Herzegovina
+2002,14.173,Bosnia and Herzegovina
+2003,14.358,Bosnia and Herzegovina
+2004,15.462,Bosnia and Herzegovina
+2005,16.046,Bosnia and Herzegovina
+2006,17.387,Bosnia and Herzegovina
+2007,17.474,Bosnia and Herzegovina
+2008,19.959,Bosnia and Herzegovina
+2009,20.537,Bosnia and Herzegovina
+2010,21.146,Bosnia and Herzegovina
+2011,23.761,Bosnia and Herzegovina
+2012,22.134,Bosnia and Herzegovina
+2013,21.801,Bosnia and Herzegovina
+2014,19.312,Bosnia and Herzegovina
+2015,18.46,Bosnia and Herzegovina
+2016,21.73,Bosnia and Herzegovina
+2017,22.156,Bosnia and Herzegovina
+2018,22.075,Bosnia and Herzegovina
+2019,20.81,Bosnia and Herzegovina
+2020,20.832,Bosnia and Herzegovina
+2021,21.264,Bosnia and Herzegovina
+2022,20.963,Bosnia and Herzegovina
+1990,2.7,Botswana
+1991,2.634,Botswana
+1992,2.777,Botswana
+1993,3.195,Botswana
+1994,3.03,Botswana
+1995,3.045,Botswana
+1996,2.755,Botswana
+1997,2.799,Botswana
+1998,3.342,Botswana
+1999,3.158,Botswana
+2000,3.778,Botswana
+2001,3.847,Botswana
+2002,3.975,Botswana
+2003,3.825,Botswana
+2004,3.895,Botswana
+2005,4.093,Botswana
+2006,4.133,Botswana
+2007,4.228,Botswana
+2008,4.503,Botswana
+2009,3.855,Botswana
+2010,4.537,Botswana
+2011,4.029,Botswana
+2012,5.077,Botswana
+2013,5.663,Botswana
+2014,6.85,Botswana
+2015,5.418,Botswana
+2016,6.345,Botswana
+2017,7.07,Botswana
+2018,7.64,Botswana
+2019,6.727,Botswana
+2020,5.551,Botswana
+2021,6.009,Botswana
+2022,6.596,Botswana
+1990,218.658,Brazil
+1991,229.394,Brazil
+1992,233.601,Brazil
+1993,244.306,Brazil
+1994,254.002,Brazil
+1995,268.678,Brazil
+1996,289.311,Brazil
+1997,306.949,Brazil
+1998,317.359,Brazil
+1999,327.256,Brazil
+2000,340.183,Brazil
+2001,346.166,Brazil
+2002,347.765,Brazil
+2003,344.645,Brazil
+2004,361.434,Brazil
+2005,364.371,Brazil
+2006,368.871,Brazil
+2007,390.573,Brazil
+2008,412.638,Brazil
+2009,389.775,Brazil
+2010,440.269,Brazil
+2011,462.58,Brazil
+2012,498.309,Brazil
+2013,532.418,Brazil
+2014,557.901,Brazil
+2015,529.353,Brazil
+2016,492.748,Brazil
+2017,498.266,Brazil
+2018,478.379,Brazil
+2019,473.39,Brazil
+2020,445.208,Brazil
+2021,498.017,Brazil
+2022,483.841,Brazil
+1990,0.066,British Virgin Islands
+1991,0.073,British Virgin Islands
+1992,0.081,British Virgin Islands
+1993,0.084,British Virgin Islands
+1994,0.084,British Virgin Islands
+1995,0.088,British Virgin Islands
+1996,0.099,British Virgin Islands
+1997,0.103,British Virgin Islands
+1998,0.103,British Virgin Islands
+1999,0.114,British Virgin Islands
+2000,0.117,British Virgin Islands
+2001,0.125,British Virgin Islands
+2002,0.143,British Virgin Islands
+2003,0.147,British Virgin Islands
+2004,0.154,British Virgin Islands
+2005,0.165,British Virgin Islands
+2006,0.18,British Virgin Islands
+2007,0.187,British Virgin Islands
+2008,0.194,British Virgin Islands
+2009,0.194,British Virgin Islands
+2010,0.213,British Virgin Islands
+2011,0.213,British Virgin Islands
+2012,0.213,British Virgin Islands
+2013,0.213,British Virgin Islands
+2014,0.216,British Virgin Islands
+2015,0.227,British Virgin Islands
+2016,0.231,British Virgin Islands
+2017,0.18,British Virgin Islands
+2018,0.161,British Virgin Islands
+2019,0.183,British Virgin Islands
+2020,0.18,British Virgin Islands
+2021,0.183,British Virgin Islands
+2022,0.178,British Virgin Islands
+1990,5.456,Brunei
+1991,7.211,Brunei
+1992,6.885,Brunei
+1993,6.357,Brunei
+1994,5.553,Brunei
+1995,5.825,Brunei
+1996,5.879,Brunei
+1997,6.087,Brunei
+1998,5.595,Brunei
+1999,5.978,Brunei
+2000,5.329,Brunei
+2001,5.19,Brunei
+2002,4.67,Brunei
+2003,5.598,Brunei
+2004,5.641,Brunei
+2005,5.429,Brunei
+2006,7.144,Brunei
+2007,8.077,Brunei
+2008,9.166,Brunei
+2009,7.745,Brunei
+2010,8.017,Brunei
+2011,9.555,Brunei
+2012,9.5,Brunei
+2013,7.626,Brunei
+2014,8.831,Brunei
+2015,6.933,Brunei
+2016,7.633,Brunei
+2017,9.309,Brunei
+2018,9.344,Brunei
+2019,10.733,Brunei
+2020,11.157,Brunei
+2021,11.713,Brunei
+2022,11.354,Brunei
+1990,76.741,Bulgaria
+1991,61.623,Bulgaria
+1992,57.456,Bulgaria
+1993,58.492,Bulgaria
+1994,56.46,Bulgaria
+1995,57.998,Bulgaria
+1996,58.541,Bulgaria
+1997,55.891,Bulgaria
+1998,53.212,Bulgaria
+1999,46.471,Bulgaria
+2000,45.592,Bulgaria
+2001,49.117,Bulgaria
+2002,46.235,Bulgaria
+2003,50.587,Bulgaria
+2004,49.624,Bulgaria
+2005,50.685,Bulgaria
+2006,51.922,Bulgaria
+2007,55.751,Bulgaria
+2008,54.109,Bulgaria
+2009,45.837,Bulgaria
+2010,47.9,Bulgaria
+2011,53.205,Bulgaria
+2012,48.361,Bulgaria
+2013,42.726,Bulgaria
+2014,45.251,Bulgaria
+2015,48.204,Bulgaria
+2016,45.419,Bulgaria
+2017,47.521,Bulgaria
+2018,43.577,Bulgaria
+2019,42.267,Bulgaria
+2020,36.644,Bulgaria
+2021,42.425,Bulgaria
+2022,46.966,Bulgaria
+1990,0.59,Burkina Faso
+1991,0.638,Burkina Faso
+1992,0.63,Burkina Faso
+1993,0.634,Burkina Faso
+1994,0.66,Burkina Faso
+1995,0.661,Burkina Faso
+1996,0.723,Burkina Faso
+1997,0.76,Burkina Faso
+1998,0.852,Burkina Faso
+1999,1.044,Burkina Faso
+2000,0.934,Burkina Faso
+2001,1.061,Burkina Faso
+2002,1.071,Burkina Faso
+2003,1.188,Burkina Faso
+2004,1.104,Burkina Faso
+2005,1.111,Burkina Faso
+2006,1.214,Burkina Faso
+2007,1.62,Burkina Faso
+2008,1.818,Burkina Faso
+2009,1.836,Burkina Faso
+2010,1.985,Burkina Faso
+2011,2.149,Burkina Faso
+2012,2.615,Burkina Faso
+2013,2.809,Burkina Faso
+2014,2.864,Burkina Faso
+2015,3.744,Burkina Faso
+2016,3.985,Burkina Faso
+2017,4.622,Burkina Faso
+2018,5.226,Burkina Faso
+2019,5.621,Burkina Faso
+2020,5.377,Burkina Faso
+2021,6.289,Burkina Faso
+2022,6.374,Burkina Faso
+1990,0.209,Burundi
+1991,0.238,Burundi
+1992,0.216,Burundi
+1993,0.227,Burundi
+1994,0.234,Burundi
+1995,0.238,Burundi
+1996,0.242,Burundi
+1997,0.249,Burundi
+1998,0.249,Burundi
+1999,0.253,Burundi
+2000,0.271,Burundi
+2001,0.205,Burundi
+2002,0.213,Burundi
+2003,0.172,Burundi
+2004,0.202,Burundi
+2005,0.165,Burundi
+2006,0.187,Burundi
+2007,0.187,Burundi
+2008,0.198,Burundi
+2009,0.213,Burundi
+2010,0.33,Burundi
+2011,0.414,Burundi
+2012,0.392,Burundi
+2013,0.44,Burundi
+2014,0.348,Burundi
+2015,0.355,Burundi
+2016,0.429,Burundi
+2017,0.513,Burundi
+2018,0.645,Burundi
+2019,0.689,Burundi
+2020,0.739,Burundi
+2021,0.775,Burundi
+2022,0.707,Burundi
+1990,1.26,Cambodia
+1991,1.304,Cambodia
+1992,1.348,Cambodia
+1993,1.385,Cambodia
+1994,1.425,Cambodia
+1995,1.499,Cambodia
+1996,1.517,Cambodia
+1997,1.466,Cambodia
+1998,1.876,Cambodia
+1999,1.894,Cambodia
+2000,2.001,Cambodia
+2001,2.235,Cambodia
+2002,2.151,Cambodia
+2003,2.253,Cambodia
+2004,2.242,Cambodia
+2005,2.209,Cambodia
+2006,2.847,Cambodia
+2007,3.489,Cambodia
+2008,3.936,Cambodia
+2009,4.579,Cambodia
+2010,5.064,Cambodia
+2011,5.275,Cambodia
+2012,5.576,Cambodia
+2013,5.626,Cambodia
+2014,6.699,Cambodia
+2015,8.189,Cambodia
+2016,10.647,Cambodia
+2017,12.088,Cambodia
+2018,13.934,Cambodia
+2019,18.629,Cambodia
+2020,19.034,Cambodia
+2021,19.248,Cambodia
+2022,19.609,Cambodia
+1990,2.605,Cameroon
+1991,2.668,Cameroon
+1992,2.712,Cameroon
+1993,2.866,Cameroon
+1994,4.88,Cameroon
+1995,5.375,Cameroon
+1996,5.975,Cameroon
+1997,5.379,Cameroon
+1998,5.373,Cameroon
+1999,5.219,Cameroon
+2000,5.589,Cameroon
+2001,5.562,Cameroon
+2002,5.351,Cameroon
+2003,5.705,Cameroon
+2004,5.698,Cameroon
+2005,5.424,Cameroon
+2006,5.486,Cameroon
+2007,7.409,Cameroon
+2008,7.321,Cameroon
+2009,8.555,Cameroon
+2010,8.383,Cameroon
+2011,8.105,Cameroon
+2012,7.603,Cameroon
+2013,7.85,Cameroon
+2014,8.772,Cameroon
+2015,9.851,Cameroon
+2016,9.965,Cameroon
+2017,9.586,Cameroon
+2018,9.848,Cameroon
+2019,9.606,Cameroon
+2020,9.716,Cameroon
+2021,9.605,Cameroon
+2022,10.046,Cameroon
+1990,458.015,Canada
+1991,449.756,Canada
+1992,463.497,Canada
+1993,464.16,Canada
+1994,478.631,Canada
+1995,491.414,Canada
+1996,507.729,Canada
+1997,522.022,Canada
+1998,529.636,Canada
+1999,543.866,Canada
+2000,566.261,Canada
+2001,558.36,Canada
+2002,563.729,Canada
+2003,580.792,Canada
+2004,579.163,Canada
+2005,572.855,Canada
+2006,568.173,Canada
+2007,591.889,Canada
+2008,575.77,Canada
+2009,542.811,Canada
+2010,554.734,Canada
+2011,563.32,Canada
+2012,564.221,Canada
+2013,568.854,Canada
+2014,566.469,Canada
+2015,565.644,Canada
+2016,558.872,Canada
+2017,569.603,Canada
+2018,579.079,Canada
+2019,582.025,Canada
+2020,526.582,Canada
+2021,540.312,Canada
+2022,550.612,Canada
+1990,0.18,Cape Verde
+1991,0.165,Cape Verde
+1992,0.18,Cape Verde
+1993,0.172,Cape Verde
+1994,0.176,Cape Verde
+1995,0.198,Cape Verde
+1996,0.216,Cape Verde
+1997,0.227,Cape Verde
+1998,0.242,Cape Verde
+1999,0.289,Cape Verde
+2000,0.297,Cape Verde
+2001,0.348,Cape Verde
+2002,0.381,Cape Verde
+2003,0.414,Cape Verde
+2004,0.425,Cape Verde
+2005,0.447,Cape Verde
+2006,0.495,Cape Verde
+2007,0.506,Cape Verde
+2008,0.469,Cape Verde
+2009,0.52,Cape Verde
+2010,0.557,Cape Verde
+2011,0.616,Cape Verde
+2012,0.502,Cape Verde
+2013,0.495,Cape Verde
+2014,0.487,Cape Verde
+2015,0.491,Cape Verde
+2016,0.535,Cape Verde
+2017,0.575,Cape Verde
+2018,0.572,Cape Verde
+2019,0.63,Cape Verde
+2020,0.517,Cape Verde
+2021,0.546,Cape Verde
+2022,0.555,Cape Verde
+1990,0.183,Central African Republic
+1991,0.191,Central African Republic
+1992,0.194,Central African Republic
+1993,0.198,Central African Republic
+1994,0.209,Central African Republic
+1995,0.209,Central African Republic
+1996,0.213,Central African Republic
+1997,0.216,Central African Republic
+1998,0.22,Central African Republic
+1999,0.231,Central African Republic
+2000,0.234,Central African Republic
+2001,0.245,Central African Republic
+2002,0.242,Central African Republic
+2003,0.224,Central African Republic
+2004,0.22,Central African Republic
+2005,0.216,Central African Republic
+2006,0.227,Central African Republic
+2007,0.231,Central African Republic
+2008,0.165,Central African Republic
+2009,0.161,Central African Republic
+2010,0.169,Central African Republic
+2011,0.187,Central African Republic
+2012,0.191,Central African Republic
+2013,0.117,Central African Republic
+2014,0.125,Central African Republic
+2015,0.18,Central African Republic
+2016,0.198,Central African Republic
+2017,0.216,Central African Republic
+2018,0.22,Central African Republic
+2019,0.227,Central African Republic
+2020,0.238,Central African Republic
+2021,0.242,Central African Republic
+2022,0.271,Central African Republic
+1990,92.386,Central America (GCP)
+1991,91.418,Central America (GCP)
+1992,89.993,Central America (GCP)
+1993,90.46,Central America (GCP)
+1994,94.068,Central America (GCP)
+1995,100.835,Central America (GCP)
+1996,106.476,Central America (GCP)
+1997,112.959,Central America (GCP)
+1998,113.327,Central America (GCP)
+1999,118.589,Central America (GCP)
+2000,129.789,Central America (GCP)
+2001,135.018,Central America (GCP)
+2002,139.767,Central America (GCP)
+2003,146.719,Central America (GCP)
+2004,143.291,Central America (GCP)
+2005,152.148,Central America (GCP)
+2006,162.885,Central America (GCP)
+2007,167.421,Central America (GCP)
+2008,166.912,Central America (GCP)
+2009,164.965,Central America (GCP)
+2010,171.566,Central America (GCP)
+2011,172.25,Central America (GCP)
+2012,171.365,Central America (GCP)
+2013,171.913,Central America (GCP)
+2014,174.981,Central America (GCP)
+2015,181.953,Central America (GCP)
+2016,175.96,Central America (GCP)
+2017,171.15,Central America (GCP)
+2018,171.925,Central America (GCP)
+2019,180.347,Central America (GCP)
+2020,155.89,Central America (GCP)
+2021,172.783,Central America (GCP)
+2022,171.995,Central America (GCP)
+1990,0.377,Chad
+1991,0.385,Chad
+1992,0.407,Chad
+1993,0.403,Chad
+1994,0.412,Chad
+1995,0.427,Chad
+1996,0.443,Chad
+1997,0.453,Chad
+1998,0.464,Chad
+1999,0.477,Chad
+2000,0.488,Chad
+2001,0.506,Chad
+2002,0.528,Chad
+2003,0.882,Chad
+2004,0.903,Chad
+2005,0.926,Chad
+2006,0.961,Chad
+2007,1.089,Chad
+2008,0.872,Chad
+2009,1.216,Chad
+2010,1.236,Chad
+2011,1.273,Chad
+2012,1.743,Chad
+2013,2.078,Chad
+2014,2.183,Chad
+2015,2.352,Chad
+2016,2.374,Chad
+2017,2.344,Chad
+2018,2.384,Chad
+2019,2.299,Chad
+2020,2.356,Chad
+2021,2.67,Chad
+2022,3.005,Chad
+1990,32.908,Chile
+1991,30.892,Chile
+1992,32.001,Chile
+1993,34.098,Chile
+1994,37.975,Chile
+1995,41.563,Chile
+1996,48.226,Chile
+1997,55.942,Chile
+1998,57.258,Chile
+1999,61.408,Chile
+2000,58.503,Chile
+2001,52.918,Chile
+2002,54.836,Chile
+2003,55.1,Chile
+2004,59.228,Chile
+2005,61.127,Chile
+2006,64.052,Chile
+2007,70.476,Chile
+2008,70.553,Chile
+2009,65.96,Chile
+2010,71.348,Chile
+2011,78.071,Chile
+2012,79.621,Chile
+2013,81.737,Chile
+2014,77.59,Chile
+2015,81.782,Chile
+2016,84.25,Chile
+2017,84.138,Chile
+2018,84.439,Chile
+2019,91.977,Chile
+2020,80.178,Chile
+2021,83.655,Chile
+2022,82.537,Chile
+1990,2484.855,China
+1991,2606.096,China
+1992,2730.788,China
+1993,2921.651,China
+1994,3103.739,China
+1995,3361.637,China
+1996,3508.818,China
+1997,3515.594,China
+1998,3364.587,China
+1999,3557.275,China
+2000,3649.227,China
+2001,3728.51,China
+2002,4103.046,China
+2003,4841.119,China
+2004,5217.351,China
+2005,5882.106,China
+2006,6494.331,China
+2007,6983.547,China
+2008,7501.498,China
+2009,7891.078,China
+2010,8620.576,China
+2011,9532.332,China
+2012,9779.292,China
+2013,9956.329,China
+2014,9990.257,China
+2015,9863.457,China
+2016,9762.714,China
+2017,10006.343,China
+2018,10332.992,China
+2019,10713.984,China
+2020,10905.693,China
+2021,11447.913,China
+2022,11350.538,China
+1994,0.0,Christmas Island
+1995,0.0,Christmas Island
+1996,0.0,Christmas Island
+1997,0.0,Christmas Island
+1998,0.0,Christmas Island
+1999,0.0,Christmas Island
+2000,0.0,Christmas Island
+2001,0.0,Christmas Island
+2002,0.0,Christmas Island
+2003,0.0,Christmas Island
+2004,0.0,Christmas Island
+2005,0.0,Christmas Island
+2006,0.0,Christmas Island
+2007,0.0,Christmas Island
+2008,0.0,Christmas Island
+2009,0.0,Christmas Island
+2010,0.0,Christmas Island
+2011,0.0,Christmas Island
+2012,0.0,Christmas Island
+2013,0.0,Christmas Island
+2014,0.0,Christmas Island
+2015,0.0,Christmas Island
+2016,0.0,Christmas Island
+2017,0.0,Christmas Island
+2018,0.0,Christmas Island
+2019,0.0,Christmas Island
+2020,0.0,Christmas Island
+2021,0.0,Christmas Island
+2022,0.0,Christmas Island
+1990,56.898,Colombia
+1991,56.654,Colombia
+1992,61.495,Colombia
+1993,63.338,Colombia
+1994,67.037,Colombia
+1995,59.421,Colombia
+1996,59.913,Colombia
+1997,65.256,Colombia
+1998,65.799,Colombia
+1999,55.476,Colombia
+2000,56.591,Colombia
+2001,56.848,Colombia
+2002,55.901,Colombia
+2003,57.378,Colombia
+2004,54.647,Colombia
+2005,60.162,Colombia
+2006,62.304,Colombia
+2007,60.491,Colombia
+2008,66.964,Colombia
+2009,72.461,Colombia
+2010,76.266,Colombia
+2011,76.224,Colombia
+2012,80.255,Colombia
+2013,88.105,Colombia
+2014,94.078,Colombia
+2015,98.064,Colombia
+2016,94.208,Colombia
+2017,86.61,Colombia
+2018,86.731,Colombia
+2019,94.498,Colombia
+2020,89.732,Colombia
+2021,94.323,Colombia
+2022,98.293,Colombia
+1990,0.066,Comoros
+1991,0.066,Comoros
+1992,0.07,Comoros
+1993,0.073,Comoros
+1994,0.073,Comoros
+1995,0.077,Comoros
+1996,0.081,Comoros
+1997,0.084,Comoros
+1998,0.092,Comoros
+1999,0.095,Comoros
+2000,0.103,Comoros
+2001,0.106,Comoros
+2002,0.106,Comoros
+2003,0.136,Comoros
+2004,0.147,Comoros
+2005,0.143,Comoros
+2006,0.165,Comoros
+2007,0.106,Comoros
+2008,0.11,Comoros
+2009,0.136,Comoros
+2010,0.161,Comoros
+2011,0.143,Comoros
+2012,0.154,Comoros
+2013,0.183,Comoros
+2014,0.161,Comoros
+2015,0.18,Comoros
+2016,0.209,Comoros
+2017,0.26,Comoros
+2018,0.286,Comoros
+2019,0.311,Comoros
+2020,0.374,Comoros
+2021,0.498,Comoros
+2022,0.451,Comoros
+1990,1.008,Congo
+1991,1.083,Congo
+1992,1.289,Congo
+1993,1.16,Congo
+1994,3.384,Congo
+1995,3.225,Congo
+1996,4.037,Congo
+1997,4.831,Congo
+1998,3.869,Congo
+1999,3.916,Congo
+2000,4.284,Congo
+2001,4.178,Congo
+2002,2.72,Congo
+2003,3.258,Congo
+2004,3.549,Congo
+2005,4.352,Congo
+2006,4.786,Congo
+2007,4.259,Congo
+2008,4.27,Congo
+2009,4.944,Congo
+2010,5.5,Congo
+2011,5.046,Congo
+2012,5.018,Congo
+2013,5.89,Congo
+2014,5.471,Congo
+2015,5.637,Congo
+2016,5.729,Congo
+2017,5.653,Congo
+2018,6.547,Congo
+2019,7.294,Congo
+2020,7.677,Congo
+2021,7.415,Congo
+2022,8.111,Congo
+1990,0.044,Cook Islands
+1991,0.044,Cook Islands
+1992,0.044,Cook Islands
+1993,0.048,Cook Islands
+1994,0.048,Cook Islands
+1995,0.048,Cook Islands
+1996,0.051,Cook Islands
+1997,0.051,Cook Islands
+1998,0.048,Cook Islands
+1999,0.051,Cook Islands
+2000,0.051,Cook Islands
+2001,0.051,Cook Islands
+2002,0.044,Cook Islands
+2003,0.051,Cook Islands
+2004,0.055,Cook Islands
+2005,0.062,Cook Islands
+2006,0.066,Cook Islands
+2007,0.066,Cook Islands
+2008,0.066,Cook Islands
+2009,0.066,Cook Islands
+2010,0.073,Cook Islands
+2011,0.081,Cook Islands
+2012,0.084,Cook Islands
+2013,0.084,Cook Islands
+2014,0.081,Cook Islands
+2015,0.077,Cook Islands
+2016,0.07,Cook Islands
+2017,0.077,Cook Islands
+2018,0.077,Cook Islands
+2019,0.077,Cook Islands
+2020,0.066,Cook Islands
+2021,0.07,Cook Islands
+2022,0.071,Cook Islands
+1990,2.913,Costa Rica
+1991,3.288,Costa Rica
+1992,3.742,Costa Rica
+1993,3.891,Costa Rica
+1994,5.2,Costa Rica
+1995,4.801,Costa Rica
+1996,4.686,Costa Rica
+1997,4.916,Costa Rica
+1998,5.234,Costa Rica
+1999,5.438,Costa Rica
+2000,5.394,Costa Rica
+2001,5.667,Costa Rica
+2002,6.245,Costa Rica
+2003,6.583,Costa Rica
+2004,6.842,Costa Rica
+2005,6.723,Costa Rica
+2006,7.007,Costa Rica
+2007,7.961,Costa Rica
+2008,7.99,Costa Rica
+2009,7.748,Costa Rica
+2010,7.493,Costa Rica
+2011,7.311,Costa Rica
+2012,7.26,Costa Rica
+2013,7.632,Costa Rica
+2014,7.748,Costa Rica
+2015,7.406,Costa Rica
+2016,7.856,Costa Rica
+2017,8.029,Costa Rica
+2018,8.012,Costa Rica
+2019,7.698,Costa Rica
+2020,6.771,Costa Rica
+2021,7.647,Costa Rica
+2022,7.847,Costa Rica
+1990,4.782,Cote d'Ivoire
+1991,4.309,Cote d'Ivoire
+1992,3.844,Cote d'Ivoire
+1993,5.093,Cote d'Ivoire
+1994,4.133,Cote d'Ivoire
+1995,6.225,Cote d'Ivoire
+1996,7.526,Cote d'Ivoire
+1997,7.211,Cote d'Ivoire
+1998,6.755,Cote d'Ivoire
+1999,6.092,Cote d'Ivoire
+2000,6.634,Cote d'Ivoire
+2001,7.65,Cote d'Ivoire
+2002,7.45,Cote d'Ivoire
+2003,5.301,Cote d'Ivoire
+2004,7.386,Cote d'Ivoire
+2005,7.564,Cote d'Ivoire
+2006,6.887,Cote d'Ivoire
+2007,6.653,Cote d'Ivoire
+2008,6.713,Cote d'Ivoire
+2009,5.66,Cote d'Ivoire
+2010,6.225,Cote d'Ivoire
+2011,6.523,Cote d'Ivoire
+2012,8.54,Cote d'Ivoire
+2013,9.68,Cote d'Ivoire
+2014,9.903,Cote d'Ivoire
+2015,9.555,Cote d'Ivoire
+2016,11.983,Cote d'Ivoire
+2017,12.002,Cote d'Ivoire
+2018,10.415,Cote d'Ivoire
+2019,10.535,Cote d'Ivoire
+2020,11.016,Cote d'Ivoire
+2021,13.669,Cote d'Ivoire
+2022,13.644,Cote d'Ivoire
+1990,22.874,Croatia
+1991,16.993,Croatia
+1992,16.375,Croatia
+1993,16.808,Croatia
+1994,16.052,Croatia
+1995,16.811,Croatia
+1996,17.336,Croatia
+1997,18.567,Croatia
+1998,19.039,Croatia
+1999,20.081,Croatia
+2000,19.652,Croatia
+2001,20.776,Croatia
+2002,21.916,Croatia
+2003,23.227,Croatia
+2004,22.855,Croatia
+2005,23.298,Croatia
+2006,23.499,Croatia
+2007,24.805,Croatia
+2008,23.52,Croatia
+2009,21.756,Croatia
+2010,20.986,Croatia
+2011,20.621,Croatia
+2012,19.056,Croatia
+2013,18.406,Croatia
+2014,17.657,Croatia
+2015,17.803,Croatia
+2016,18.09,Croatia
+2017,18.719,Croatia
+2018,17.703,Croatia
+2019,17.83,Croatia
+2020,16.882,Croatia
+2021,17.411,Croatia
+2022,17.608,Croatia
+1990,29.648,Cuba
+1991,27.17,Cuba
+1992,20.593,Cuba
+1993,19.823,Cuba
+1994,21.382,Cuba
+1995,22.835,Cuba
+1996,23.333,Cuba
+1997,24.809,Cuba
+1998,24.294,Cuba
+1999,24.467,Cuba
+2000,25.284,Cuba
+2001,24.681,Cuba
+2002,25.154,Cuba
+2003,25.569,Cuba
+2004,24.547,Cuba
+2005,25.677,Cuba
+2006,26.785,Cuba
+2007,25.724,Cuba
+2008,27.738,Cuba
+2009,27.821,Cuba
+2010,33.038,Cuba
+2011,29.068,Cuba
+2012,29.476,Cuba
+2013,27.898,Cuba
+2014,27.37,Cuba
+2015,29.091,Cuba
+2016,27.769,Cuba
+2017,24.566,Cuba
+2018,23.019,Cuba
+2019,22.494,Cuba
+2020,21.277,Cuba
+2021,22.553,Cuba
+2022,21.882,Cuba
+1990,4.824,Curacao
+1991,3.849,Curacao
+1992,3.171,Curacao
+1993,4.896,Curacao
+1994,4.694,Curacao
+1995,4.645,Curacao
+1996,4.345,Curacao
+1997,4.547,Curacao
+1998,0.251,Curacao
+1999,1.881,Curacao
+2000,4.99,Curacao
+2001,5.081,Curacao
+2002,4.899,Curacao
+2003,4.902,Curacao
+2004,5.143,Curacao
+2005,5.098,Curacao
+2006,5.313,Curacao
+2007,5.981,Curacao
+2008,5.753,Curacao
+2009,5.887,Curacao
+2010,4.055,Curacao
+2011,5.173,Curacao
+2012,6.287,Curacao
+2013,5.932,Curacao
+2014,6.797,Curacao
+2015,7.332,Curacao
+2016,6.203,Curacao
+2017,4.968,Curacao
+2018,4.32,Curacao
+2019,2.253,Curacao
+2020,1.814,Curacao
+2021,2.001,Curacao
+2022,1.94,Curacao
+1990,4.644,Cyprus
+1991,5.132,Cyprus
+1992,5.504,Cyprus
+1993,5.748,Cyprus
+1994,5.99,Cyprus
+1995,5.86,Cyprus
+1996,6.21,Cyprus
+1997,6.296,Cyprus
+1998,6.59,Cyprus
+1999,6.856,Cyprus
+2000,7.102,Cyprus
+2001,6.976,Cyprus
+2002,7.167,Cyprus
+2003,7.557,Cyprus
+2004,7.787,Cyprus
+2005,7.958,Cyprus
+2006,8.186,Cyprus
+2007,8.504,Cyprus
+2008,8.717,Cyprus
+2009,8.471,Cyprus
+2010,8.102,Cyprus
+2011,7.789,Cyprus
+2012,7.264,Cyprus
+2013,6.584,Cyprus
+2014,6.952,Cyprus
+2015,6.973,Cyprus
+2016,7.375,Cyprus
+2017,7.505,Cyprus
+2018,7.323,Cyprus
+2019,7.344,Cyprus
+2020,7.015,Cyprus
+2021,7.17,Cyprus
+2022,7.198,Cyprus
+1990,164.25,Czechia
+1991,148.883,Czechia
+1992,145.706,Czechia
+1993,140.124,Czechia
+1994,132.668,Czechia
+1995,131.622,Czechia
+1996,135.019,Czechia
+1997,130.942,Czechia
+1998,125.716,Czechia
+1999,116.672,Czechia
+2000,127.236,Czechia
+2001,127.145,Czechia
+2002,123.968,Czechia
+2003,127.572,Czechia
+2004,128.292,Czechia
+2005,125.691,Czechia
+2006,126.537,Czechia
+2007,128.366,Czechia
+2008,122.935,Czechia
+2009,114.983,Czechia
+2010,117.476,Czechia
+2011,115.189,Czechia
+2012,111.287,Czechia
+2013,106.722,Czechia
+2014,104.246,Czechia
+2015,105.001,Czechia
+2016,106.648,Czechia
+2017,107.746,Czechia
+2018,106.336,Czechia
+2019,101.009,Czechia
+2020,91.674,Czechia
+2021,96.645,Czechia
+2022,95.108,Czechia
+1990,4.249,Democratic Republic of Congo
+1991,3.133,Democratic Republic of Congo
+1992,2.808,Democratic Republic of Congo
+1993,2.662,Democratic Republic of Congo
+1994,2.751,Democratic Republic of Congo
+1995,3.096,Democratic Republic of Congo
+1996,3.473,Democratic Republic of Congo
+1997,3.089,Democratic Republic of Congo
+1998,2.733,Democratic Republic of Congo
+1999,2.199,Democratic Republic of Congo
+2000,1.705,Democratic Republic of Congo
+2001,1.647,Democratic Republic of Congo
+2002,1.734,Democratic Republic of Congo
+2003,2.096,Democratic Republic of Congo
+2004,2.028,Democratic Republic of Congo
+2005,2.287,Democratic Republic of Congo
+2006,2.352,Democratic Republic of Congo
+2007,2.623,Democratic Republic of Congo
+2008,2.685,Democratic Republic of Congo
+2009,2.446,Democratic Republic of Congo
+2010,2.735,Democratic Republic of Congo
+2011,3.041,Democratic Republic of Congo
+2012,2.797,Democratic Republic of Congo
+2013,3.921,Democratic Republic of Congo
+2014,5.066,Democratic Republic of Congo
+2015,3.274,Democratic Republic of Congo
+2016,2.659,Democratic Republic of Congo
+2017,2.917,Democratic Republic of Congo
+2018,3.774,Democratic Republic of Congo
+2019,4.121,Democratic Republic of Congo
+2020,4.302,Democratic Republic of Congo
+2021,4.269,Democratic Republic of Congo
+2022,4.631,Democratic Republic of Congo
+1990,53.464,Denmark
+1991,64.093,Denmark
+1992,58.315,Denmark
+1993,60.562,Denmark
+1994,64.661,Denmark
+1995,61.641,Denmark
+1996,74.887,Denmark
+1997,65.425,Denmark
+1998,61.226,Denmark
+1999,58.642,Denmark
+2000,54.296,Denmark
+2001,55.886,Denmark
+2002,55.544,Denmark
+2003,60.638,Denmark
+2004,55.093,Denmark
+2005,51.527,Denmark
+2006,59.492,Denmark
+2007,54.698,Denmark
+2008,51.246,Denmark
+2009,48.84,Denmark
+2010,49.179,Denmark
+2011,44.227,Denmark
+2012,39.853,Denmark
+2013,41.755,Denmark
+2014,37.565,Denmark
+2015,35.102,Denmark
+2016,36.906,Denmark
+2017,34.652,Denmark
+2018,34.602,Denmark
+2019,30.942,Denmark
+2020,28.294,Denmark
+2021,29.588,Denmark
+2022,28.432,Denmark
+1990,0.297,Djibouti
+1991,0.3,Djibouti
+1992,0.304,Djibouti
+1993,0.304,Djibouti
+1994,0.3,Djibouti
+1995,0.311,Djibouti
+1996,0.308,Djibouti
+1997,0.333,Djibouti
+1998,0.385,Djibouti
+1999,0.385,Djibouti
+2000,0.366,Djibouti
+2001,0.366,Djibouti
+2002,0.399,Djibouti
+2003,0.421,Djibouti
+2004,0.407,Djibouti
+2005,0.414,Djibouti
+2006,0.414,Djibouti
+2007,0.462,Djibouti
+2008,0.498,Djibouti
+2009,0.443,Djibouti
+2010,0.517,Djibouti
+2011,0.315,Djibouti
+2012,0.297,Djibouti
+2013,0.384,Djibouti
+2014,0.414,Djibouti
+2015,0.505,Djibouti
+2016,0.428,Djibouti
+2017,0.414,Djibouti
+2018,0.475,Djibouti
+2019,0.543,Djibouti
+2020,0.463,Djibouti
+2021,0.532,Djibouti
+2022,0.494,Djibouti
+1990,0.059,Dominica
+1991,0.059,Dominica
+1992,0.059,Dominica
+1993,0.062,Dominica
+1994,0.07,Dominica
+1995,0.081,Dominica
+1996,0.073,Dominica
+1997,0.081,Dominica
+1998,0.077,Dominica
+1999,0.081,Dominica
+2000,0.103,Dominica
+2001,0.11,Dominica
+2002,0.103,Dominica
+2003,0.117,Dominica
+2004,0.143,Dominica
+2005,0.15,Dominica
+2006,0.143,Dominica
+2007,0.172,Dominica
+2008,0.169,Dominica
+2009,0.187,Dominica
+2010,0.172,Dominica
+2011,0.154,Dominica
+2012,0.165,Dominica
+2013,0.158,Dominica
+2014,0.165,Dominica
+2015,0.176,Dominica
+2016,0.172,Dominica
+2017,0.154,Dominica
+2018,0.161,Dominica
+2019,0.172,Dominica
+2020,0.158,Dominica
+2021,0.161,Dominica
+2022,0.156,Dominica
+1990,8.936,Dominican Republic
+1991,9.538,Dominican Republic
+1992,10.418,Dominican Republic
+1993,11.209,Dominican Republic
+1994,11.796,Dominican Republic
+1995,15.107,Dominican Republic
+1996,16.484,Dominican Republic
+1997,17.266,Dominican Republic
+1998,17.788,Dominican Republic
+1999,17.821,Dominican Republic
+2000,18.992,Dominican Republic
+2001,19.145,Dominican Republic
+2002,20.949,Dominican Republic
+2003,21.345,Dominican Republic
+2004,17.333,Dominican Republic
+2005,17.941,Dominican Republic
+2006,19.112,Dominican Republic
+2007,19.993,Dominican Republic
+2008,20.332,Dominican Republic
+2009,19.781,Dominican Republic
+2010,20.553,Dominican Republic
+2011,21.318,Dominican Republic
+2012,21.255,Dominican Republic
+2013,21.267,Dominican Republic
+2014,21.801,Dominican Republic
+2015,23.495,Dominican Republic
+2016,24.645,Dominican Republic
+2017,24.017,Dominican Republic
+2018,25.756,Dominican Republic
+2019,28.375,Dominican Republic
+2020,27.015,Dominican Republic
+2021,30.835,Dominican Republic
+2022,30.431,Dominican Republic
+1994,0.0,East Timor
+1995,0.0,East Timor
+1996,0.0,East Timor
+1997,0.0,East Timor
+1998,0.061,East Timor
+1999,0.153,East Timor
+2000,0.22,East Timor
+2001,0.119,East Timor
+2002,0.262,East Timor
+2003,0.249,East Timor
+2004,0.497,East Timor
+2005,0.321,East Timor
+2006,0.317,East Timor
+2007,0.288,East Timor
+2008,0.285,East Timor
+2009,0.322,East Timor
+2010,0.313,East Timor
+2011,0.434,East Timor
+2012,0.591,East Timor
+2013,0.619,East Timor
+2014,0.624,East Timor
+2015,0.59,East Timor
+2016,0.643,East Timor
+2017,0.69,East Timor
+2018,0.617,East Timor
+2019,0.675,East Timor
+2020,0.646,East Timor
+2021,0.62,East Timor
+2022,0.649,East Timor
+1990,16.458,Ecuador
+1991,16.157,Ecuador
+1992,21.96,Ecuador
+1993,24.089,Ecuador
+1994,14.307,Ecuador
+1995,23.498,Ecuador
+1996,25.3,Ecuador
+1997,19.429,Ecuador
+1998,23.09,Ecuador
+1999,21.976,Ecuador
+2000,20.927,Ecuador
+2001,23.408,Ecuador
+2002,24.827,Ecuador
+2003,27.072,Ecuador
+2004,29.258,Ecuador
+2005,30.59,Ecuador
+2006,29.69,Ecuador
+2007,34.279,Ecuador
+2008,30.314,Ecuador
+2009,33.599,Ecuador
+2010,36.276,Ecuador
+2011,38.264,Ecuador
+2012,37.409,Ecuador
+2013,39.655,Ecuador
+2014,43.731,Ecuador
+2015,41.276,Ecuador
+2016,39.357,Ecuador
+2017,39.174,Ecuador
+2018,38.429,Ecuador
+2019,40.062,Ecuador
+2020,32.909,Ecuador
+2021,38.204,Ecuador
+2022,40.522,Ecuador
+1990,75.218,Egypt
+1991,77.296,Egypt
+1992,79.94,Egypt
+1993,92.278,Egypt
+1994,88.373,Egypt
+1995,98.994,Egypt
+1996,97.951,Egypt
+1997,111.705,Egypt
+1998,125.026,Egypt
+1999,128.221,Egypt
+2000,143.836,Egypt
+2001,127.657,Egypt
+2002,129.155,Egypt
+2003,149.919,Egypt
+2004,152.576,Egypt
+2005,168.217,Egypt
+2006,179.194,Egypt
+2007,188.805,Egypt
+2008,197.728,Egypt
+2009,206.478,Egypt
+2010,203.608,Egypt
+2011,216.917,Egypt
+2012,213.734,Egypt
+2013,211.419,Egypt
+2014,226.899,Egypt
+2015,224.48,Egypt
+2016,239.382,Egypt
+2017,260.675,Egypt
+2018,249.217,Egypt
+2019,258.742,Egypt
+2020,235.358,Egypt
+2021,260.936,Egypt
+2022,271.169,Egypt
+1990,2.475,El Salvador
+1991,3.155,El Salvador
+1992,3.317,El Salvador
+1993,3.976,El Salvador
+1994,4.513,El Salvador
+1995,4.998,El Salvador
+1996,4.414,El Salvador
+1997,5.416,El Salvador
+1998,5.731,El Salvador
+1999,5.588,El Salvador
+2000,5.671,El Salvador
+2001,5.857,El Salvador
+2002,6.07,El Salvador
+2003,6.435,El Salvador
+2004,6.254,El Salvador
+2005,6.298,El Salvador
+2006,6.718,El Salvador
+2007,6.846,El Salvador
+2008,6.405,El Salvador
+2009,6.312,El Salvador
+2010,6.319,El Salvador
+2011,6.499,El Salvador
+2012,6.472,El Salvador
+2013,6.094,El Salvador
+2014,6.151,El Salvador
+2015,6.668,El Salvador
+2016,6.596,El Salvador
+2017,5.97,El Salvador
+2018,6.263,El Salvador
+2019,7.553,El Salvador
+2020,6.594,El Salvador
+2021,7.581,El Salvador
+2022,7.8,El Salvador
+1990,0.062,Equatorial Guinea
+1991,0.066,Equatorial Guinea
+1992,0.066,Equatorial Guinea
+1993,0.07,Equatorial Guinea
+1994,1.153,Equatorial Guinea
+1995,1.227,Equatorial Guinea
+1996,1.356,Equatorial Guinea
+1997,1.975,Equatorial Guinea
+1998,2.302,Equatorial Guinea
+1999,2.511,Equatorial Guinea
+2000,2.699,Equatorial Guinea
+2001,3.095,Equatorial Guinea
+2002,2.761,Equatorial Guinea
+2003,3.133,Equatorial Guinea
+2004,6.137,Equatorial Guinea
+2005,6.208,Equatorial Guinea
+2006,6.182,Equatorial Guinea
+2007,5.724,Equatorial Guinea
+2008,5.942,Equatorial Guinea
+2009,4.902,Equatorial Guinea
+2010,6.402,Equatorial Guinea
+2011,6.095,Equatorial Guinea
+2012,6.901,Equatorial Guinea
+2013,8.196,Equatorial Guinea
+2014,7.672,Equatorial Guinea
+2015,7.033,Equatorial Guinea
+2016,7.558,Equatorial Guinea
+2017,6.832,Equatorial Guinea
+2018,7.052,Equatorial Guinea
+2019,5.535,Equatorial Guinea
+2020,6.411,Equatorial Guinea
+2021,7.119,Equatorial Guinea
+2022,6.826,Equatorial Guinea
+1994,0.707,Eritrea
+1995,0.79,Eritrea
+1996,0.862,Eritrea
+1997,0.768,Eritrea
+1998,0.586,Eritrea
+1999,0.615,Eritrea
+2000,0.604,Eritrea
+2001,0.637,Eritrea
+2002,0.509,Eritrea
+2003,0.78,Eritrea
+2004,0.633,Eritrea
+2005,0.586,Eritrea
+2006,0.454,Eritrea
+2007,0.424,Eritrea
+2008,0.398,Eritrea
+2009,0.446,Eritrea
+2010,0.468,Eritrea
+2011,0.578,Eritrea
+2012,0.608,Eritrea
+2013,0.57,Eritrea
+2014,0.569,Eritrea
+2015,0.554,Eritrea
+2016,0.557,Eritrea
+2017,0.557,Eritrea
+2018,0.623,Eritrea
+2019,0.645,Eritrea
+2020,0.641,Eritrea
+2021,0.682,Eritrea
+2022,0.623,Eritrea
+1990,36.917,Estonia
+1991,34.144,Estonia
+1992,24.418,Estonia
+1993,19.435,Estonia
+1994,20.041,Estonia
+1995,18.055,Estonia
+1996,19.034,Estonia
+1997,18.673,Estonia
+1998,16.933,Estonia
+1999,15.929,Estonia
+2000,15.471,Estonia
+2001,15.87,Estonia
+2002,15.358,Estonia
+2003,17.251,Estonia
+2004,17.322,Estonia
+2005,17.09,Estonia
+2006,16.438,Estonia
+2007,19.93,Estonia
+2008,17.815,Estonia
+2009,14.405,Estonia
+2010,18.965,Estonia
+2011,18.948,Estonia
+2012,17.761,Estonia
+2013,19.634,Estonia
+2014,18.784,Estonia
+2015,15.78,Estonia
+2016,17.433,Estonia
+2017,18.616,Estonia
+2018,17.801,Estonia
+2019,12.288,Estonia
+2020,9.198,Estonia
+2021,10.391,Estonia
+2022,11.757,Estonia
+1990,0.96,Eswatini
+1991,0.872,Eswatini
+1992,0.832,Eswatini
+1993,0.711,Eswatini
+1994,1.077,Eswatini
+1995,1.063,Eswatini
+1996,0.788,Eswatini
+1997,1.143,Eswatini
+1998,1.161,Eswatini
+1999,1.238,Eswatini
+2000,1.209,Eswatini
+2001,1.096,Eswatini
+2002,1.081,Eswatini
+2003,1.004,Eswatini
+2004,1.0,Eswatini
+2005,1.015,Eswatini
+2006,1.015,Eswatini
+2007,1.041,Eswatini
+2008,1.022,Eswatini
+2009,1.059,Eswatini
+2010,0.997,Eswatini
+2011,1.008,Eswatini
+2012,1.169,Eswatini
+2013,1.4,Eswatini
+2014,0.769,Eswatini
+2015,0.868,Eswatini
+2016,1.055,Eswatini
+2017,0.986,Eswatini
+2018,1.033,Eswatini
+2019,1.121,Eswatini
+2020,1.121,Eswatini
+2021,1.011,Eswatini
+2022,1.08,Eswatini
+1990,2.987,Ethiopia
+1991,2.958,Ethiopia
+1992,2.937,Ethiopia
+1993,2.994,Ethiopia
+1994,2.197,Ethiopia
+1995,2.506,Ethiopia
+1996,2.794,Ethiopia
+1997,2.98,Ethiopia
+1998,3.147,Ethiopia
+1999,3.094,Ethiopia
+2000,3.463,Ethiopia
+2001,4.265,Ethiopia
+2002,4.432,Ethiopia
+2003,4.87,Ethiopia
+2004,5.159,Ethiopia
+2005,4.956,Ethiopia
+2006,5.318,Ethiopia
+2007,5.84,Ethiopia
+2008,6.418,Ethiopia
+2009,6.453,Ethiopia
+2010,6.344,Ethiopia
+2011,7.41,Ethiopia
+2012,8.058,Ethiopia
+2013,9.839,Ethiopia
+2014,11.671,Ethiopia
+2015,12.699,Ethiopia
+2016,14.495,Ethiopia
+2017,14.774,Ethiopia
+2018,15.787,Ethiopia
+2019,17.236,Ethiopia
+2020,15.85,Ethiopia
+2021,16.161,Ethiopia
+2022,15.157,Ethiopia
+1990,8038.27,Europe
+1991,7738.573,Europe
+1992,7096.633,Europe
+1993,6806.002,Europe
+1994,6446.058,Europe
+1995,6423.223,Europe
+1996,6471.548,Europe
+1997,6266.118,Europe
+1998,6239.436,Europe
+1999,6156.371,Europe
+2000,6154.3,Europe
+2001,6280.917,Europe
+2002,6248.751,Europe
+2003,6389.753,Europe
+2004,6419.04,Europe
+2005,6422.172,Europe
+2006,6529.996,Europe
+2007,6473.897,Europe
+2008,6406.544,Europe
+2009,5892.903,Europe
+2010,6116.594,Europe
+2011,6045.117,Europe
+2012,5998.561,Europe
+2013,5841.422,Europe
+2014,5611.03,Europe
+2015,5616.481,Europe
+2016,5602.062,Europe
+2017,5635.927,Europe
+2018,5617.016,Europe
+2019,5436.906,Europe
+2020,5026.315,Europe
+2021,5304.04,Europe
+2022,5228.87,Europe
+1990,8038.27,Europe (GCP)
+1991,7738.573,Europe (GCP)
+1992,7096.633,Europe (GCP)
+1993,6806.002,Europe (GCP)
+1994,6446.058,Europe (GCP)
+1995,6423.223,Europe (GCP)
+1996,6471.548,Europe (GCP)
+1997,6266.118,Europe (GCP)
+1998,6239.436,Europe (GCP)
+1999,6156.371,Europe (GCP)
+2000,6154.3,Europe (GCP)
+2001,6280.917,Europe (GCP)
+2002,6248.751,Europe (GCP)
+2003,6389.753,Europe (GCP)
+2004,6419.04,Europe (GCP)
+2005,6422.171,Europe (GCP)
+2006,6529.996,Europe (GCP)
+2007,6473.897,Europe (GCP)
+2008,6406.544,Europe (GCP)
+2009,5892.903,Europe (GCP)
+2010,6116.594,Europe (GCP)
+2011,6045.117,Europe (GCP)
+2012,5998.561,Europe (GCP)
+2013,5841.422,Europe (GCP)
+2014,5611.03,Europe (GCP)
+2015,5616.481,Europe (GCP)
+2016,5602.062,Europe (GCP)
+2017,5635.927,Europe (GCP)
+2018,5617.015,Europe (GCP)
+2019,5436.906,Europe (GCP)
+2020,5026.315,Europe (GCP)
+2021,5304.04,Europe (GCP)
+2022,5228.87,Europe (GCP)
+1990,4168.162,Europe (excl. EU-27)
+1991,3934.174,Europe (excl. EU-27)
+1992,3419.125,Europe (excl. EU-27)
+1993,3198.134,Europe (excl. EU-27)
+1994,2856.864,Europe (excl. EU-27)
+1995,2787.696,Europe (excl. EU-27)
+1996,2751.242,Europe (excl. EU-27)
+1997,2612.209,Europe (excl. EU-27)
+1998,2595.137,Europe (excl. EU-27)
+1999,2567.41,Europe (excl. EU-27)
+2000,2554.088,Europe (excl. EU-27)
+2001,2623.996,Europe (excl. EU-27)
+2002,2591.098,Europe (excl. EU-27)
+2003,2653.312,Europe (excl. EU-27)
+2004,2675.231,Europe (excl. EU-27)
+2005,2686.687,Europe (excl. EU-27)
+2006,2777.509,Europe (excl. EU-27)
+2007,2771.446,Europe (excl. EU-27)
+2008,2780.618,Europe (excl. EU-27)
+2009,2562.352,Europe (excl. EU-27)
+2010,2692.537,Europe (excl. EU-27)
+2011,2718.283,Europe (excl. EU-27)
+2012,2740.985,Europe (excl. EU-27)
+2013,2666.312,Europe (excl. EU-27)
+2014,2572.62,Europe (excl. EU-27)
+2015,2521.728,Europe (excl. EU-27)
+2016,2508.779,Europe (excl. EU-27)
+2017,2518.701,Europe (excl. EU-27)
+2018,2567.147,Europe (excl. EU-27)
+2019,2532.198,Europe (excl. EU-27)
+2020,2398.924,Europe (excl. EU-27)
+2021,2502.895,Europe (excl. EU-27)
+2022,2488.792,Europe (excl. EU-27)
+1990,3566.217,Europe (excl. EU-28)
+1991,3324.761,Europe (excl. EU-28)
+1992,2825.28,Europe (excl. EU-28)
+1993,2618.521,Europe (excl. EU-28)
+1994,2282.847,Europe (excl. EU-28)
+1995,2221.537,Europe (excl. EU-28)
+1996,2164.481,Europe (excl. EU-28)
+1997,2049.5,Europe (excl. EU-28)
+1998,2026.593,Europe (excl. EU-28)
+1999,2005.76,Europe (excl. EU-28)
+2000,1985.055,Europe (excl. EU-28)
+2001,2046.025,Europe (excl. EU-28)
+2002,2030.824,Europe (excl. EU-28)
+2003,2081.693,Europe (excl. EU-28)
+2004,2101.801,Europe (excl. EU-28)
+2005,2116.349,Europe (excl. EU-28)
+2006,2209.664,Europe (excl. EU-28)
+2007,2211.879,Europe (excl. EU-28)
+2008,2235.686,Europe (excl. EU-28)
+2009,2068.244,Europe (excl. EU-28)
+2010,2180.633,Europe (excl. EU-28)
+2011,2248.57,Europe (excl. EU-28)
+2012,2253.508,Europe (excl. EU-28)
+2013,2188.701,Europe (excl. EU-28)
+2014,2133.812,Europe (excl. EU-28)
+2015,2099.267,Europe (excl. EU-28)
+2016,2109.349,Europe (excl. EU-28)
+2017,2131.334,Europe (excl. EU-28)
+2018,2187.418,Europe (excl. EU-28)
+2019,2167.445,Europe (excl. EU-28)
+2020,2072.66,Europe (excl. EU-28)
+2021,2158.385,Europe (excl. EU-28)
+2022,2174.957,Europe (excl. EU-28)
+1990,3870.108,European Union (27)
+1991,3804.398,European Union (27)
+1992,3677.507,European Union (27)
+1993,3607.869,European Union (27)
+1994,3589.193,European Union (27)
+1995,3635.528,European Union (27)
+1996,3720.306,European Union (27)
+1997,3653.909,European Union (27)
+1998,3644.299,European Union (27)
+1999,3588.961,European Union (27)
+2000,3600.211,European Union (27)
+2001,3656.921,European Union (27)
+2002,3657.654,European Union (27)
+2003,3736.442,European Union (27)
+2004,3743.81,European Union (27)
+2005,3735.484,European Union (27)
+2006,3752.487,European Union (27)
+2007,3702.452,European Union (27)
+2008,3625.925,European Union (27)
+2009,3330.551,European Union (27)
+2010,3424.056,European Union (27)
+2011,3326.834,European Union (27)
+2012,3257.576,European Union (27)
+2013,3175.11,European Union (27)
+2014,3038.41,European Union (27)
+2015,3094.753,European Union (27)
+2016,3093.282,European Union (27)
+2017,3117.226,European Union (27)
+2018,3049.868,European Union (27)
+2019,2904.708,European Union (27)
+2020,2627.392,European Union (27)
+2021,2801.144,European Union (27)
+2022,2740.078,European Union (27)
+1990,4472.053,European Union (28)
+1991,4413.811,European Union (28)
+1992,4271.353,European Union (28)
+1993,4187.481,European Union (28)
+1994,4163.21,European Union (28)
+1995,4201.687,European Union (28)
+1996,4307.067,European Union (28)
+1997,4216.618,European Union (28)
+1998,4212.842,European Union (28)
+1999,4150.611,European Union (28)
+2000,4169.245,European Union (28)
+2001,4234.892,European Union (28)
+2002,4217.927,European Union (28)
+2003,4308.061,European Union (28)
+2004,4317.239,European Union (28)
+2005,4305.823,European Union (28)
+2006,4320.333,European Union (28)
+2007,4262.018,European Union (28)
+2008,4170.858,European Union (28)
+2009,3824.658,European Union (28)
+2010,3935.961,European Union (28)
+2011,3796.547,European Union (28)
+2012,3745.053,European Union (28)
+2013,3652.721,European Union (28)
+2014,3477.217,European Union (28)
+2015,3517.214,European Union (28)
+2016,3492.712,European Union (28)
+2017,3504.593,European Union (28)
+2018,3429.598,European Union (28)
+2019,3269.461,European Union (28)
+2020,2953.655,European Union (28)
+2021,3145.654,European Union (28)
+2022,3053.913,European Union (28)
+1990,0.703,Faroe Islands
+1991,0.656,Faroe Islands
+1992,0.649,Faroe Islands
+1993,0.583,Faroe Islands
+1994,0.575,Faroe Islands
+1995,0.572,Faroe Islands
+1996,0.601,Faroe Islands
+1997,0.59,Faroe Islands
+1998,0.623,Faroe Islands
+1999,0.63,Faroe Islands
+2000,0.689,Faroe Islands
+2001,0.762,Faroe Islands
+2002,0.725,Faroe Islands
+2003,0.733,Faroe Islands
+2004,0.747,Faroe Islands
+2005,0.722,Faroe Islands
+2006,0.678,Faroe Islands
+2007,0.689,Faroe Islands
+2008,0.63,Faroe Islands
+2009,0.575,Faroe Islands
+2010,0.63,Faroe Islands
+2011,0.568,Faroe Islands
+2012,0.59,Faroe Islands
+2013,0.649,Faroe Islands
+2014,0.597,Faroe Islands
+2015,0.608,Faroe Islands
+2016,0.63,Faroe Islands
+2017,0.707,Faroe Islands
+2018,0.725,Faroe Islands
+2019,0.74,Faroe Islands
+2020,0.758,Faroe Islands
+2021,0.78,Faroe Islands
+2022,0.79,Faroe Islands
+1990,0.801,Fiji
+1991,0.655,Fiji
+1992,0.73,Fiji
+1993,0.729,Fiji
+1994,0.723,Fiji
+1995,0.737,Fiji
+1996,0.792,Fiji
+1997,0.764,Fiji
+1998,0.743,Fiji
+1999,0.756,Fiji
+2000,0.815,Fiji
+2001,1.004,Fiji
+2002,0.835,Fiji
+2003,0.989,Fiji
+2004,1.293,Fiji
+2005,1.026,Fiji
+2006,1.147,Fiji
+2007,1.085,Fiji
+2008,0.791,Fiji
+2009,0.7,Fiji
+2010,1.03,Fiji
+2011,0.934,Fiji
+2012,0.912,Fiji
+2013,1.037,Fiji
+2014,1.18,Fiji
+2015,1.242,Fiji
+2016,1.176,Fiji
+2017,1.308,Fiji
+2018,1.356,Fiji
+2019,1.356,Fiji
+2020,1.004,Fiji
+2021,1.096,Fiji
+2022,1.122,Fiji
+1990,56.921,Finland
+1991,55.195,Finland
+1992,54.272,Finland
+1993,56.32,Finland
+1994,61.74,Finland
+1995,58.122,Finland
+1996,64.04,Finland
+1997,62.703,Finland
+1998,59.358,Finland
+1999,58.874,Finland
+2000,57.017,Finland
+2001,62.521,Finland
+2002,65.049,Finland
+2003,72.658,Finland
+2004,68.946,Finland
+2005,57.064,Finland
+2006,68.373,Finland
+2007,66.764,Finland
+2008,58.625,Finland
+2009,55.92,Finland
+2010,64.092,Finland
+2011,56.647,Finland
+2012,51.155,Finland
+2013,51.719,Finland
+2014,47.622,Finland
+2015,44.192,Finland
+2016,47.251,Finland
+2017,44.657,Finland
+2018,45.734,Finland
+2019,42.442,Finland
+2020,37.7,Finland
+2021,37.798,Finland
+2022,36.367,Finland
+1990,393.717,France
+1991,417.859,France
+1992,407.316,France
+1993,387.699,France
+1994,380.793,France
+1995,385.81,France
+1996,402.156,France
+1997,394.845,France
+1998,413.259,France
+1999,412.021,France
+2000,406.139,France
+2001,410.445,France
+2002,405.947,France
+2003,411.965,France
+2004,413.379,France
+2005,415.795,France
+2006,406.157,France
+2007,396.01,France
+2008,389.094,France
+2009,370.876,France
+2010,376.457,France
+2011,354.375,France
+2012,356.439,France
+2013,358.703,France
+2014,326.842,France
+2015,331.49,France
+2016,334.2,France
+2017,337.101,France
+2018,321.94,France
+2019,315.015,France
+2020,280.49,France
+2021,305.607,France
+2022,293.502,France
+1990,0.469,French Polynesia
+1991,0.469,French Polynesia
+1992,0.447,French Polynesia
+1993,0.469,French Polynesia
+1994,0.48,French Polynesia
+1995,0.473,French Polynesia
+1996,0.469,French Polynesia
+1997,0.491,French Polynesia
+1998,0.487,French Polynesia
+1999,0.539,French Polynesia
+2000,0.612,French Polynesia
+2001,0.725,French Polynesia
+2002,0.725,French Polynesia
+2003,0.78,French Polynesia
+2004,0.769,French Polynesia
+2005,0.828,French Polynesia
+2006,0.821,French Polynesia
+2007,0.813,French Polynesia
+2008,0.835,French Polynesia
+2009,0.839,French Polynesia
+2010,0.923,French Polynesia
+2011,0.887,French Polynesia
+2012,0.876,French Polynesia
+2013,0.879,French Polynesia
+2014,0.85,French Polynesia
+2015,0.846,French Polynesia
+2016,0.868,French Polynesia
+2017,0.872,French Polynesia
+2018,0.879,French Polynesia
+2019,0.89,French Polynesia
+2020,0.832,French Polynesia
+2021,0.876,French Polynesia
+2022,0.897,French Polynesia
+1990,4.485,Gabon
+1991,4.522,Gabon
+1992,4.917,Gabon
+1993,4.975,Gabon
+1994,4.542,Gabon
+1995,5.22,Gabon
+1996,5.886,Gabon
+1997,5.527,Gabon
+1998,6.453,Gabon
+1999,6.014,Gabon
+2000,6.128,Gabon
+2001,6.48,Gabon
+2002,6.25,Gabon
+2003,6.746,Gabon
+2004,6.386,Gabon
+2005,6.223,Gabon
+2006,5.543,Gabon
+2007,5.038,Gabon
+2008,5.379,Gabon
+2009,5.304,Gabon
+2010,5.836,Gabon
+2011,5.828,Gabon
+2012,5.63,Gabon
+2013,5.927,Gabon
+2014,6.369,Gabon
+2015,6.476,Gabon
+2016,6.522,Gabon
+2017,5.495,Gabon
+2018,5.567,Gabon
+2019,5.331,Gabon
+2020,5.625,Gabon
+2021,5.531,Gabon
+2022,5.835,Gabon
+1990,0.198,Gambia
+1991,0.198,Gambia
+1992,0.198,Gambia
+1993,0.209,Gambia
+1994,0.209,Gambia
+1995,0.216,Gambia
+1996,0.22,Gambia
+1997,0.224,Gambia
+1998,0.242,Gambia
+1999,0.275,Gambia
+2000,0.275,Gambia
+2001,0.3,Gambia
+2002,0.297,Gambia
+2003,0.297,Gambia
+2004,0.319,Gambia
+2005,0.322,Gambia
+2006,0.348,Gambia
+2007,0.348,Gambia
+2008,0.363,Gambia
+2009,0.374,Gambia
+2010,0.425,Gambia
+2011,0.443,Gambia
+2012,0.447,Gambia
+2013,0.425,Gambia
+2014,0.506,Gambia
+2015,0.583,Gambia
+2016,0.59,Gambia
+2017,0.594,Gambia
+2018,0.649,Gambia
+2019,0.711,Gambia
+2020,0.7,Gambia
+2021,0.725,Gambia
+2022,0.737,Gambia
+1990,15.948,Georgia
+1991,15.872,Georgia
+1992,15.277,Georgia
+1993,9.916,Georgia
+1994,6.068,Georgia
+1995,2.29,Georgia
+1996,4.054,Georgia
+1997,4.426,Georgia
+1998,4.939,Georgia
+1999,4.311,Georgia
+2000,4.5,Georgia
+2001,3.725,Georgia
+2002,3.348,Georgia
+2003,3.732,Georgia
+2004,4.272,Georgia
+2005,5.014,Georgia
+2006,6.093,Georgia
+2007,6.362,Georgia
+2008,5.309,Georgia
+2009,6.136,Georgia
+2010,6.208,Georgia
+2011,7.805,Georgia
+2012,8.254,Georgia
+2013,8.013,Georgia
+2014,8.939,Georgia
+2015,9.756,Georgia
+2016,10.068,Georgia
+2017,10.173,Georgia
+2018,10.063,Georgia
+2019,10.887,Georgia
+2020,10.575,Georgia
+2021,11.094,Georgia
+2022,11.527,Georgia
+1990,1054.796,Germany
+1991,1016.93,Germany
+1992,969.464,Germany
+1993,959.386,Germany
+1994,943.228,Germany
+1995,939.934,Germany
+1996,959.69,Germany
+1997,931.508,Germany
+1998,923.499,Germany
+1999,895.442,Germany
+2000,898.976,Germany
+2001,915.255,Germany
+2002,898.834,Germany
+2003,894.501,Germany
+2004,876.57,Germany
+2005,867.881,Germany
+2006,886.434,Germany
+2007,846.116,Germany
+2008,856.607,Germany
+2009,789.951,Germany
+2010,826.68,Germany
+2011,804.514,Germany
+2012,814.09,Germany
+2013,831.743,Germany
+2014,792.579,Germany
+2015,800.844,Germany
+2016,798.014,Germany
+2017,784.594,Germany
+2018,760.046,Germany
+2019,709.827,Germany
+2020,648.357,Germany
+2021,678.777,Germany
+2022,671.472,Germany
+1990,3.514,Ghana
+1991,3.902,Ghana
+1992,3.243,Ghana
+1993,3.818,Ghana
+1994,4.54,Ghana
+1995,4.624,Ghana
+1996,4.858,Ghana
+1997,5.514,Ghana
+1998,5.584,Ghana
+1999,5.613,Ghana
+2000,5.313,Ghana
+2001,5.969,Ghana
+2002,6.483,Ghana
+2003,6.685,Ghana
+2004,6.451,Ghana
+2005,6.113,Ghana
+2006,8.523,Ghana
+2007,8.982,Ghana
+2008,8.324,Ghana
+2009,6.868,Ghana
+2010,8.943,Ghana
+2011,10.336,Ghana
+2012,12.644,Ghana
+2013,12.606,Ghana
+2014,13.252,Ghana
+2015,14.568,Ghana
+2016,13.917,Ghana
+2017,12.438,Ghana
+2018,15.19,Ghana
+2019,16.418,Ghana
+2020,19.168,Ghana
+2021,20.546,Ghana
+2022,20.287,Ghana
+1990,83.438,Greece
+1991,83.408,Greece
+1992,84.976,Greece
+1993,84.285,Greece
+1994,86.43,Greece
+1995,86.963,Greece
+1996,89.115,Greece
+1997,93.802,Greece
+1998,98.622,Greece
+1999,97.935,Greece
+2000,102.973,Greece
+2001,105.362,Greece
+2002,105.001,Greece
+2003,109.067,Greece
+2004,109.485,Greece
+2005,113.889,Greece
+2006,112.42,Greece
+2007,114.546,Greece
+2008,111.08,Greece
+2009,104.32,Greece
+2010,97.354,Greece
+2011,94.505,Greece
+2012,91.393,Greece
+2013,81.713,Greece
+2014,78.636,Greece
+2015,74.927,Greece
+2016,71.36,Greece
+2017,74.842,Greece
+2018,71.778,Greece
+2019,65.736,Greece
+2020,55.558,Greece
+2021,57.519,Greece
+2022,58.08,Greece
+1990,0.625,Greenland
+1991,0.61,Greenland
+1992,0.596,Greenland
+1993,0.546,Greenland
+1994,0.496,Greenland
+1995,0.534,Greenland
+1996,0.597,Greenland
+1997,0.618,Greenland
+1998,0.597,Greenland
+1999,0.595,Greenland
+2000,0.668,Greenland
+2001,0.618,Greenland
+2002,0.58,Greenland
+2003,0.649,Greenland
+2004,0.64,Greenland
+2005,0.644,Greenland
+2006,0.663,Greenland
+2007,0.654,Greenland
+2008,0.677,Greenland
+2009,0.592,Greenland
+2010,0.679,Greenland
+2011,0.726,Greenland
+2012,0.58,Greenland
+2013,0.563,Greenland
+2014,0.523,Greenland
+2015,0.526,Greenland
+2016,0.527,Greenland
+2017,0.544,Greenland
+2018,0.545,Greenland
+2019,0.555,Greenland
+2020,0.537,Greenland
+2021,0.567,Greenland
+2022,0.588,Greenland
+1990,0.106,Grenada
+1991,0.11,Grenada
+1992,0.117,Grenada
+1993,0.121,Grenada
+1994,0.143,Grenada
+1995,0.15,Grenada
+1996,0.154,Grenada
+1997,0.169,Grenada
+1998,0.176,Grenada
+1999,0.194,Grenada
+2000,0.191,Grenada
+2001,0.194,Grenada
+2002,0.205,Grenada
+2003,0.216,Grenada
+2004,0.205,Grenada
+2005,0.216,Grenada
+2006,0.231,Grenada
+2007,0.238,Grenada
+2008,0.249,Grenada
+2009,0.253,Grenada
+2010,0.256,Grenada
+2011,0.253,Grenada
+2012,0.271,Grenada
+2013,0.297,Grenada
+2014,0.238,Grenada
+2015,0.26,Grenada
+2016,0.275,Grenada
+2017,0.293,Grenada
+2018,0.308,Grenada
+2019,0.33,Grenada
+2020,0.289,Grenada
+2021,0.311,Grenada
+2022,0.321,Grenada
+1990,4.972,Guatemala
+1991,4.951,Guatemala
+1992,5.919,Guatemala
+1993,5.578,Guatemala
+1994,6.751,Guatemala
+1995,7.079,Guatemala
+1996,6.571,Guatemala
+1997,7.502,Guatemala
+1998,8.639,Guatemala
+1999,8.806,Guatemala
+2000,9.765,Guatemala
+2001,10.233,Guatemala
+2002,10.722,Guatemala
+2003,10.448,Guatemala
+2004,11.18,Guatemala
+2005,12.109,Guatemala
+2006,12.177,Guatemala
+2007,12.145,Guatemala
+2008,10.893,Guatemala
+2009,11.442,Guatemala
+2010,11.098,Guatemala
+2011,11.237,Guatemala
+2012,11.577,Guatemala
+2013,12.812,Guatemala
+2014,13.827,Guatemala
+2015,15.952,Guatemala
+2016,16.926,Guatemala
+2017,17.321,Guatemala
+2018,18.523,Guatemala
+2019,19.304,Guatemala
+2020,17.165,Guatemala
+2021,19.805,Guatemala
+2022,19.114,Guatemala
+1990,1.004,Guinea
+1991,1.026,Guinea
+1992,1.059,Guinea
+1993,1.088,Guinea
+1994,1.125,Guinea
+1995,1.165,Guinea
+1996,1.235,Guinea
+1997,1.29,Guinea
+1998,1.363,Guinea
+1999,1.433,Guinea
+2000,1.491,Guinea
+2001,1.561,Guinea
+2002,1.623,Guinea
+2003,1.7,Guinea
+2004,1.762,Guinea
+2005,1.825,Guinea
+2006,1.891,Guinea
+2007,1.968,Guinea
+2008,1.997,Guinea
+2009,2.11,Guinea
+2010,2.484,Guinea
+2011,2.594,Guinea
+2012,2.422,Guinea
+2013,2.11,Guinea
+2014,2.165,Guinea
+2015,2.451,Guinea
+2016,2.741,Guinea
+2017,3.239,Guinea
+2018,3.162,Guinea
+2019,3.921,Guinea
+2020,4.499,Guinea
+2021,4.126,Guinea
+2022,4.194,Guinea
+1990,0.172,Guinea-Bissau
+1991,0.176,Guinea-Bissau
+1992,0.18,Guinea-Bissau
+1993,0.183,Guinea-Bissau
+1994,0.183,Guinea-Bissau
+1995,0.183,Guinea-Bissau
+1996,0.205,Guinea-Bissau
+1997,0.202,Guinea-Bissau
+1998,0.172,Guinea-Bissau
+1999,0.194,Guinea-Bissau
+2000,0.147,Guinea-Bissau
+2001,0.15,Guinea-Bissau
+2002,0.154,Guinea-Bissau
+2003,0.194,Guinea-Bissau
+2004,0.202,Guinea-Bissau
+2005,0.213,Guinea-Bissau
+2006,0.216,Guinea-Bissau
+2007,0.231,Guinea-Bissau
+2008,0.227,Guinea-Bissau
+2009,0.234,Guinea-Bissau
+2010,0.238,Guinea-Bissau
+2011,0.242,Guinea-Bissau
+2012,0.245,Guinea-Bissau
+2013,0.245,Guinea-Bissau
+2014,0.26,Guinea-Bissau
+2015,0.278,Guinea-Bissau
+2016,0.304,Guinea-Bissau
+2017,0.304,Guinea-Bissau
+2018,0.311,Guinea-Bissau
+2019,0.322,Guinea-Bissau
+2020,0.297,Guinea-Bissau
+2021,0.304,Guinea-Bissau
+2022,0.309,Guinea-Bissau
+1990,1.129,Guyana
+1991,1.107,Guyana
+1992,1.041,Guyana
+1993,1.044,Guyana
+1994,1.458,Guyana
+1995,1.568,Guyana
+1996,1.652,Guyana
+1997,1.806,Guyana
+1998,1.828,Guyana
+1999,1.832,Guyana
+2000,1.748,Guyana
+2001,1.744,Guyana
+2002,1.715,Guyana
+2003,1.858,Guyana
+2004,1.927,Guyana
+2005,1.619,Guyana
+2006,1.51,Guyana
+2007,1.781,Guyana
+2008,1.707,Guyana
+2009,1.909,Guyana
+2010,1.887,Guyana
+2011,1.96,Guyana
+2012,1.96,Guyana
+2013,1.905,Guyana
+2014,1.972,Guyana
+2015,2.003,Guyana
+2016,2.375,Guyana
+2017,2.327,Guyana
+2018,2.503,Guyana
+2019,2.756,Guyana
+2020,3.361,Guyana
+2021,3.581,Guyana
+2022,3.627,Guyana
+1990,0.995,Haiti
+1991,0.976,Haiti
+1992,0.889,Haiti
+1993,0.684,Haiti
+1994,0.183,Haiti
+1995,0.876,Haiti
+1996,1.019,Haiti
+1997,1.348,Haiti
+1998,1.235,Haiti
+1999,1.271,Haiti
+2000,1.634,Haiti
+2001,1.471,Haiti
+2002,1.785,Haiti
+2003,1.7,Haiti
+2004,1.652,Haiti
+2005,1.724,Haiti
+2006,1.752,Haiti
+2007,1.772,Haiti
+2008,1.761,Haiti
+2009,1.888,Haiti
+2010,2.137,Haiti
+2011,2.273,Haiti
+2012,2.264,Haiti
+2013,2.706,Haiti
+2014,2.705,Haiti
+2015,2.661,Haiti
+2016,2.98,Haiti
+2017,3.139,Haiti
+2018,3.407,Haiti
+2019,3.128,Haiti
+2020,3.238,Haiti
+2021,3.484,Haiti
+2022,3.381,Haiti
+1990,14994.972,High-income countries
+1991,15320.779,High-income countries
+1992,14508.868,High-income countries
+1993,14530.375,High-income countries
+1994,14512.632,High-income countries
+1995,14627.597,High-income countries
+1996,14988.649,High-income countries
+1997,14913.173,High-income countries
+1998,14853.022,High-income countries
+1999,15028.869,High-income countries
+2000,15444.175,High-income countries
+2001,15467.07,High-income countries
+2002,15557.402,High-income countries
+2003,15848.628,High-income countries
+2004,16054.051,High-income countries
+2005,16130.242,High-income countries
+2006,16195.988,High-income countries
+2007,16315.113,High-income countries
+2008,16041.604,High-income countries
+2009,15083.762,High-income countries
+2010,15720.304,High-income countries
+2011,15612.542,High-income countries
+2012,15533.979,High-income countries
+2013,15483.349,High-income countries
+2014,15287.873,High-income countries
+2015,15226.152,High-income countries
+2016,15084.555,High-income countries
+2017,15072.403,High-income countries
+2018,15212.384,High-income countries
+2019,14912.153,High-income countries
+2020,13688.639,High-income countries
+2021,14433.055,High-income countries
+2022,14464.458,High-income countries
+1990,2.505,Honduras
+1991,2.527,Honduras
+1992,2.803,Honduras
+1993,2.941,Honduras
+1994,3.231,Honduras
+1995,3.836,Honduras
+1996,3.876,Honduras
+1997,4.01,Honduras
+1998,4.811,Honduras
+1999,4.705,Honduras
+2000,5.032,Honduras
+2001,5.665,Honduras
+2002,5.945,Honduras
+2003,6.687,Honduras
+2004,7.194,Honduras
+2005,6.835,Honduras
+2006,7.698,Honduras
+2007,8.216,Honduras
+2008,8.533,Honduras
+2009,8.03,Honduras
+2010,7.997,Honduras
+2011,8.86,Honduras
+2012,9.218,Honduras
+2013,9.365,Honduras
+2014,9.481,Honduras
+2015,10.348,Honduras
+2016,9.722,Honduras
+2017,10.231,Honduras
+2018,9.861,Honduras
+2019,11.219,Honduras
+2020,9.526,Honduras
+2021,10.188,Honduras
+2022,10.482,Honduras
+1990,27.148,Hong Kong
+1991,28.463,Hong Kong
+1992,32.919,Hong Kong
+1993,34.778,Hong Kong
+1994,31.079,Hong Kong
+1995,31.267,Hong Kong
+1996,28.909,Hong Kong
+1997,30.497,Hong Kong
+1998,38.925,Hong Kong
+1999,42.549,Hong Kong
+2000,40.283,Hong Kong
+2001,37.802,Hong Kong
+2002,39.485,Hong Kong
+2003,43.202,Hong Kong
+2004,41.569,Hong Kong
+2005,43.731,Hong Kong
+2006,41.915,Hong Kong
+2007,43.572,Hong Kong
+2008,42.791,Hong Kong
+2009,41.579,Hong Kong
+2010,40.063,Hong Kong
+2011,43.15,Hong Kong
+2012,42.742,Hong Kong
+2013,44.307,Hong Kong
+2014,45.492,Hong Kong
+2015,42.4,Hong Kong
+2016,43.366,Hong Kong
+2017,42.431,Hong Kong
+2018,42.601,Hong Kong
+2019,41.9,Hong Kong
+2020,33.497,Hong Kong
+2021,33.717,Hong Kong
+2022,31.532,Hong Kong
+1990,73.427,Hungary
+1991,69.825,Hungary
+1992,62.281,Hungary
+1993,62.991,Hungary
+1994,61.88,Hungary
+1995,61.464,Hungary
+1996,63.083,Hungary
+1997,61.676,Hungary
+1998,61.255,Hungary
+1999,61.575,Hungary
+2000,58.244,Hungary
+2001,59.828,Hungary
+2002,58.842,Hungary
+2003,61.611,Hungary
+2004,59.985,Hungary
+2005,60.142,Hungary
+2006,59.529,Hungary
+2007,58.449,Hungary
+2008,57.184,Hungary
+2009,51.457,Hungary
+2010,51.993,Hungary
+2011,50.156,Hungary
+2012,46.72,Hungary
+2013,43.487,Hungary
+2014,43.639,Hungary
+2015,46.567,Hungary
+2016,47.039,Hungary
+2017,49.424,Hungary
+2018,49.376,Hungary
+2019,49.166,Hungary
+2020,47.107,Hungary
+2021,48.331,Hungary
+2022,44.843,Hungary
+1990,2.222,Iceland
+1991,2.103,Iceland
+1992,2.25,Iceland
+1993,2.401,Iceland
+1994,2.35,Iceland
+1995,2.469,Iceland
+1996,2.523,Iceland
+1997,2.619,Iceland
+1998,2.639,Iceland
+1999,2.841,Iceland
+2000,2.933,Iceland
+2001,2.865,Iceland
+2002,2.992,Iceland
+2003,2.986,Iceland
+2004,3.108,Iceland
+2005,2.977,Iceland
+2006,3.155,Iceland
+2007,3.495,Iceland
+2008,3.812,Iceland
+2009,3.732,Iceland
+2010,3.627,Iceland
+2011,3.504,Iceland
+2012,3.499,Iceland
+2013,3.488,Iceland
+2014,3.445,Iceland
+2015,3.541,Iceland
+2016,3.494,Iceland
+2017,3.611,Iceland
+2018,3.667,Iceland
+2019,3.556,Iceland
+2020,3.341,Iceland
+2021,3.508,Iceland
+2022,3.613,Iceland
+1990,577.996,India
+1991,615.365,India
+1992,655.447,India
+1993,677.299,India
+1994,714.064,India
+1995,760.462,India
+1996,823.621,India
+1997,858.011,India
+1998,875.772,India
+1999,960.763,India
+2000,986.445,India
+2001,1000.527,India
+2002,1032.14,India
+2003,1067.737,India
+2004,1133.828,India
+2005,1194.592,India
+2006,1292.485,India
+2007,1392.506,India
+2008,1489.437,India
+2009,1612.216,India
+2010,1677.337,India
+2011,1764.712,India
+2012,1925.7,India
+2013,1995.098,India
+2014,2148.344,India
+2015,2234.219,India
+2016,2354.658,India
+2017,2426.607,India
+2018,2593.058,India
+2019,2612.888,India
+2020,2421.552,India
+2021,2674.222,India
+2022,2831.166,India
+1990,155.081,Indonesia
+1991,174.865,Indonesia
+1992,199.419,Indonesia
+1993,215.109,Indonesia
+1994,219.372,Indonesia
+1995,222.41,Indonesia
+1996,253.065,Indonesia
+1997,279.941,Indonesia
+1998,244.523,Indonesia
+1999,292.001,Indonesia
+2000,281.33,Indonesia
+2001,317.027,Indonesia
+2002,308.486,Indonesia
+2003,339.357,Indonesia
+2004,343.022,Indonesia
+2005,347.617,Indonesia
+2006,346.633,Indonesia
+2007,387.858,Indonesia
+2008,365.718,Indonesia
+2009,398.942,Indonesia
+2010,445.806,Indonesia
+2011,500.725,Indonesia
+2012,515.954,Indonesia
+2013,489.055,Indonesia
+2014,487.89,Indonesia
+2015,539.149,Indonesia
+2016,540.086,Indonesia
+2017,556.944,Indonesia
+2018,594.101,Indonesia
+2019,653.792,Indonesia
+2020,608.223,Indonesia
+2021,619.622,Indonesia
+2022,737.073,Indonesia
+1990,189.878,International aviation
+1991,198.712,International aviation
+1992,219.962,International aviation
+1993,227.201,International aviation
+1994,241.273,International aviation
+1995,255.057,International aviation
+1996,270.976,International aviation
+1997,289.361,International aviation
+1998,309.126,International aviation
+1999,318.88,International aviation
+2000,324.21,International aviation
+2001,325.978,International aviation
+2002,344.503,International aviation
+2003,358.629,International aviation
+2004,389.352,International aviation
+2005,410.863,International aviation
+2006,424.846,International aviation
+2007,439.883,International aviation
+2008,445.606,International aviation
+2009,428.019,International aviation
+2010,451.502,International aviation
+2011,470.057,International aviation
+2012,484.41,International aviation
+2013,498.401,International aviation
+2014,498.253,International aviation
+2015,518.203,International aviation
+2016,540.414,International aviation
+2017,564.229,International aviation
+2018,605.798,International aviation
+2019,623.609,International aviation
+2020,270.161,International aviation
+2021,293.716,International aviation
+2022,424.851,International aviation
+1990,361.656,International shipping
+1991,347.734,International shipping
+1992,337.519,International shipping
+1993,333.854,International shipping
+1994,347.004,International shipping
+1995,365.699,International shipping
+1996,401.175,International shipping
+1997,417.674,International shipping
+1998,440.887,International shipping
+1999,458.357,International shipping
+2000,463.5,International shipping
+2001,455.558,International shipping
+2002,456.383,International shipping
+2003,474.633,International shipping
+2004,517.787,International shipping
+2005,531.993,International shipping
+2006,569.212,International shipping
+2007,611.52,International shipping
+2008,615.992,International shipping
+2009,594.947,International shipping
+2010,629.809,International shipping
+2011,639.338,International shipping
+2012,613.456,International shipping
+2013,615.698,International shipping
+2014,621.561,International shipping
+2015,638.76,International shipping
+2016,632.392,International shipping
+2017,645.677,International shipping
+2018,641.295,International shipping
+2019,627.17,International shipping
+2020,583.679,International shipping
+2021,599.905,International shipping
+2022,595.232,International shipping
+1990,211.075,Iran
+1991,223.046,Iran
+1992,228.194,Iran
+1993,236.993,Iran
+1994,264.822,Iran
+1995,270.875,Iran
+1996,276.62,Iran
+1997,269.263,Iran
+1998,305.642,Iran
+1999,374.452,Iran
+2000,367.213,Iran
+2001,389.909,Iran
+2002,397.031,Iran
+2003,410.967,Iran
+2004,442.119,Iran
+2005,466.784,Iran
+2006,501.018,Iran
+2007,507.775,Iran
+2008,528.536,Iran
+2009,543.413,Iran
+2010,561.496,Iran
+2011,576.146,Iran
+2012,599.121,Iran
+2013,609.839,Iran
+2014,644.151,Iran
+2015,641.911,Iran
+2016,644.684,Iran
+2017,696.4,Iran
+2018,689.783,Iran
+2019,735.347,Iran
+2020,756.606,Iran
+2021,779.756,Iran
+2022,800.747,Iran
+1990,49.057,Iraq
+1991,45.185,Iraq
+1992,58.889,Iraq
+1993,63.13,Iraq
+1994,76.437,Iraq
+1995,79.695,Iraq
+1996,74.71,Iraq
+1997,76.174,Iraq
+1998,80.837,Iraq
+1999,82.043,Iraq
+2000,83.266,Iraq
+2001,96.332,Iraq
+2002,96.54,Iraq
+2003,101.267,Iraq
+2004,112.803,Iraq
+2005,114.02,Iraq
+2006,98.564,Iraq
+2007,61.086,Iraq
+2008,93.938,Iraq
+2009,104.815,Iraq
+2010,113.536,Iraq
+2011,122.937,Iraq
+2012,133.421,Iraq
+2013,141.053,Iraq
+2014,137.021,Iraq
+2015,141.987,Iraq
+2016,152.422,Iraq
+2017,166.704,Iraq
+2018,184.777,Iraq
+2019,190.234,Iraq
+2020,161.115,Iraq
+2021,159.045,Iraq
+2022,171.279,Iraq
+1990,32.945,Ireland
+1991,33.675,Ireland
+1992,33.496,Ireland
+1993,33.717,Ireland
+1994,34.839,Ireland
+1995,35.853,Ireland
+1996,37.469,Ireland
+1997,38.805,Ireland
+1998,40.708,Ireland
+1999,42.44,Ireland
+2000,45.25,Ireland
+2001,47.608,Ireland
+2002,46.081,Ireland
+2003,45.684,Ireland
+2004,46.167,Ireland
+2005,48.153,Ireland
+2006,47.597,Ireland
+2007,47.657,Ireland
+2008,47.359,Ireland
+2009,42.191,Ireland
+2010,41.792,Ireland
+2011,38.054,Ireland
+2012,38.224,Ireland
+2013,37.279,Ireland
+2014,36.85,Ireland
+2015,38.716,Ireland
+2016,40.367,Ireland
+2017,39.076,Ireland
+2018,39.009,Ireland
+2019,37.323,Ireland
+2020,35.124,Ireland
+2021,37.544,Ireland
+2022,36.711,Ireland
+1990,35.824,Israel
+1991,36.148,Israel
+1992,42.082,Israel
+1993,44.235,Israel
+1994,47.475,Israel
+1995,49.866,Israel
+1996,51.936,Israel
+1997,54.866,Israel
+1998,56.01,Israel
+1999,54.756,Israel
+2000,59.519,Israel
+2001,63.024,Israel
+2002,59.301,Israel
+2003,62.415,Israel
+2004,58.679,Israel
+2005,56.524,Israel
+2006,62.149,Israel
+2007,62.8,Israel
+2008,67.98,Israel
+2009,63.861,Israel
+2010,68.287,Israel
+2011,68.595,Israel
+2012,74.785,Israel
+2013,63.095,Israel
+2014,60.282,Israel
+2015,62.939,Israel
+2016,61.164,Israel
+2017,58.845,Israel
+2018,59.986,Israel
+2019,58.656,Israel
+2020,59.156,Israel
+2021,59.008,Israel
+2022,60.946,Israel
+1990,438.207,Italy
+1991,437.741,Italy
+1992,437.936,Italy
+1993,430.267,Italy
+1994,424.506,Italy
+1995,448.595,Italy
+1996,442.842,Italy
+1997,448.57,Italy
+1998,460.823,Italy
+1999,465.506,Italy
+2000,469.597,Italy
+2001,469.678,Italy
+2002,477.105,Italy
+2003,495.092,Italy
+2004,500.686,Italy
+2005,501.364,Italy
+2006,495.937,Italy
+2007,489.653,Italy
+2008,478.126,Italy
+2009,424.061,Italy
+2010,435.71,Italy
+2011,423.894,Italy
+2012,403.441,Italy
+2013,369.475,Italy
+2014,349.4,Italy
+2015,361.254,Italy
+2016,358.144,Italy
+2017,352.679,Italy
+2018,349.062,Italy
+2019,339.634,Italy
+2020,302.602,Italy
+2021,335.978,Italy
+2022,340.672,Italy
+1990,7.527,Jamaica
+1991,7.751,Jamaica
+1992,7.709,Jamaica
+1993,8.001,Jamaica
+1994,8.189,Jamaica
+1995,9.173,Jamaica
+1996,9.688,Jamaica
+1997,10.068,Jamaica
+1998,9.694,Jamaica
+1999,9.958,Jamaica
+2000,10.314,Jamaica
+2001,10.576,Jamaica
+2002,10.203,Jamaica
+2003,10.667,Jamaica
+2004,10.574,Jamaica
+2005,10.417,Jamaica
+2006,11.577,Jamaica
+2007,10.749,Jamaica
+2008,10.78,Jamaica
+2009,7.934,Jamaica
+2010,7.677,Jamaica
+2011,8.256,Jamaica
+2012,7.913,Jamaica
+2013,8.492,Jamaica
+2014,7.697,Jamaica
+2015,7.999,Jamaica
+2016,8.163,Jamaica
+2017,7.798,Jamaica
+2018,8.086,Jamaica
+2019,9.476,Jamaica
+2020,6.902,Jamaica
+2021,7.346,Jamaica
+2022,7.137,Jamaica
+1990,1157.393,Japan
+1991,1169.093,Japan
+1992,1178.892,Japan
+1993,1171.892,Japan
+1994,1226.893,Japan
+1995,1239.195,Japan
+1996,1251.695,Japan
+1997,1244.395,Japan
+1998,1204.594,Japan
+1999,1241.195,Japan
+2000,1263.993,Japan
+2001,1249.393,Japan
+2002,1278.995,Japan
+2003,1287.495,Japan
+2004,1282.895,Japan
+2005,1290.296,Japan
+2006,1267.295,Japan
+2007,1302.996,Japan
+2008,1232.196,Japan
+2009,1163.393,Japan
+2010,1214.798,Japan
+2011,1264.797,Japan
+2012,1305.998,Japan
+2013,1315.298,Japan
+2014,1263.806,Japan
+2015,1223.199,Japan
+2016,1203.184,Japan
+2017,1187.484,Japan
+2018,1142.481,Japan
+2019,1105.478,Japan
+2020,1040.483,Japan
+2021,1061.905,Japan
+2022,1032.687,Japan
+1990,10.476,Jordan
+1991,9.904,Jordan
+1992,11.984,Jordan
+1993,11.774,Jordan
+1994,13.25,Jordan
+1995,13.208,Jordan
+1996,13.825,Jordan
+1997,14.074,Jordan
+1998,14.253,Jordan
+1999,14.267,Jordan
+2000,15.2,Jordan
+2001,15.61,Jordan
+2002,16.42,Jordan
+2003,16.982,Jordan
+2004,18.671,Jordan
+2005,20.437,Jordan
+2006,20.526,Jordan
+2007,21.436,Jordan
+2008,20.718,Jordan
+2009,21.337,Jordan
+2010,20.615,Jordan
+2011,21.244,Jordan
+2012,23.815,Jordan
+2013,23.818,Jordan
+2014,25.899,Jordan
+2015,25.55,Jordan
+2016,24.698,Jordan
+2017,25.814,Jordan
+2018,25.142,Jordan
+2019,24.747,Jordan
+2020,20.96,Jordan
+2021,20.639,Jordan
+2022,20.255,Jordan
+1990,268.173,Kazakhstan
+1991,261.066,Kazakhstan
+1992,236.131,Kazakhstan
+1993,208.217,Kazakhstan
+1994,174.933,Kazakhstan
+1995,168.286,Kazakhstan
+1996,154.505,Kazakhstan
+1997,146.425,Kazakhstan
+1998,144.283,Kazakhstan
+1999,119.265,Kazakhstan
+2000,143.38,Kazakhstan
+2001,138.769,Kazakhstan
+2002,157.525,Kazakhstan
+2003,175.855,Kazakhstan
+2004,186.356,Kazakhstan
+2005,200.042,Kazakhstan
+2006,220.575,Kazakhstan
+2007,226.745,Kazakhstan
+2008,226.831,Kazakhstan
+2009,224.55,Kazakhstan
+2010,248.803,Kazakhstan
+2011,238.988,Kazakhstan
+2012,246.345,Kazakhstan
+2013,255.165,Kazakhstan
+2014,274.29,Kazakhstan
+2015,278.661,Kazakhstan
+2016,277.696,Kazakhstan
+2017,293.476,Kazakhstan
+2018,307.174,Kazakhstan
+2019,275.29,Kazakhstan
+2020,255.486,Kazakhstan
+2021,255.143,Kazakhstan
+2022,254.414,Kazakhstan
+1990,5.819,Kenya
+1991,4.834,Kenya
+1992,5.536,Kenya
+1993,6.342,Kenya
+1994,6.553,Kenya
+1995,7.549,Kenya
+1996,9.292,Kenya
+1997,8.21,Kenya
+1998,9.96,Kenya
+1999,10.071,Kenya
+2000,10.409,Kenya
+2001,9.278,Kenya
+2002,7.891,Kenya
+2003,6.697,Kenya
+2004,7.59,Kenya
+2005,8.555,Kenya
+2006,9.566,Kenya
+2007,9.824,Kenya
+2008,10.233,Kenya
+2009,12.343,Kenya
+2010,12.163,Kenya
+2011,13.448,Kenya
+2012,12.506,Kenya
+2013,13.458,Kenya
+2014,14.532,Kenya
+2015,16.998,Kenya
+2016,18.135,Kenya
+2017,17.709,Kenya
+2018,18.838,Kenya
+2019,19.796,Kenya
+2020,21.982,Kenya
+2021,22.314,Kenya
+2022,21.397,Kenya
+1990,0.022,Kiribati
+1991,0.022,Kiribati
+1992,0.026,Kiribati
+1993,0.029,Kiribati
+1994,0.029,Kiribati
+1995,0.029,Kiribati
+1996,0.029,Kiribati
+1997,0.029,Kiribati
+1998,0.029,Kiribati
+1999,0.029,Kiribati
+2000,0.037,Kiribati
+2001,0.037,Kiribati
+2002,0.037,Kiribati
+2003,0.04,Kiribati
+2004,0.04,Kiribati
+2005,0.048,Kiribati
+2006,0.048,Kiribati
+2007,0.048,Kiribati
+2008,0.048,Kiribati
+2009,0.048,Kiribati
+2010,0.059,Kiribati
+2011,0.055,Kiribati
+2012,0.051,Kiribati
+2013,0.051,Kiribati
+2014,0.059,Kiribati
+2015,0.055,Kiribati
+2016,0.055,Kiribati
+2017,0.066,Kiribati
+2018,0.066,Kiribati
+2019,0.066,Kiribati
+2020,0.066,Kiribati
+2021,0.066,Kiribati
+2022,0.068,Kiribati
+1994,0.0,Kosovo
+1995,0.0,Kosovo
+1996,0.0,Kosovo
+1997,0.0,Kosovo
+1998,0.0,Kosovo
+1999,0.0,Kosovo
+2000,0.0,Kosovo
+2001,0.0,Kosovo
+2002,0.0,Kosovo
+2003,0.0,Kosovo
+2004,0.164,Kosovo
+2005,0.162,Kosovo
+2006,0.161,Kosovo
+2007,0.166,Kosovo
+2008,7.362,Kosovo
+2009,8.109,Kosovo
+2010,8.355,Kosovo
+2011,8.294,Kosovo
+2012,7.848,Kosovo
+2013,7.969,Kosovo
+2014,7.133,Kosovo
+2015,8.291,Kosovo
+2016,8.793,Kosovo
+2017,8.023,Kosovo
+2018,8.045,Kosovo
+2019,8.39,Kosovo
+2020,8.451,Kosovo
+2021,8.816,Kosovo
+2022,8.692,Kosovo
+1990,37.807,Kuwait
+1991,492.841,Kuwait
+1992,29.648,Kuwait
+1993,49.129,Kuwait
+1994,57.197,Kuwait
+1995,56.128,Kuwait
+1996,51.627,Kuwait
+1997,56.621,Kuwait
+1998,52.812,Kuwait
+1999,54.978,Kuwait
+2000,54.89,Kuwait
+2001,59.051,Kuwait
+2002,59.986,Kuwait
+2003,62.336,Kuwait
+2004,65.631,Kuwait
+2005,74.428,Kuwait
+2006,76.05,Kuwait
+2007,77.16,Kuwait
+2008,84.282,Kuwait
+2009,88.719,Kuwait
+2010,90.873,Kuwait
+2011,87.968,Kuwait
+2012,102.298,Kuwait
+2013,84.313,Kuwait
+2014,76.435,Kuwait
+2015,94.508,Kuwait
+2016,109.905,Kuwait
+2017,103.95,Kuwait
+2018,106.723,Kuwait
+2019,108.549,Kuwait
+2020,95.655,Kuwait
+2021,95.13,Kuwait
+2022,97.461,Kuwait
+1991,477.925,Kuwaiti Oil Fires (GCP)
+1994,0.0,Kuwaiti Oil Fires (GCP)
+1995,0.0,Kuwaiti Oil Fires (GCP)
+1996,0.0,Kuwaiti Oil Fires (GCP)
+1997,0.0,Kuwaiti Oil Fires (GCP)
+1998,0.0,Kuwaiti Oil Fires (GCP)
+1999,0.0,Kuwaiti Oil Fires (GCP)
+2000,0.0,Kuwaiti Oil Fires (GCP)
+2001,0.0,Kuwaiti Oil Fires (GCP)
+2002,0.0,Kuwaiti Oil Fires (GCP)
+2003,0.0,Kuwaiti Oil Fires (GCP)
+2004,0.0,Kuwaiti Oil Fires (GCP)
+2005,0.0,Kuwaiti Oil Fires (GCP)
+2006,0.0,Kuwaiti Oil Fires (GCP)
+2007,0.0,Kuwaiti Oil Fires (GCP)
+2008,0.0,Kuwaiti Oil Fires (GCP)
+2009,0.0,Kuwaiti Oil Fires (GCP)
+2010,0.0,Kuwaiti Oil Fires (GCP)
+2011,0.0,Kuwaiti Oil Fires (GCP)
+2012,0.0,Kuwaiti Oil Fires (GCP)
+2013,0.0,Kuwaiti Oil Fires (GCP)
+2014,0.0,Kuwaiti Oil Fires (GCP)
+2015,0.0,Kuwaiti Oil Fires (GCP)
+2016,0.0,Kuwaiti Oil Fires (GCP)
+2017,0.0,Kuwaiti Oil Fires (GCP)
+2018,0.0,Kuwaiti Oil Fires (GCP)
+2019,0.0,Kuwaiti Oil Fires (GCP)
+2020,0.0,Kuwaiti Oil Fires (GCP)
+2021,0.0,Kuwaiti Oil Fires (GCP)
+2022,0.0,Kuwaiti Oil Fires (GCP)
+1990,19.198,Kyrgyzstan
+1991,15.893,Kyrgyzstan
+1992,11.042,Kyrgyzstan
+1993,8.468,Kyrgyzstan
+1994,6.144,Kyrgyzstan
+1995,4.507,Kyrgyzstan
+1996,5.652,Kyrgyzstan
+1997,5.561,Kyrgyzstan
+1998,5.901,Kyrgyzstan
+1999,4.642,Kyrgyzstan
+2000,4.575,Kyrgyzstan
+2001,3.857,Kyrgyzstan
+2002,4.917,Kyrgyzstan
+2003,5.376,Kyrgyzstan
+2004,5.808,Kyrgyzstan
+2005,5.519,Kyrgyzstan
+2006,5.461,Kyrgyzstan
+2007,6.522,Kyrgyzstan
+2008,7.481,Kyrgyzstan
+2009,6.709,Kyrgyzstan
+2010,6.356,Kyrgyzstan
+2011,7.62,Kyrgyzstan
+2012,10.087,Kyrgyzstan
+2013,9.734,Kyrgyzstan
+2014,10.236,Kyrgyzstan
+2015,10.265,Kyrgyzstan
+2016,9.622,Kyrgyzstan
+2017,9.361,Kyrgyzstan
+2018,11.172,Kyrgyzstan
+2019,9.043,Kyrgyzstan
+2020,8.348,Kyrgyzstan
+2021,10.327,Kyrgyzstan
+2022,10.032,Kyrgyzstan
+1990,0.513,Laos
+1991,0.546,Laos
+1992,0.593,Laos
+1993,0.607,Laos
+1994,0.634,Laos
+1995,0.671,Laos
+1996,0.75,Laos
+1997,0.792,Laos
+1998,0.82,Laos
+1999,0.846,Laos
+2000,0.96,Laos
+2001,1.063,Laos
+2002,1.166,Laos
+2003,1.221,Laos
+2004,1.282,Laos
+2005,1.337,Laos
+2006,1.757,Laos
+2007,1.835,Laos
+2008,2.131,Laos
+2009,2.667,Laos
+2010,3.005,Laos
+2011,3.17,Laos
+2012,3.398,Laos
+2013,4.261,Laos
+2014,4.45,Laos
+2015,9.229,Laos
+2016,16.458,Laos
+2017,19.684,Laos
+2018,20.558,Laos
+2019,19.08,Laos
+2020,19.492,Laos
+2021,22.801,Laos
+2022,23.436,Laos
+1990,19.662,Latvia
+1991,17.92,Latvia
+1992,14.194,Latvia
+1993,11.922,Latvia
+1994,10.37,Latvia
+1995,9.134,Latvia
+1996,9.212,Latvia
+1997,8.68,Latvia
+1998,8.306,Latvia
+1999,7.718,Latvia
+2000,7.082,Latvia
+2001,7.497,Latvia
+2002,7.52,Latvia
+2003,7.726,Latvia
+2004,7.731,Latvia
+2005,7.811,Latvia
+2006,8.31,Latvia
+2007,8.637,Latvia
+2008,8.198,Latvia
+2009,7.456,Latvia
+2010,8.555,Latvia
+2011,7.811,Latvia
+2012,7.52,Latvia
+2013,7.369,Latvia
+2014,7.172,Latvia
+2015,7.262,Latvia
+2016,7.211,Latvia
+2017,7.215,Latvia
+2018,7.857,Latvia
+2019,7.648,Latvia
+2020,6.998,Latvia
+2021,7.238,Latvia
+2022,6.62,Latvia
+1990,7.868,Lebanon
+1991,8.115,Lebanon
+1992,9.727,Lebanon
+1993,10.355,Lebanon
+1994,11.111,Lebanon
+1995,12.255,Lebanon
+1996,12.753,Lebanon
+1997,15.099,Lebanon
+1998,16.286,Lebanon
+1999,16.43,Lebanon
+2000,15.466,Lebanon
+2001,16.407,Lebanon
+2002,16.244,Lebanon
+2003,18.529,Lebanon
+2004,17.208,Lebanon
+2005,16.65,Lebanon
+2006,14.792,Lebanon
+2007,13.746,Lebanon
+2008,17.418,Lebanon
+2009,20.958,Lebanon
+2010,19.997,Lebanon
+2011,20.264,Lebanon
+2012,22.332,Lebanon
+2013,22.163,Lebanon
+2014,23.992,Lebanon
+2015,25.735,Lebanon
+2016,26.442,Lebanon
+2017,27.824,Lebanon
+2018,26.157,Lebanon
+2019,25.661,Lebanon
+2020,23.815,Lebanon
+2021,19.291,Lebanon
+2022,18.922,Lebanon
+1990,1.473,Lesotho
+1991,1.528,Lesotho
+1992,1.587,Lesotho
+1993,1.634,Lesotho
+1994,1.674,Lesotho
+1995,1.707,Lesotho
+1996,1.737,Lesotho
+1997,1.77,Lesotho
+1998,1.803,Lesotho
+1999,1.825,Lesotho
+2000,1.85,Lesotho
+2001,1.876,Lesotho
+2002,1.905,Lesotho
+2003,1.931,Lesotho
+2004,1.982,Lesotho
+2005,2.012,Lesotho
+2006,2.037,Lesotho
+2007,2.074,Lesotho
+2008,2.125,Lesotho
+2009,2.217,Lesotho
+2010,2.275,Lesotho
+2011,3.063,Lesotho
+2012,3.092,Lesotho
+2013,2.334,Lesotho
+2014,2.473,Lesotho
+2015,2.242,Lesotho
+2016,2.213,Lesotho
+2017,2.514,Lesotho
+2018,2.371,Lesotho
+2019,2.389,Lesotho
+2020,2.173,Lesotho
+2021,3.426,Lesotho
+2022,3.833,Lesotho
+1990,0.456,Liberia
+1991,0.375,Liberia
+1992,0.392,Liberia
+1993,0.417,Liberia
+1994,0.415,Liberia
+1995,0.416,Liberia
+1996,0.427,Liberia
+1997,0.446,Liberia
+1998,0.473,Liberia
+1999,0.376,Liberia
+2000,0.399,Liberia
+2001,0.417,Liberia
+2002,0.432,Liberia
+2003,0.464,Liberia
+2004,0.546,Liberia
+2005,0.651,Liberia
+2006,0.673,Liberia
+2007,0.625,Liberia
+2008,0.531,Liberia
+2009,0.522,Liberia
+2010,0.709,Liberia
+2011,0.819,Liberia
+2012,0.915,Liberia
+2013,0.874,Liberia
+2014,0.734,Liberia
+2015,0.698,Liberia
+2016,0.644,Liberia
+2017,0.67,Liberia
+2018,0.606,Liberia
+2019,0.932,Liberia
+2020,0.78,Liberia
+2021,0.783,Liberia
+2022,0.792,Liberia
+1990,36.514,Libya
+1991,42.62,Libya
+1992,37.024,Libya
+1993,38.708,Libya
+1994,51.36,Libya
+1995,54.596,Libya
+1996,53.952,Libya
+1997,51.779,Libya
+1998,51.653,Libya
+1999,50.26,Libya
+2000,53.239,Libya
+2001,53.114,Libya
+2002,52.525,Libya
+2003,55.477,Libya
+2004,56.85,Libya
+2005,55.986,Libya
+2006,53.777,Libya
+2007,44.392,Libya
+2008,49.699,Libya
+2009,51.627,Libya
+2010,59.148,Libya
+2011,53.542,Libya
+2012,61.606,Libya
+2013,51.344,Libya
+2014,68.348,Libya
+2015,62.644,Libya
+2016,60.171,Libya
+2017,69.58,Libya
+2018,65.323,Libya
+2019,76.247,Libya
+2020,34.237,Libya
+2021,56.541,Libya
+2022,57.546,Libya
+1990,0.199,Liechtenstein
+1991,0.206,Liechtenstein
+1992,0.207,Liechtenstein
+1993,0.215,Liechtenstein
+1994,0.201,Liechtenstein
+1995,0.204,Liechtenstein
+1996,0.206,Liechtenstein
+1997,0.218,Liechtenstein
+1998,0.229,Liechtenstein
+1999,0.227,Liechtenstein
+2000,0.217,Liechtenstein
+2001,0.215,Liechtenstein
+2002,0.22,Liechtenstein
+2003,0.229,Liechtenstein
+2004,0.229,Liechtenstein
+2005,0.229,Liechtenstein
+2006,0.231,Liechtenstein
+2007,0.201,Liechtenstein
+2008,0.22,Liechtenstein
+2009,0.205,Liechtenstein
+2010,0.191,Liechtenstein
+2011,0.177,Liechtenstein
+2012,0.185,Liechtenstein
+2013,0.193,Liechtenstein
+2014,0.161,Liechtenstein
+2015,0.16,Liechtenstein
+2016,0.15,Liechtenstein
+2017,0.156,Liechtenstein
+2018,0.143,Liechtenstein
+2019,0.149,Liechtenstein
+2020,0.142,Liechtenstein
+2021,0.146,Liechtenstein
+2022,0.153,Liechtenstein
+1990,35.772,Lithuania
+1991,37.855,Lithuania
+1992,21.203,Lithuania
+1993,16.355,Lithuania
+1994,15.802,Lithuania
+1995,15.092,Lithuania
+1996,15.775,Lithuania
+1997,15.198,Lithuania
+1998,16.032,Lithuania
+1999,13.485,Lithuania
+2000,11.878,Lithuania
+2001,12.629,Lithuania
+2002,12.701,Lithuania
+2003,12.695,Lithuania
+2004,13.29,Lithuania
+2005,13.901,Lithuania
+2006,14.234,Lithuania
+2007,15.519,Lithuania
+2008,14.958,Lithuania
+2009,12.861,Lithuania
+2010,13.834,Lithuania
+2011,13.991,Lithuania
+2012,14.084,Lithuania
+2013,13.18,Lithuania
+2014,12.885,Lithuania
+2015,13.088,Lithuania
+2016,13.156,Lithuania
+2017,13.32,Lithuania
+2018,13.47,Lithuania
+2019,13.707,Lithuania
+2020,13.563,Lithuania
+2021,13.851,Lithuania
+2022,12.857,Lithuania
+1990,188.867,Low-income countries
+1991,186.533,Low-income countries
+1992,171.273,Low-income countries
+1993,163.234,Low-income countries
+1994,158.09,Low-income countries
+1995,155.441,Low-income countries
+1996,148.24,Low-income countries
+1997,149.411,Low-income countries
+1998,148.886,Low-income countries
+1999,158.739,Low-income countries
+2000,164.2,Low-income countries
+2001,166.57,Low-income countries
+2002,154.679,Low-income countries
+2003,176.948,Low-income countries
+2004,179.041,Low-income countries
+2005,183.933,Low-income countries
+2006,192.43,Low-income countries
+2007,197.63,Low-income countries
+2008,209.442,Low-income countries
+2009,208.946,Low-income countries
+2010,208.762,Low-income countries
+2011,191.955,Low-income countries
+2012,177.208,Low-income countries
+2013,167.276,Low-income countries
+2014,171.086,Low-income countries
+2015,150.221,Low-income countries
+2016,157.252,Low-income countries
+2017,199.326,Low-income countries
+2018,196.733,Low-income countries
+2019,208.338,Low-income countries
+2020,200.521,Low-income countries
+2021,194.18,Low-income countries
+2022,192.595,Low-income countries
+1990,1105.813,Lower-middle-income countries
+1991,1148.454,Lower-middle-income countries
+1992,1215.578,Lower-middle-income countries
+1993,1263.826,Lower-middle-income countries
+1994,1354.089,Lower-middle-income countries
+1995,1427.003,Lower-middle-income countries
+1996,1537.373,Lower-middle-income countries
+1997,1611.672,Lower-middle-income countries
+1998,1656.555,Lower-middle-income countries
+1999,1755.423,Lower-middle-income countries
+2000,1827.241,Lower-middle-income countries
+2001,1848.306,Lower-middle-income countries
+2002,1897.529,Lower-middle-income countries
+2003,1981.194,Lower-middle-income countries
+2004,2089.057,Lower-middle-income countries
+2005,2184.885,Lower-middle-income countries
+2006,2304.831,Lower-middle-income countries
+2007,2438.967,Lower-middle-income countries
+2008,2579.854,Lower-middle-income countries
+2009,2706.806,Lower-middle-income countries
+2010,2846.691,Lower-middle-income countries
+2011,3003.597,Lower-middle-income countries
+2012,3168.652,Lower-middle-income countries
+2013,3260.296,Lower-middle-income countries
+2014,3497.819,Lower-middle-income countries
+2015,3643.334,Lower-middle-income countries
+2016,3859.967,Lower-middle-income countries
+2017,4028.302,Lower-middle-income countries
+2018,4218.262,Lower-middle-income countries
+2019,4379.94,Lower-middle-income countries
+2020,4181.05,Lower-middle-income countries
+2021,4489.79,Lower-middle-income countries
+2022,4626.718,Lower-middle-income countries
+1990,11.813,Luxembourg
+1991,12.424,Luxembourg
+1992,12.192,Luxembourg
+1993,12.341,Luxembourg
+1994,11.525,Luxembourg
+1995,9.136,Luxembourg
+1996,9.186,Luxembourg
+1997,8.547,Luxembourg
+1998,7.655,Luxembourg
+1999,8.117,Luxembourg
+2000,8.702,Luxembourg
+2001,9.206,Luxembourg
+2002,9.979,Luxembourg
+2003,10.451,Luxembourg
+2004,11.819,Luxembourg
+2005,12.077,Luxembourg
+2006,11.909,Luxembourg
+2007,11.305,Luxembourg
+2008,11.169,Luxembourg
+2009,10.625,Luxembourg
+2010,11.195,Luxembourg
+2011,11.097,Luxembourg
+2012,10.866,Luxembourg
+2013,10.334,Luxembourg
+2014,9.816,Luxembourg
+2015,9.345,Luxembourg
+2016,9.09,Luxembourg
+2017,9.263,Luxembourg
+2018,9.567,Luxembourg
+2019,9.762,Luxembourg
+2020,8.075,Luxembourg
+2021,8.421,Luxembourg
+2022,7.277,Luxembourg
+1990,0.901,Macao
+1991,0.967,Macao
+1992,0.978,Macao
+1993,1.103,Macao
+1994,1.18,Macao
+1995,1.125,Macao
+1996,1.301,Macao
+1997,1.367,Macao
+1998,1.444,Macao
+1999,1.425,Macao
+2000,1.528,Macao
+2001,1.561,Macao
+2002,1.389,Macao
+2003,1.422,Macao
+2004,1.583,Macao
+2005,1.682,Macao
+2006,1.458,Macao
+2007,1.363,Macao
+2008,1.132,Macao
+2009,1.891,Macao
+2010,1.235,Macao
+2011,1.293,Macao
+2012,1.132,Macao
+2013,0.989,Macao
+2014,1.293,Macao
+2015,1.77,Macao
+2016,1.781,Macao
+2017,1.927,Macao
+2018,1.242,Macao
+2019,1.213,Macao
+2020,1.033,Macao
+2021,1.026,Macao
+2022,1.037,Macao
+1990,0.944,Madagascar
+1991,1.025,Madagascar
+1992,1.003,Madagascar
+1993,1.032,Madagascar
+1994,1.152,Madagascar
+1995,1.192,Madagascar
+1996,1.245,Madagascar
+1997,1.535,Madagascar
+1998,1.619,Madagascar
+1999,1.763,Madagascar
+2000,1.948,Madagascar
+2001,1.743,Madagascar
+2002,1.236,Madagascar
+2003,1.692,Madagascar
+2004,1.804,Madagascar
+2005,1.741,Madagascar
+2006,1.675,Madagascar
+2007,1.735,Madagascar
+2008,1.78,Madagascar
+2009,1.706,Madagascar
+2010,1.872,Madagascar
+2011,2.374,Madagascar
+2012,2.744,Madagascar
+2013,3.193,Madagascar
+2014,3.096,Madagascar
+2015,3.249,Madagascar
+2016,3.374,Madagascar
+2017,3.976,Madagascar
+2018,3.733,Madagascar
+2019,4.297,Madagascar
+2020,3.975,Madagascar
+2021,4.455,Madagascar
+2022,4.309,Madagascar
+1990,0.74,Malawi
+1991,0.788,Malawi
+1992,0.787,Malawi
+1993,0.882,Malawi
+1994,0.902,Malawi
+1995,0.907,Malawi
+1996,0.92,Malawi
+1997,0.915,Malawi
+1998,0.902,Malawi
+1999,0.893,Malawi
+2000,0.858,Malawi
+2001,0.773,Malawi
+2002,0.856,Malawi
+2003,0.918,Malawi
+2004,0.902,Malawi
+2005,0.849,Malawi
+2006,0.848,Malawi
+2007,0.919,Malawi
+2008,0.998,Malawi
+2009,1.013,Malawi
+2010,0.968,Malawi
+2011,1.056,Malawi
+2012,1.066,Malawi
+2013,1.146,Malawi
+2014,1.041,Malawi
+2015,1.083,Malawi
+2016,1.206,Malawi
+2017,1.23,Malawi
+2018,1.723,Malawi
+2019,1.721,Malawi
+2020,1.768,Malawi
+2021,1.885,Malawi
+2022,1.748,Malawi
+1990,54.269,Malaysia
+1991,65.785,Malaysia
+1992,72.961,Malaysia
+1993,86.612,Malaysia
+1994,87.497,Malaysia
+1995,109.595,Malaysia
+1996,110.108,Malaysia
+1997,118.471,Malaysia
+1998,109.782,Malaysia
+1999,103.987,Malaysia
+2000,122.878,Malaysia
+2001,130.89,Malaysia
+2002,132.035,Malaysia
+2003,153.384,Malaysia
+2004,169.678,Malaysia
+2005,169.967,Malaysia
+2006,170.166,Malaysia
+2007,175.451,Malaysia
+2008,192.847,Malaysia
+2009,192.119,Malaysia
+2010,199.346,Malaysia
+2011,203.452,Malaysia
+2012,212.99,Malaysia
+2013,241.671,Malaysia
+2014,245.05,Malaysia
+2015,235.938,Malaysia
+2016,237.294,Malaysia
+2017,244.457,Malaysia
+2018,262.643,Malaysia
+2019,279.842,Malaysia
+2020,263.199,Malaysia
+2021,273.152,Malaysia
+2022,285.448,Malaysia
+1990,0.172,Maldives
+1991,0.154,Maldives
+1992,0.231,Maldives
+1993,0.198,Maldives
+1994,0.198,Maldives
+1995,0.249,Maldives
+1996,0.289,Maldives
+1997,0.33,Maldives
+1998,0.3,Maldives
+1999,0.421,Maldives
+2000,0.451,Maldives
+2001,0.462,Maldives
+2002,0.594,Maldives
+2003,0.506,Maldives
+2004,0.667,Maldives
+2005,0.601,Maldives
+2006,0.744,Maldives
+2007,0.78,Maldives
+2008,0.843,Maldives
+2009,0.883,Maldives
+2010,0.934,Maldives
+2011,0.986,Maldives
+2012,1.11,Maldives
+2013,1.092,Maldives
+2014,1.315,Maldives
+2015,1.279,Maldives
+2016,1.436,Maldives
+2017,1.513,Maldives
+2018,1.74,Maldives
+2019,1.993,Maldives
+2020,1.678,Maldives
+2021,1.971,Maldives
+2022,2.018,Maldives
+1990,0.422,Mali
+1991,0.426,Mali
+1992,0.463,Mali
+1993,0.503,Mali
+1994,0.548,Mali
+1995,0.595,Mali
+1996,0.646,Mali
+1997,0.727,Mali
+1998,0.934,Mali
+1999,0.971,Mali
+2000,1.066,Mali
+2001,1.161,Mali
+2002,1.209,Mali
+2003,1.246,Mali
+2004,1.407,Mali
+2005,1.455,Mali
+2006,1.535,Mali
+2007,1.788,Mali
+2008,1.957,Mali
+2009,1.887,Mali
+2010,2.088,Mali
+2011,2.279,Mali
+2012,2.437,Mali
+2013,2.743,Mali
+2014,3.136,Mali
+2015,3.399,Mali
+2016,4.29,Mali
+2017,4.77,Mali
+2018,5.198,Mali
+2019,5.833,Mali
+2020,6.448,Mali
+2021,6.886,Mali
+2022,6.988,Mali
+1990,2.427,Malta
+1991,2.272,Malta
+1992,2.294,Malta
+1993,2.886,Malta
+1994,2.658,Malta
+1995,2.452,Malta
+1996,2.534,Malta
+1997,2.556,Malta
+1998,2.525,Malta
+1999,2.573,Malta
+2000,2.468,Malta
+2001,2.737,Malta
+2002,2.747,Malta
+2003,2.961,Malta
+2004,2.849,Malta
+2005,2.65,Malta
+2006,2.655,Malta
+2007,2.728,Malta
+2008,2.721,Malta
+2009,2.561,Malta
+2010,2.619,Malta
+2011,2.608,Malta
+2012,2.749,Malta
+2013,2.429,Malta
+2014,2.417,Malta
+2015,1.699,Malta
+2016,1.376,Malta
+2017,1.537,Malta
+2018,1.547,Malta
+2019,1.649,Malta
+2020,1.6,Malta
+2021,1.611,Malta
+2022,1.774,Malta
+1992,0.077,Marshall Islands
+1993,0.084,Marshall Islands
+1994,0.084,Marshall Islands
+1995,0.088,Marshall Islands
+1996,0.088,Marshall Islands
+1997,0.088,Marshall Islands
+1998,0.092,Marshall Islands
+1999,0.088,Marshall Islands
+2000,0.099,Marshall Islands
+2001,0.103,Marshall Islands
+2002,0.11,Marshall Islands
+2003,0.106,Marshall Islands
+2004,0.117,Marshall Islands
+2005,0.114,Marshall Islands
+2006,0.121,Marshall Islands
+2007,0.125,Marshall Islands
+2008,0.128,Marshall Islands
+2009,0.132,Marshall Islands
+2010,0.136,Marshall Islands
+2011,0.139,Marshall Islands
+2012,0.136,Marshall Islands
+2013,0.139,Marshall Islands
+2014,0.143,Marshall Islands
+2015,0.143,Marshall Islands
+2016,0.143,Marshall Islands
+2017,0.147,Marshall Islands
+2018,0.147,Marshall Islands
+2019,0.147,Marshall Islands
+2020,0.147,Marshall Islands
+2021,0.147,Marshall Islands
+2022,0.15,Marshall Islands
+1990,0.854,Mauritania
+1991,0.868,Mauritania
+1992,0.905,Mauritania
+1993,0.927,Mauritania
+1994,0.956,Mauritania
+1995,1.015,Mauritania
+1996,1.063,Mauritania
+1997,1.077,Mauritania
+1998,1.07,Mauritania
+1999,1.096,Mauritania
+2000,1.114,Mauritania
+2001,1.172,Mauritania
+2002,1.249,Mauritania
+2003,1.29,Mauritania
+2004,1.385,Mauritania
+2005,1.437,Mauritania
+2006,1.55,Mauritania
+2007,1.758,Mauritania
+2008,1.834,Mauritania
+2009,2.012,Mauritania
+2010,2.094,Mauritania
+2011,2.23,Mauritania
+2012,2.448,Mauritania
+2013,2.169,Mauritania
+2014,2.566,Mauritania
+2015,3.002,Mauritania
+2016,2.627,Mauritania
+2017,3.581,Mauritania
+2018,4.452,Mauritania
+2019,4.62,Mauritania
+2020,4.782,Mauritania
+2021,4.503,Mauritania
+2022,4.578,Mauritania
+1990,1.462,Mauritius
+1991,1.521,Mauritius
+1992,1.707,Mauritius
+1993,1.773,Mauritius
+1994,1.623,Mauritius
+1995,1.828,Mauritius
+1996,1.949,Mauritius
+1997,1.997,Mauritius
+1998,2.169,Mauritius
+1999,2.426,Mauritius
+2000,2.689,Mauritius
+2001,2.862,Mauritius
+2002,2.884,Mauritius
+2003,3.059,Mauritius
+2004,3.089,Mauritius
+2005,3.294,Mauritius
+2006,3.627,Mauritius
+2007,3.686,Mauritius
+2008,3.767,Mauritius
+2009,3.708,Mauritius
+2010,3.913,Mauritius
+2011,3.917,Mauritius
+2012,3.964,Mauritius
+2013,4.067,Mauritius
+2014,4.206,Mauritius
+2015,4.21,Mauritius
+2016,4.346,Mauritius
+2017,4.536,Mauritius
+2018,4.459,Mauritius
+2019,4.521,Mauritius
+2020,3.807,Mauritius
+2021,3.972,Mauritius
+2022,3.928,Mauritius
+1990,316.746,Mexico
+1991,329.827,Mexico
+1992,332.453,Mexico
+1993,337.722,Mexico
+1994,351.534,Mexico
+1995,330.905,Mexico
+1996,341.544,Mexico
+1997,362.462,Mexico
+1998,381.102,Mexico
+1999,386.04,Mexico
+2000,391.439,Mexico
+2001,407.485,Mexico
+2002,410.301,Mexico
+2003,435.969,Mexico
+2004,438.588,Mexico
+2005,463.432,Mexico
+2006,474.519,Mexico
+2007,473.595,Mexico
+2008,472.981,Mexico
+2009,460.294,Mexico
+2010,456.409,Mexico
+2011,483.302,Mexico
+2012,501.489,Mexico
+2013,495.415,Mexico
+2014,484.045,Mexico
+2015,479.434,Mexico
+2016,478.828,Mexico
+2017,464.406,Mexico
+2018,468.413,Mexico
+2019,468.236,Mexico
+2020,428.94,Mexico
+2021,446.834,Mexico
+2022,465.336,Mexico
+1992,0.136,Micronesia (country)
+1993,0.143,Micronesia (country)
+1994,0.154,Micronesia (country)
+1995,0.18,Micronesia (country)
+1996,0.183,Micronesia (country)
+1997,0.194,Micronesia (country)
+1998,0.202,Micronesia (country)
+1999,0.191,Micronesia (country)
+2000,0.18,Micronesia (country)
+2001,0.165,Micronesia (country)
+2002,0.15,Micronesia (country)
+2003,0.161,Micronesia (country)
+2004,0.143,Micronesia (country)
+2005,0.117,Micronesia (country)
+2006,0.114,Micronesia (country)
+2007,0.132,Micronesia (country)
+2008,0.11,Micronesia (country)
+2009,0.147,Micronesia (country)
+2010,0.103,Micronesia (country)
+2011,0.117,Micronesia (country)
+2012,0.125,Micronesia (country)
+2013,0.136,Micronesia (country)
+2014,0.136,Micronesia (country)
+2015,0.143,Micronesia (country)
+2016,0.143,Micronesia (country)
+2017,0.143,Micronesia (country)
+2018,0.143,Micronesia (country)
+2019,0.147,Micronesia (country)
+2020,0.147,Micronesia (country)
+2021,0.143,Micronesia (country)
+2022,0.146,Micronesia (country)
+1990,819.005,Middle East (GCP)
+1991,889.218,Middle East (GCP)
+1992,980.86,Middle East (GCP)
+1993,1065.591,Middle East (GCP)
+1994,1124.762,Middle East (GCP)
+1995,1135.244,Middle East (GCP)
+1996,1154.065,Middle East (GCP)
+1997,1138.115,Middle East (GCP)
+1998,1178.167,Middle East (GCP)
+1999,1267.684,Middle East (GCP)
+2000,1402.025,Middle East (GCP)
+2001,1437.125,Middle East (GCP)
+2002,1448.6,Middle East (GCP)
+2003,1543.696,Middle East (GCP)
+2004,1650.472,Middle East (GCP)
+2005,1719.316,Middle East (GCP)
+2006,1825.892,Middle East (GCP)
+2007,1837.988,Middle East (GCP)
+2008,1979.456,Middle East (GCP)
+2009,2061.091,Middle East (GCP)
+2010,2174.946,Middle East (GCP)
+2011,2227.932,Middle East (GCP)
+2012,2376.944,Middle East (GCP)
+2013,2331.437,Middle East (GCP)
+2014,2375.603,Middle East (GCP)
+2015,2465.174,Middle East (GCP)
+2016,2518.586,Middle East (GCP)
+2017,2580.779,Middle East (GCP)
+2018,2604.22,Middle East (GCP)
+2019,2676.076,Middle East (GCP)
+2020,2612.747,Middle East (GCP)
+2021,2753.741,Middle East (GCP)
+2022,2813.759,Middle East (GCP)
+1990,36.479,Moldova
+1991,29.596,Moldova
+1992,20.978,Moldova
+1993,15.846,Moldova
+1994,12.427,Moldova
+1995,11.405,Moldova
+1996,11.687,Moldova
+1997,7.301,Moldova
+1998,6.444,Moldova
+1999,4.685,Moldova
+2000,3.573,Moldova
+2001,3.787,Moldova
+2002,4.052,Moldova
+2003,4.404,Moldova
+2004,4.613,Moldova
+2005,4.938,Moldova
+2006,5.03,Moldova
+2007,4.979,Moldova
+2008,5.19,Moldova
+2009,4.54,Moldova
+2010,4.831,Moldova
+2011,4.945,Moldova
+2012,4.766,Moldova
+2013,4.899,Moldova
+2014,4.759,Moldova
+2015,4.782,Moldova
+2016,4.904,Moldova
+2017,5.221,Moldova
+2018,5.434,Moldova
+2019,5.495,Moldova
+2020,5.238,Moldova
+2021,5.85,Moldova
+2022,5.79,Moldova
+1990,9.791,Mongolia
+1991,11.96,Mongolia
+1992,10.943,Mongolia
+1993,9.193,Mongolia
+1994,7.865,Mongolia
+1995,7.837,Mongolia
+1996,7.935,Mongolia
+1997,7.615,Mongolia
+1998,7.622,Mongolia
+1999,7.488,Mongolia
+2000,7.432,Mongolia
+2001,7.804,Mongolia
+2002,8.197,Mongolia
+2003,7.931,Mongolia
+2004,8.501,Mongolia
+2005,8.515,Mongolia
+2006,9.281,Mongolia
+2007,11.958,Mongolia
+2008,11.918,Mongolia
+2009,13.026,Mongolia
+2010,13.772,Mongolia
+2011,21.368,Mongolia
+2012,35.0,Mongolia
+2013,43.478,Mongolia
+2014,29.626,Mongolia
+2015,23.282,Mongolia
+2016,25.629,Mongolia
+2017,34.135,Mongolia
+2018,45.316,Mongolia
+2019,47.244,Mongolia
+2020,37.073,Mongolia
+2021,41.852,Mongolia
+2022,43.415,Mongolia
+1990,1.961,Montenegro
+1991,1.387,Montenegro
+1992,1.483,Montenegro
+1993,1.294,Montenegro
+1994,1.257,Montenegro
+1995,1.327,Montenegro
+1996,1.553,Montenegro
+1997,1.67,Montenegro
+1998,1.758,Montenegro
+1999,1.212,Montenegro
+2000,1.521,Montenegro
+2001,1.667,Montenegro
+2002,1.766,Montenegro
+2003,1.889,Montenegro
+2004,2.041,Montenegro
+2005,1.751,Montenegro
+2006,2.063,Montenegro
+2007,2.056,Montenegro
+2008,2.605,Montenegro
+2009,1.682,Montenegro
+2010,2.422,Montenegro
+2011,2.407,Montenegro
+2012,2.213,Montenegro
+2013,2.151,Montenegro
+2014,2.107,Montenegro
+2015,2.239,Montenegro
+2016,2.015,Montenegro
+2017,2.103,Montenegro
+2018,2.4,Montenegro
+2019,2.477,Montenegro
+2020,2.407,Montenegro
+2021,2.411,Montenegro
+2022,2.391,Montenegro
+1990,0.029,Montserrat
+1991,0.029,Montserrat
+1992,0.029,Montserrat
+1993,0.029,Montserrat
+1994,0.033,Montserrat
+1995,0.033,Montserrat
+1996,0.037,Montserrat
+1997,0.033,Montserrat
+1998,0.029,Montserrat
+1999,0.037,Montserrat
+2000,0.026,Montserrat
+2001,0.026,Montserrat
+2002,0.048,Montserrat
+2003,0.037,Montserrat
+2004,0.048,Montserrat
+2005,0.04,Montserrat
+2006,0.04,Montserrat
+2007,0.04,Montserrat
+2008,0.048,Montserrat
+2009,0.044,Montserrat
+2010,0.059,Montserrat
+2011,0.037,Montserrat
+2012,0.04,Montserrat
+2013,0.048,Montserrat
+2014,0.048,Montserrat
+2015,0.055,Montserrat
+2016,0.029,Montserrat
+2017,0.029,Montserrat
+2018,0.029,Montserrat
+2019,0.022,Montserrat
+2020,0.022,Montserrat
+2021,0.022,Montserrat
+2022,0.021,Montserrat
+1990,22.298,Morocco
+1991,23.688,Morocco
+1992,24.737,Morocco
+1993,26.779,Morocco
+1994,28.124,Morocco
+1995,28.75,Morocco
+1996,29.525,Morocco
+1997,29.978,Morocco
+1998,30.881,Morocco
+1999,31.986,Morocco
+2000,33.199,Morocco
+2001,36.806,Morocco
+2002,37.306,Morocco
+2003,36.57,Morocco
+2004,42.226,Morocco
+2005,44.661,Morocco
+2006,46.249,Morocco
+2007,48.913,Morocco
+2008,51.369,Morocco
+2009,50.86,Morocco
+2010,54.365,Morocco
+2011,54.868,Morocco
+2012,56.954,Morocco
+2013,56.606,Morocco
+2014,57.175,Morocco
+2015,58.495,Morocco
+2016,58.457,Morocco
+2017,61.104,Morocco
+2018,62.306,Morocco
+2019,68.74,Morocco
+2020,64.564,Morocco
+2021,70.245,Morocco
+2022,69.506,Morocco
+1990,1.025,Mozambique
+1991,0.941,Mozambique
+1992,1.027,Mozambique
+1993,1.14,Mozambique
+1994,1.098,Mozambique
+1995,1.131,Mozambique
+1996,1.092,Mozambique
+1997,1.17,Mozambique
+1998,1.112,Mozambique
+1999,1.168,Mozambique
+2000,1.322,Mozambique
+2001,1.554,Mozambique
+2002,1.537,Mozambique
+2003,1.856,Mozambique
+2004,1.864,Mozambique
+2005,1.77,Mozambique
+2006,1.916,Mozambique
+2007,2.189,Mozambique
+2008,2.18,Mozambique
+2009,2.439,Mozambique
+2010,2.635,Mozambique
+2011,3.107,Mozambique
+2012,3.052,Mozambique
+2013,3.579,Mozambique
+2014,8.122,Mozambique
+2015,6.731,Mozambique
+2016,8.547,Mozambique
+2017,6.905,Mozambique
+2018,7.01,Mozambique
+2019,7.101,Mozambique
+2020,6.376,Mozambique
+2021,7.868,Mozambique
+2022,8.358,Mozambique
+1990,4.236,Myanmar
+1991,4.137,Myanmar
+1992,4.842,Myanmar
+1993,5.303,Myanmar
+1994,6.174,Myanmar
+1995,6.893,Myanmar
+1996,7.188,Myanmar
+1997,7.42,Myanmar
+1998,8.046,Myanmar
+1999,8.934,Myanmar
+2000,10.219,Myanmar
+2001,8.856,Myanmar
+2002,9.328,Myanmar
+2003,9.997,Myanmar
+2004,12.565,Myanmar
+2005,11.555,Myanmar
+2006,12.813,Myanmar
+2007,12.841,Myanmar
+2008,9.772,Myanmar
+2009,10.207,Myanmar
+2010,13.122,Myanmar
+2011,15.122,Myanmar
+2012,11.819,Myanmar
+2013,12.722,Myanmar
+2014,15.849,Myanmar
+2015,21.887,Myanmar
+2016,21.14,Myanmar
+2017,23.63,Myanmar
+2018,34.017,Myanmar
+2019,33.62,Myanmar
+2020,34.588,Myanmar
+2021,29.6,Myanmar
+2022,29.533,Myanmar
+1991,1.044,Namibia
+1992,1.136,Namibia
+1993,1.374,Namibia
+1994,1.557,Namibia
+1995,1.619,Namibia
+1996,1.718,Namibia
+1997,1.817,Namibia
+1998,1.865,Namibia
+1999,1.74,Namibia
+2000,1.722,Namibia
+2001,2.228,Namibia
+2002,1.971,Namibia
+2003,2.092,Namibia
+2004,2.242,Namibia
+2005,2.528,Namibia
+2006,2.517,Namibia
+2007,2.327,Namibia
+2008,2.858,Namibia
+2009,2.664,Namibia
+2010,2.785,Namibia
+2011,2.782,Namibia
+2012,3.201,Namibia
+2013,3.59,Namibia
+2014,3.74,Namibia
+2015,3.932,Namibia
+2016,3.974,Namibia
+2017,4.099,Namibia
+2018,4.21,Namibia
+2019,4.239,Namibia
+2020,3.832,Namibia
+2021,3.901,Namibia
+2022,4.085,Namibia
+1990,0.125,Nauru
+1991,0.125,Nauru
+1992,0.121,Nauru
+1993,0.114,Nauru
+1994,0.11,Nauru
+1995,0.106,Nauru
+1996,0.103,Nauru
+1997,0.103,Nauru
+1998,0.099,Nauru
+1999,0.092,Nauru
+2000,0.084,Nauru
+2001,0.081,Nauru
+2002,0.077,Nauru
+2003,0.066,Nauru
+2004,0.066,Nauru
+2005,0.062,Nauru
+2006,0.044,Nauru
+2007,0.044,Nauru
+2008,0.044,Nauru
+2009,0.04,Nauru
+2010,0.044,Nauru
+2011,0.04,Nauru
+2012,0.044,Nauru
+2013,0.048,Nauru
+2014,0.051,Nauru
+2015,0.055,Nauru
+2016,0.051,Nauru
+2017,0.055,Nauru
+2018,0.055,Nauru
+2019,0.055,Nauru
+2020,0.051,Nauru
+2021,0.055,Nauru
+2022,0.056,Nauru
+1990,0.721,Nepal
+1991,1.026,Nepal
+1992,1.233,Nepal
+1993,1.397,Nepal
+1994,1.619,Nepal
+1995,2.309,Nepal
+1996,2.353,Nepal
+1997,2.641,Nepal
+1998,2.223,Nepal
+1999,3.191,Nepal
+2000,3.037,Nepal
+2001,3.236,Nepal
+2002,2.596,Nepal
+2003,2.81,Nepal
+2004,2.582,Nepal
+2005,2.987,Nepal
+2006,2.456,Nepal
+2007,2.57,Nepal
+2008,3.352,Nepal
+2009,4.129,Nepal
+2010,4.824,Nepal
+2011,5.22,Nepal
+2012,5.47,Nepal
+2013,6.218,Nepal
+2014,7.591,Nepal
+2015,6.905,Nepal
+2016,10.088,Nepal
+2017,12.42,Nepal
+2018,13.999,Nepal
+2019,12.75,Nepal
+2020,15.632,Nepal
+2021,15.724,Nepal
+2022,16.089,Nepal
+1990,162.797,Netherlands
+1991,171.193,Netherlands
+1992,170.997,Netherlands
+1993,170.964,Netherlands
+1994,171.731,Netherlands
+1995,173.261,Netherlands
+1996,182.323,Netherlands
+1997,175.247,Netherlands
+1998,176.179,Netherlands
+1999,170.835,Netherlands
+2000,171.936,Netherlands
+2001,177.247,Netherlands
+2002,176.525,Netherlands
+2003,179.964,Netherlands
+2004,181.892,Netherlands
+2005,177.931,Netherlands
+2006,173.085,Netherlands
+2007,172.833,Netherlands
+2008,175.705,Netherlands
+2009,170.234,Netherlands
+2010,182.289,Netherlands
+2011,169.162,Netherlands
+2012,165.575,Netherlands
+2013,164.758,Netherlands
+2014,157.342,Netherlands
+2015,163.743,Netherlands
+2016,164.608,Netherlands
+2017,162.078,Netherlands
+2018,158.042,Netherlands
+2019,152.422,Netherlands
+2020,136.67,Netherlands
+2021,139.684,Netherlands
+2022,127.241,Netherlands
+1990,1.576,New Caledonia
+1991,1.759,New Caledonia
+1992,1.575,New Caledonia
+1993,1.828,New Caledonia
+1994,1.971,New Caledonia
+1995,2.063,New Caledonia
+1996,2.184,New Caledonia
+1997,1.817,New Caledonia
+1998,1.81,New Caledonia
+1999,2.056,New Caledonia
+2000,2.22,New Caledonia
+2001,1.877,New Caledonia
+2002,2.392,New Caledonia
+2003,2.726,New Caledonia
+2004,2.515,New Caledonia
+2005,2.81,New Caledonia
+2006,2.707,New Caledonia
+2007,2.927,New Caledonia
+2008,2.848,New Caledonia
+2009,3.036,New Caledonia
+2010,3.658,New Caledonia
+2011,3.694,New Caledonia
+2012,3.706,New Caledonia
+2013,3.97,New Caledonia
+2014,5.009,New Caledonia
+2015,4.877,New Caledonia
+2016,5.482,New Caledonia
+2017,5.584,New Caledonia
+2018,5.913,New Caledonia
+2019,5.673,New Caledonia
+2020,5.109,New Caledonia
+2021,4.537,New Caledonia
+2022,5.115,New Caledonia
+1990,25.497,New Zealand
+1991,26.176,New Zealand
+1992,28.162,New Zealand
+1993,27.755,New Zealand
+1994,27.895,New Zealand
+1995,28.001,New Zealand
+1996,29.301,New Zealand
+1997,31.274,New Zealand
+1998,29.853,New Zealand
+1999,31.461,New Zealand
+2000,32.241,New Zealand
+2001,34.379,New Zealand
+2002,34.542,New Zealand
+2003,36.243,New Zealand
+2004,35.837,New Zealand
+2005,37.425,New Zealand
+2006,37.33,New Zealand
+2007,36.409,New Zealand
+2008,37.506,New Zealand
+2009,34.617,New Zealand
+2010,34.808,New Zealand
+2011,34.262,New Zealand
+2012,35.941,New Zealand
+2013,35.238,New Zealand
+2014,35.435,New Zealand
+2015,35.802,New Zealand
+2016,34.146,New Zealand
+2017,35.685,New Zealand
+2018,35.703,New Zealand
+2019,36.732,New Zealand
+2020,34.023,New Zealand
+2021,34.323,New Zealand
+2022,31.61,New Zealand
+1990,2.044,Nicaragua
+1991,1.986,Nicaragua
+1992,2.373,Nicaragua
+1993,2.282,Nicaragua
+1994,2.518,Nicaragua
+1995,2.755,Nicaragua
+1996,2.847,Nicaragua
+1997,3.114,Nicaragua
+1998,3.393,Nicaragua
+1999,3.597,Nicaragua
+2000,3.721,Nicaragua
+2001,3.922,Nicaragua
+2002,3.99,Nicaragua
+2003,4.335,Nicaragua
+2004,4.378,Nicaragua
+2005,4.27,Nicaragua
+2006,4.418,Nicaragua
+2007,4.551,Nicaragua
+2008,4.365,Nicaragua
+2009,4.445,Nicaragua
+2010,4.468,Nicaragua
+2011,4.806,Nicaragua
+2012,4.55,Nicaragua
+2013,4.605,Nicaragua
+2014,4.745,Nicaragua
+2015,5.431,Nicaragua
+2016,5.406,Nicaragua
+2017,5.461,Nicaragua
+2018,5.199,Nicaragua
+2019,5.223,Nicaragua
+2020,4.66,Nicaragua
+2021,5.145,Nicaragua
+2022,5.296,Nicaragua
+1990,0.599,Niger
+1991,0.566,Niger
+1992,0.525,Niger
+1993,0.598,Niger
+1994,0.577,Niger
+1995,0.558,Niger
+1996,0.639,Niger
+1997,0.644,Niger
+1998,0.696,Niger
+1999,0.682,Niger
+2000,0.687,Niger
+2001,0.646,Niger
+2002,0.685,Niger
+2003,0.744,Niger
+2004,0.792,Niger
+2005,0.691,Niger
+2006,0.671,Niger
+2007,0.71,Niger
+2008,0.792,Niger
+2009,0.952,Niger
+2010,1.16,Niger
+2011,1.317,Niger
+2012,1.844,Niger
+2013,2.078,Niger
+2014,2.256,Niger
+2015,2.206,Niger
+2016,2.145,Niger
+2017,2.25,Niger
+2018,1.803,Niger
+2019,2.513,Niger
+2020,2.461,Niger
+2021,2.713,Niger
+2022,2.697,Niger
+1990,38.857,Nigeria
+1991,41.929,Nigeria
+1992,46.265,Nigeria
+1993,44.814,Nigeria
+1994,80.462,Nigeria
+1995,84.343,Nigeria
+1996,97.89,Nigeria
+1997,95.782,Nigeria
+1998,86.493,Nigeria
+1999,84.992,Nigeria
+2000,97.64,Nigeria
+2001,100.954,Nigeria
+2002,90.479,Nigeria
+2003,100.764,Nigeria
+2004,95.553,Nigeria
+2005,102.321,Nigeria
+2006,90.987,Nigeria
+2007,83.386,Nigeria
+2008,90.395,Nigeria
+2009,80.346,Nigeria
+2010,114.533,Nigeria
+2011,129.196,Nigeria
+2012,114.071,Nigeria
+2013,122.647,Nigeria
+2014,129.276,Nigeria
+2015,115.831,Nigeria
+2016,123.853,Nigeria
+2017,118.72,Nigeria
+2018,112.612,Nigeria
+2019,133.824,Nigeria
+2020,129.497,Nigeria
+2021,135.07,Nigeria
+2022,131.568,Nigeria
+1990,0.007,Niue
+1991,0.007,Niue
+1992,0.007,Niue
+1993,0.007,Niue
+1994,0.007,Niue
+1995,0.007,Niue
+1996,0.007,Niue
+1997,0.007,Niue
+1998,0.007,Niue
+1999,0.007,Niue
+2000,0.007,Niue
+2001,0.007,Niue
+2002,0.007,Niue
+2003,0.004,Niue
+2004,0.004,Niue
+2005,0.004,Niue
+2006,0.004,Niue
+2007,0.004,Niue
+2008,0.007,Niue
+2009,0.004,Niue
+2010,0.004,Niue
+2011,0.007,Niue
+2012,0.007,Niue
+2013,0.007,Niue
+2014,0.011,Niue
+2015,0.007,Niue
+2016,0.007,Niue
+2017,0.007,Niue
+2018,0.011,Niue
+2019,0.007,Niue
+2020,0.007,Niue
+2021,0.007,Niue
+2022,0.008,Niue
+1990,10135.065,Non-OECD (GCP)
+1991,10610.013,Non-OECD (GCP)
+1992,9865.958,Non-OECD (GCP)
+1993,10017.371,Non-OECD (GCP)
+1994,10035.237,Non-OECD (GCP)
+1995,10382.133,Non-OECD (GCP)
+1996,10653.596,Non-OECD (GCP)
+1997,10679.813,Non-OECD (GCP)
+1998,10546.38,Non-OECD (GCP)
+1999,10937.171,Non-OECD (GCP)
+2000,11250.033,Non-OECD (GCP)
+2001,11496.845,Non-OECD (GCP)
+2002,11958.792,Non-OECD (GCP)
+2003,13085.453,Non-OECD (GCP)
+2004,13836.635,Non-OECD (GCP)
+2005,14717.787,Non-OECD (GCP)
+2006,15730.36,Non-OECD (GCP)
+2007,16449.951,Non-OECD (GCP)
+2008,17347.49,Non-OECD (GCP)
+2009,17717.643,Non-OECD (GCP)
+2010,19034.871,Non-OECD (GCP)
+2011,20299.816,Non-OECD (GCP)
+2012,20959.424,Non-OECD (GCP)
+2013,21192.18,Non-OECD (GCP)
+2014,21534.436,Non-OECD (GCP)
+2015,21569.926,Non-OECD (GCP)
+2016,21705.105,Non-OECD (GCP)
+2017,22252.854,Non-OECD (GCP)
+2018,22884.207,Non-OECD (GCP)
+2019,23598.059,Non-OECD (GCP)
+2020,23102.908,Non-OECD (GCP)
+2021,24323.074,Non-OECD (GCP)
+2022,24582.254,Non-OECD (GCP)
+1990,5988.813,North America
+1991,5934.664,North America
+1992,6060.854,North America
+1993,6165.8,North America
+1994,6289.066,North America
+1995,6349.006,North America
+1996,6569.388,North America
+1997,6686.24,North America
+1998,6757.986,North America
+1999,6853.051,North America
+2000,7098.336,North America
+2001,7009.265,North America
+2002,7060.732,North America
+2003,7174.326,North America
+2004,7274.384,North America
+2005,7321.313,North America
+2006,7258.981,North America
+2007,7363.736,North America
+2008,7131.514,North America
+2009,6649.442,North America
+2010,6863.159,North America
+2011,6765.769,North America
+2012,6581.796,North America
+2013,6716.957,North America
+2014,6754.753,North America
+2015,6604.085,North America
+2016,6467.17,North America
+2017,6417.92,North America
+2018,6597.806,North America
+2019,6493.359,North America
+2020,5826.628,North America
+2021,6192.752,North America
+2022,6267.443,North America
+1990,5896.434,North America (GCP)
+1991,5843.253,North America (GCP)
+1992,5970.869,North America (GCP)
+1993,6075.352,North America (GCP)
+1994,6195.009,North America (GCP)
+1995,6248.183,North America (GCP)
+1996,6462.922,North America (GCP)
+1997,6573.292,North America (GCP)
+1998,6644.67,North America (GCP)
+1999,6734.473,North America (GCP)
+2000,6968.559,North America (GCP)
+2001,6874.258,North America (GCP)
+2002,6920.977,North America (GCP)
+2003,7027.618,North America (GCP)
+2004,7131.104,North America (GCP)
+2005,7169.176,North America (GCP)
+2006,7096.107,North America (GCP)
+2007,7196.326,North America (GCP)
+2008,6964.613,North America (GCP)
+2009,6484.488,North America (GCP)
+2010,6691.604,North America (GCP)
+2011,6593.53,North America (GCP)
+2012,6410.441,North America (GCP)
+2013,6545.054,North America (GCP)
+2014,6579.783,North America (GCP)
+2015,6422.143,North America (GCP)
+2016,6291.224,North America (GCP)
+2017,6246.781,North America (GCP)
+2018,6425.893,North America (GCP)
+2019,6313.027,North America (GCP)
+2020,5670.749,North America (GCP)
+2021,6019.98,North America (GCP)
+2022,6095.459,North America (GCP)
+1990,867.856,North America (excl. USA)
+1991,871.707,North America (excl. USA)
+1992,886.627,North America (excl. USA)
+1993,892.95,North America (excl. USA)
+1994,924.787,North America (excl. USA)
+1995,923.746,North America (excl. USA)
+1996,956.405,North America (excl. USA)
+1997,998.098,North America (excl. USA)
+1998,1024.706,North America (excl. USA)
+1999,1049.134,North America (excl. USA)
+2000,1088.201,North America (excl. USA)
+2001,1101.525,North America (excl. USA)
+2002,1114.424,North America (excl. USA)
+2003,1164.18,North America (excl. USA)
+2004,1161.729,North America (excl. USA)
+2005,1189.13,North America (excl. USA)
+2006,1206.296,North America (excl. USA)
+2007,1233.613,North America (excl. USA)
+2008,1216.395,North America (excl. USA)
+2009,1168.716,North America (excl. USA)
+2010,1183.444,North America (excl. USA)
+2011,1219.653,North America (excl. USA)
+2012,1237.71,North America (excl. USA)
+2013,1236.8,North America (excl. USA)
+2014,1226.072,North America (excl. USA)
+2015,1227.612,North America (excl. USA)
+2016,1214.238,North America (excl. USA)
+2017,1205.758,North America (excl. USA)
+2018,1220.009,North America (excl. USA)
+2019,1231.214,North America (excl. USA)
+2020,1112.0,North America (excl. USA)
+2021,1160.539,North America (excl. USA)
+2022,1188.572,North America (excl. USA)
+1990,118.379,North Korea
+1991,112.819,North Korea
+1992,97.982,North Korea
+1993,89.582,North Korea
+1994,81.58,North Korea
+1995,76.082,North Korea
+1996,66.292,North Korea
+1997,63.679,North Korea
+1998,58.749,North Korea
+1999,64.14,North Korea
+2000,69.165,North Korea
+2001,71.664,North Korea
+2002,68.642,North Korea
+2003,70.139,North Korea
+2004,71.722,North Korea
+2005,75.01,North Korea
+2006,76.17,North Korea
+2007,63.478,North Korea
+2008,70.329,North Korea
+2009,67.664,North Korea
+2010,65.359,North Korea
+2011,47.834,North Korea
+2012,46.722,North Korea
+2013,36.111,North Korea
+2014,39.788,North Korea
+2015,31.248,North Korea
+2016,34.2,North Korea
+2017,69.675,North Korea
+2018,62.59,North Korea
+2019,69.49,North Korea
+2020,65.548,North Korea
+2021,53.952,North Korea
+2022,56.192,North Korea
+1990,11.098,North Macedonia
+1991,7.788,North Macedonia
+1992,8.394,North Macedonia
+1993,7.599,North Macedonia
+1994,7.903,North Macedonia
+1995,7.925,North Macedonia
+1996,9.417,North Macedonia
+1997,8.446,North Macedonia
+1998,9.647,North Macedonia
+1999,8.783,North Macedonia
+2000,8.468,North Macedonia
+2001,8.288,North Macedonia
+2002,7.834,North Macedonia
+2003,8.53,North Macedonia
+2004,8.226,North Macedonia
+2005,8.596,North Macedonia
+2006,8.651,North Macedonia
+2007,9.013,North Macedonia
+2008,8.936,North Macedonia
+2009,8.237,North Macedonia
+2010,8.186,North Macedonia
+2011,8.838,North Macedonia
+2012,8.486,North Macedonia
+2013,7.489,North Macedonia
+2014,7.203,North Macedonia
+2015,6.757,North Macedonia
+2016,6.657,North Macedonia
+2017,7.152,North Macedonia
+2018,7.636,North Macedonia
+2019,7.647,North Macedonia
+2020,6.962,North Macedonia
+2021,6.489,North Macedonia
+2022,7.127,North Macedonia
+1990,35.003,Norway
+1991,33.458,Norway
+1992,34.394,Norway
+1993,35.938,Norway
+1994,37.853,Norway
+1995,38.458,Norway
+1996,41.524,Norway
+1997,41.625,Norway
+1998,41.818,Norway
+1999,42.591,Norway
+2000,42.11,Norway
+2001,43.498,Norway
+2002,42.553,Norway
+2003,43.9,Norway
+2004,44.236,Norway
+2005,43.263,Norway
+2006,43.842,Norway
+2007,45.588,Norway
+2008,44.675,Norway
+2009,43.081,Norway
+2010,45.621,Norway
+2011,44.747,Norway
+2012,44.228,Norway
+2013,44.516,Norway
+2014,44.958,Norway
+2015,45.494,Norway
+2016,44.678,Norway
+2017,44.165,Norway
+2018,44.405,Norway
+2019,42.793,Norway
+2020,41.231,Norway
+2021,41.028,Norway
+2022,40.808,Norway
+1990,12042.389,OECD (GCP)
+1991,12029.642,OECD (GCP)
+1992,12104.732,OECD (GCP)
+1993,12177.359,OECD (GCP)
+1994,12369.433,OECD (GCP)
+1995,12529.193,OECD (GCP)
+1996,12932.423,OECD (GCP)
+1997,13015.059,OECD (GCP)
+1998,13007.386,OECD (GCP)
+1999,13139.32,OECD (GCP)
+2000,13472.809,OECD (GCP)
+2001,13427.914,OECD (GCP)
+2002,13517.191,OECD (GCP)
+2003,13750.774,OECD (GCP)
+2004,13888.731,OECD (GCP)
+2005,13953.751,OECD (GCP)
+2006,13903.977,OECD (GCP)
+2007,14033.289,OECD (GCP)
+2008,13665.111,OECD (GCP)
+2009,12801.312,OECD (GCP)
+2010,13239.72,OECD (GCP)
+2011,13095.325,OECD (GCP)
+2012,12942.731,OECD (GCP)
+2013,12995.378,OECD (GCP)
+2014,12795.846,OECD (GCP)
+2015,12678.008,OECD (GCP)
+2016,12538.746,OECD (GCP)
+2017,12527.139,OECD (GCP)
+2018,12599.128,OECD (GCP)
+2019,12255.44,OECD (GCP)
+2020,11169.778,OECD (GCP)
+2021,11775.04,OECD (GCP)
+2022,11691.496,OECD (GCP)
+1990,309.498,Oceania
+1991,311.623,Oceania
+1992,318.661,Oceania
+1993,322.915,Oceania
+1994,328.045,Oceania
+1995,339.531,Oceania
+1996,348.035,Oceania
+1997,358.497,Oceania
+1998,371.793,Oceania
+1999,382.561,Oceania
+2000,390.08,Oceania
+2001,400.358,Oceania
+2002,405.958,Oceania
+2003,415.715,Oceania
+2004,429.569,Oceania
+2005,434.553,Oceania
+2006,440.741,Oceania
+2007,448.667,Oceania
+2008,453.682,Oceania
+2009,452.965,Oceania
+2010,451.682,Oceania
+2011,450.4,Oceania
+2012,453.473,Oceania
+2013,446.241,Oceania
+2014,442.859,Oceania
+2015,452.079,Oceania
+2016,460.608,Oceania
+2017,465.37,Oceania
+2018,468.624,Oceania
+2019,470.051,Oceania
+2020,449.667,Oceania
+2021,439.662,Oceania
+2022,433.029,Oceania
+1990,307.343,Oceania (GCP)
+1991,309.454,Oceania (GCP)
+1992,316.47,Oceania (GCP)
+1993,320.724,Oceania (GCP)
+1994,325.859,Oceania (GCP)
+1995,337.472,Oceania (GCP)
+1996,345.845,Oceania (GCP)
+1997,355.882,Oceania (GCP)
+1998,368.261,Oceania (GCP)
+1999,380.009,Oceania (GCP)
+2000,387.142,Oceania (GCP)
+2001,397.022,Oceania (GCP)
+2002,402.296,Oceania (GCP)
+2003,411.658,Oceania (GCP)
+2004,424.874,Oceania (GCP)
+2005,429.573,Oceania (GCP)
+2006,435.69,Oceania (GCP)
+2007,442.086,Oceania (GCP)
+2008,448.137,Oceania (GCP)
+2009,447.7,Oceania (GCP)
+2010,446.967,Oceania (GCP)
+2011,445.101,Oceania (GCP)
+2012,449.097,Oceania (GCP)
+2013,441.709,Oceania (GCP)
+2014,436.738,Oceania (GCP)
+2015,445.755,Oceania (GCP)
+2016,453.58,Oceania (GCP)
+2017,458.823,Oceania (GCP)
+2018,461.032,Oceania (GCP)
+2019,462.066,Oceania (GCP)
+2020,441.8,Oceania (GCP)
+2021,431.532,Oceania (GCP)
+2022,424.828,Oceania (GCP)
+1990,11.222,Oman
+1991,11.595,Oman
+1992,11.893,Oman
+1993,13.225,Oman
+1994,17.384,Oman
+1995,18.735,Oman
+1996,18.108,Oman
+1997,18.054,Oman
+1998,18.445,Oman
+1999,21.985,Oman
+2000,23.89,Oman
+2001,22.404,Oman
+2002,26.842,Oman
+2003,34.356,Oman
+2004,29.024,Oman
+2005,31.601,Oman
+2006,40.167,Oman
+2007,45.071,Oman
+2008,47.19,Oman
+2009,44.278,Oman
+2010,51.178,Oman
+2011,57.011,Oman
+2012,62.728,Oman
+2013,65.272,Oman
+2014,65.911,Oman
+2015,67.59,Oman
+2016,65.925,Oman
+2017,66.242,Oman
+2018,70.376,Oman
+2019,71.725,Oman
+2020,68.625,Oman
+2021,75.116,Oman
+2022,76.606,Oman
+1990,67.827,Pakistan
+1991,67.477,Pakistan
+1992,72.015,Pakistan
+1993,77.176,Pakistan
+1994,84.018,Pakistan
+1995,83.614,Pakistan
+1996,93.539,Pakistan
+1997,93.788,Pakistan
+1998,96.741,Pakistan
+1999,99.389,Pakistan
+2000,103.94,Pakistan
+2001,105.401,Pakistan
+2002,112.9,Pakistan
+2003,117.462,Pakistan
+2004,129.796,Pakistan
+2005,133.645,Pakistan
+2006,144.053,Pakistan
+2007,157.678,Pakistan
+2008,155.149,Pakistan
+2009,155.521,Pakistan
+2010,154.202,Pakistan
+2011,154.801,Pakistan
+2012,154.768,Pakistan
+2013,151.847,Pakistan
+2014,156.705,Pakistan
+2015,150.59,Pakistan
+2016,178.032,Pakistan
+2017,218.361,Pakistan
+2018,210.348,Pakistan
+2019,207.622,Pakistan
+2020,230.754,Pakistan
+2021,247.901,Pakistan
+2022,223.834,Pakistan
+1990,0.234,Palau
+1991,0.234,Palau
+1992,0.198,Palau
+1993,0.198,Palau
+1994,0.198,Palau
+1995,0.198,Palau
+1996,0.198,Palau
+1997,0.198,Palau
+1998,0.198,Palau
+1999,0.198,Palau
+2000,0.209,Palau
+2001,0.216,Palau
+2002,0.213,Palau
+2003,0.213,Palau
+2004,0.216,Palau
+2005,0.22,Palau
+2006,0.227,Palau
+2007,0.253,Palau
+2008,0.205,Palau
+2009,0.198,Palau
+2010,0.209,Palau
+2011,0.216,Palau
+2012,0.224,Palau
+2013,0.227,Palau
+2014,0.22,Palau
+2015,0.205,Palau
+2016,0.213,Palau
+2017,0.216,Palau
+2018,0.213,Palau
+2019,0.22,Palau
+2020,0.213,Palau
+2021,0.213,Palau
+2022,0.218,Palau
+1990,0.861,Palestine
+1991,0.883,Palestine
+1992,0.916,Palestine
+1993,0.934,Palestine
+1994,0.967,Palestine
+1995,0.945,Palestine
+1996,1.037,Palestine
+1997,0.865,Palestine
+1998,1.462,Palestine
+1999,1.367,Palestine
+2000,1.66,Palestine
+2001,1.348,Palestine
+2002,1.154,Palestine
+2003,1.279,Palestine
+2004,2.195,Palestine
+2005,2.741,Palestine
+2006,2.264,Palestine
+2007,2.323,Palestine
+2008,2.052,Palestine
+2009,2.088,Palestine
+2010,2.034,Palestine
+2011,2.246,Palestine
+2012,2.198,Palestine
+2013,2.437,Palestine
+2014,2.836,Palestine
+2015,3.004,Palestine
+2016,3.232,Palestine
+2017,3.268,Palestine
+2018,2.957,Palestine
+2019,3.265,Palestine
+2020,3.327,Palestine
+2021,3.635,Palestine
+2022,3.516,Palestine
+1990,2.632,Panama
+1991,3.104,Panama
+1992,4.112,Panama
+1993,3.785,Panama
+1994,4.177,Panama
+1995,3.653,Panama
+1996,4.447,Panama
+1997,4.63,Panama
+1998,5.901,Panama
+1999,5.622,Panama
+2000,5.728,Panama
+2001,6.953,Panama
+2002,5.821,Panama
+2003,6.09,Panama
+2004,5.711,Panama
+2005,6.971,Panama
+2006,7.524,Panama
+2007,7.35,Panama
+2008,7.335,Panama
+2009,8.461,Panama
+2010,9.072,Panama
+2011,9.953,Panama
+2012,9.768,Panama
+2013,10.513,Panama
+2014,10.855,Panama
+2015,10.788,Panama
+2016,10.439,Panama
+2017,9.816,Panama
+2018,9.503,Panama
+2019,13.128,Panama
+2020,7.25,Panama
+2021,10.541,Panama
+2022,11.356,Panama
+1990,2.154,Papua New Guinea
+1991,2.169,Papua New Guinea
+1992,2.191,Papua New Guinea
+1993,2.191,Papua New Guinea
+1994,2.186,Papua New Guinea
+1995,2.059,Papua New Guinea
+1996,2.19,Papua New Guinea
+1997,2.615,Papua New Guinea
+1998,3.533,Papua New Guinea
+1999,2.552,Papua New Guinea
+2000,2.938,Papua New Guinea
+2001,3.336,Papua New Guinea
+2002,3.662,Papua New Guinea
+2003,4.057,Papua New Guinea
+2004,4.694,Papua New Guinea
+2005,4.98,Papua New Guinea
+2006,5.051,Papua New Guinea
+2007,6.581,Papua New Guinea
+2008,5.545,Papua New Guinea
+2009,5.265,Papua New Guinea
+2010,4.715,Papua New Guinea
+2011,5.298,Papua New Guinea
+2012,4.376,Papua New Guinea
+2013,4.532,Papua New Guinea
+2014,6.121,Papua New Guinea
+2015,6.323,Papua New Guinea
+2016,7.028,Papua New Guinea
+2017,6.546,Papua New Guinea
+2018,7.592,Papua New Guinea
+2019,7.986,Papua New Guinea
+2020,7.867,Papua New Guinea
+2021,8.13,Papua New Guinea
+2022,8.201,Papua New Guinea
+1990,2.136,Paraguay
+1991,2.103,Paraguay
+1992,2.58,Paraguay
+1993,2.914,Paraguay
+1994,3.404,Paraguay
+1995,3.937,Paraguay
+1996,3.719,Paraguay
+1997,4.128,Paraguay
+1998,4.384,Paraguay
+1999,4.376,Paraguay
+2000,3.606,Paraguay
+2001,3.696,Paraguay
+2002,3.857,Paraguay
+2003,4.031,Paraguay
+2004,4.061,Paraguay
+2005,3.78,Paraguay
+2006,3.909,Paraguay
+2007,4.042,Paraguay
+2008,4.278,Paraguay
+2009,4.531,Paraguay
+2010,5.022,Paraguay
+2011,5.199,Paraguay
+2012,5.173,Paraguay
+2013,5.172,Paraguay
+2014,5.458,Paraguay
+2015,6.051,Paraguay
+2016,7.193,Paraguay
+2017,7.932,Paraguay
+2018,8.401,Paraguay
+2019,8.133,Paraguay
+2020,7.377,Paraguay
+2021,8.133,Paraguay
+2022,8.107,Paraguay
+1990,21.401,Peru
+1991,20.758,Peru
+1992,20.986,Peru
+1993,23.885,Peru
+1994,24.177,Peru
+1995,25.143,Peru
+1996,24.717,Peru
+1997,27.747,Peru
+1998,28.062,Peru
+1999,29.562,Peru
+2000,28.678,Peru
+2001,25.416,Peru
+2002,25.439,Peru
+2003,24.676,Peru
+2004,28.334,Peru
+2005,30.321,Peru
+2006,28.197,Peru
+2007,34.306,Peru
+2008,35.299,Peru
+2009,39.511,Peru
+2010,42.505,Peru
+2011,42.173,Peru
+2012,45.509,Peru
+2013,43.024,Peru
+2014,49.388,Peru
+2015,49.228,Peru
+2016,52.733,Peru
+2017,54.859,Peru
+2018,55.848,Peru
+2019,58.365,Peru
+2020,46.925,Peru
+2021,52.017,Peru
+2022,54.793,Peru
+1990,40.91,Philippines
+1991,43.032,Philippines
+1992,47.934,Philippines
+1993,48.548,Philippines
+1994,53.741,Philippines
+1995,59.525,Philippines
+1996,60.814,Philippines
+1997,69.615,Philippines
+1998,67.809,Philippines
+1999,67.734,Philippines
+2000,71.902,Philippines
+2001,70.143,Philippines
+2002,70.069,Philippines
+2003,70.107,Philippines
+2004,72.663,Philippines
+2005,73.16,Philippines
+2006,66.279,Philippines
+2007,70.444,Philippines
+2008,76.979,Philippines
+2009,75.91,Philippines
+2010,82.598,Philippines
+2011,83.41,Philippines
+2012,88.119,Philippines
+2013,95.519,Philippines
+2014,100.784,Philippines
+2015,111.852,Philippines
+2016,120.987,Philippines
+2017,134.447,Philippines
+2018,140.785,Philippines
+2019,143.526,Philippines
+2020,132.232,Philippines
+2021,141.174,Philippines
+2022,144.898,Philippines
+1990,376.641,Poland
+1991,373.623,Poland
+1992,364.511,Poland
+1993,365.175,Poland
+1994,360.218,Poland
+1995,362.615,Poland
+1996,377.285,Poland
+1997,367.236,Poland
+1998,339.076,Poland
+1999,329.266,Poland
+2000,317.452,Poland
+2001,313.501,Poland
+2002,306.123,Poland
+2003,318.951,Poland
+2004,323.796,Poland
+2005,322.768,Poland
+2006,336.577,Poland
+2007,335.924,Poland
+2008,329.566,Poland
+2009,316.043,Poland
+2010,334.222,Poland
+2011,333.601,Poland
+2012,325.956,Poland
+2013,321.927,Poland
+2014,309.596,Poland
+2015,312.756,Poland
+2016,323.555,Poland
+2017,336.767,Poland
+2018,336.069,Poland
+2019,317.725,Poland
+2020,302.433,Poland
+2021,330.979,Poland
+2022,315.042,Poland
+1990,45.311,Portugal
+1991,47.131,Portugal
+1992,50.957,Portugal
+1993,49.469,Portugal
+1994,50.243,Portugal
+1995,54.503,Portugal
+1996,51.799,Portugal
+1997,54.669,Portugal
+1998,59.211,Portugal
+1999,66.878,Portugal
+2000,65.657,Portugal
+2001,65.187,Portugal
+2002,69.582,Portugal
+2003,64.482,Portugal
+2004,67.302,Portugal
+2005,69.64,Portugal
+2006,64.856,Portugal
+2007,62.38,Portugal
+2008,60.009,Portugal
+2009,57.147,Portugal
+2010,52.89,Portugal
+2011,51.784,Portugal
+2012,49.932,Portugal
+2013,48.146,Portugal
+2014,47.942,Portugal
+2015,52.233,Portugal
+2016,50.311,Portugal
+2017,55.165,Portugal
+2018,51.34,Portugal
+2019,47.583,Portugal
+2020,41.738,Portugal
+2021,40.284,Portugal
+2022,40.687,Portugal
+1990,11.411,Qatar
+1991,17.38,Qatar
+1992,26.78,Qatar
+1993,30.684,Qatar
+1994,32.343,Qatar
+1995,33.137,Qatar
+1996,34.424,Qatar
+1997,42.182,Qatar
+1998,36.888,Qatar
+1999,36.248,Qatar
+2000,40.314,Qatar
+2001,45.817,Qatar
+2002,45.067,Qatar
+2003,46.515,Qatar
+2004,47.32,Qatar
+2005,47.551,Qatar
+2006,59.63,Qatar
+2007,59.383,Qatar
+2008,61.637,Qatar
+2009,65.074,Qatar
+2010,73.422,Qatar
+2011,81.493,Qatar
+2012,93.321,Qatar
+2013,82.808,Qatar
+2014,91.178,Qatar
+2015,91.194,Qatar
+2016,87.385,Qatar
+2017,100.111,Qatar
+2018,95.467,Qatar
+2019,101.019,Qatar
+2020,102.501,Qatar
+2021,104.244,Qatar
+2022,106.152,Qatar
+1990,176.545,Romania
+1991,142.266,Romania
+1992,132.07,Romania
+1993,122.759,Romania
+1994,120.962,Romania
+1995,125.766,Romania
+1996,129.189,Romania
+1997,118.174,Romania
+1998,104.875,Romania
+1999,89.034,Romania
+2000,93.343,Romania
+2001,98.991,Romania
+2002,99.299,Romania
+2003,103.836,Romania
+2004,103.311,Romania
+2005,101.364,Romania
+2006,104.322,Romania
+2007,108.392,Romania
+2008,106.927,Romania
+2009,87.726,Romania
+2010,84.288,Romania
+2011,92.241,Romania
+2012,89.642,Romania
+2013,78.598,Romania
+2014,79.093,Romania
+2015,77.808,Romania
+2016,76.312,Romania
+2017,79.158,Romania
+2018,79.639,Romania
+2019,76.457,Romania
+2020,73.71,Romania
+2021,77.27,Romania
+2022,72.993,Romania
+1990,2536.248,Russia
+1991,2406.756,Russia
+1992,1966.505,Russia
+1993,1866.729,Russia
+1994,1647.665,Russia
+1995,1619.727,Russia
+1996,1586.822,Russia
+1997,1482.245,Russia
+1998,1465.253,Russia
+1999,1494.179,Russia
+2000,1479.142,Russia
+2001,1515.647,Russia
+2002,1506.788,Russia
+2003,1537.018,Russia
+2004,1543.957,Russia
+2005,1562.577,Russia
+2006,1623.002,Russia
+2007,1623.781,Russia
+2008,1652.064,Russia
+2009,1545.034,Russia
+2010,1632.783,Russia
+2011,1685.91,Russia
+2012,1701.268,Russia
+2013,1640.437,Russia
+2014,1639.959,Russia
+2015,1638.675,Russia
+2016,1634.885,Russia
+2017,1666.121,Russia
+2018,1712.494,Russia
+2019,1705.031,Russia
+2020,1632.929,Russia
+2021,1711.993,Russia
+2022,1802.19,Russia
+1990,0.524,Rwanda
+1991,0.472,Rwanda
+1992,0.479,Rwanda
+1993,0.483,Rwanda
+1994,0.462,Rwanda
+1995,0.455,Rwanda
+1996,0.464,Rwanda
+1997,0.483,Rwanda
+1998,0.482,Rwanda
+1999,0.503,Rwanda
+2000,0.515,Rwanda
+2001,0.522,Rwanda
+2002,0.519,Rwanda
+2003,0.509,Rwanda
+2004,0.516,Rwanda
+2005,0.514,Rwanda
+2006,0.514,Rwanda
+2007,0.542,Rwanda
+2008,0.528,Rwanda
+2009,0.558,Rwanda
+2010,0.581,Rwanda
+2011,0.644,Rwanda
+2012,0.718,Rwanda
+2013,0.782,Rwanda
+2014,0.83,Rwanda
+2015,0.97,Rwanda
+2016,1.048,Rwanda
+2017,1.155,Rwanda
+2018,1.287,Rwanda
+2019,1.373,Rwanda
+2020,1.372,Rwanda
+2021,1.659,Rwanda
+2022,1.541,Rwanda
+1994,0.0,Ryukyu Islands (GCP)
+1995,0.0,Ryukyu Islands (GCP)
+1996,0.0,Ryukyu Islands (GCP)
+1997,0.0,Ryukyu Islands (GCP)
+1998,0.0,Ryukyu Islands (GCP)
+1999,0.0,Ryukyu Islands (GCP)
+2000,0.0,Ryukyu Islands (GCP)
+2001,0.0,Ryukyu Islands (GCP)
+2002,0.0,Ryukyu Islands (GCP)
+2003,0.0,Ryukyu Islands (GCP)
+2004,0.0,Ryukyu Islands (GCP)
+2005,0.0,Ryukyu Islands (GCP)
+2006,0.0,Ryukyu Islands (GCP)
+2007,0.0,Ryukyu Islands (GCP)
+2008,0.0,Ryukyu Islands (GCP)
+2009,0.0,Ryukyu Islands (GCP)
+2010,0.0,Ryukyu Islands (GCP)
+2011,0.0,Ryukyu Islands (GCP)
+2012,0.0,Ryukyu Islands (GCP)
+2013,0.0,Ryukyu Islands (GCP)
+2014,0.0,Ryukyu Islands (GCP)
+2015,0.0,Ryukyu Islands (GCP)
+2016,0.0,Ryukyu Islands (GCP)
+2017,0.0,Ryukyu Islands (GCP)
+2018,0.0,Ryukyu Islands (GCP)
+2019,0.0,Ryukyu Islands (GCP)
+2020,0.0,Ryukyu Islands (GCP)
+2021,0.0,Ryukyu Islands (GCP)
+2022,0.0,Ryukyu Islands (GCP)
+1990,0.007,Saint Helena
+1991,0.007,Saint Helena
+1992,0.007,Saint Helena
+1993,0.011,Saint Helena
+1994,0.011,Saint Helena
+1995,0.011,Saint Helena
+1996,0.011,Saint Helena
+1997,0.011,Saint Helena
+1998,0.011,Saint Helena
+1999,0.011,Saint Helena
+2000,0.011,Saint Helena
+2001,0.011,Saint Helena
+2002,0.011,Saint Helena
+2003,0.011,Saint Helena
+2004,0.011,Saint Helena
+2005,0.011,Saint Helena
+2006,0.011,Saint Helena
+2007,0.011,Saint Helena
+2008,0.011,Saint Helena
+2009,0.011,Saint Helena
+2010,0.011,Saint Helena
+2011,0.011,Saint Helena
+2012,0.011,Saint Helena
+2013,0.011,Saint Helena
+2014,0.011,Saint Helena
+2015,0.011,Saint Helena
+2016,0.015,Saint Helena
+2017,0.011,Saint Helena
+2018,0.011,Saint Helena
+2019,0.015,Saint Helena
+2020,0.011,Saint Helena
+2021,0.011,Saint Helena
+2022,0.011,Saint Helena
+1990,0.106,Saint Kitts and Nevis
+1991,0.106,Saint Kitts and Nevis
+1992,0.11,Saint Kitts and Nevis
+1993,0.114,Saint Kitts and Nevis
+1994,0.121,Saint Kitts and Nevis
+1995,0.128,Saint Kitts and Nevis
+1996,0.132,Saint Kitts and Nevis
+1997,0.143,Saint Kitts and Nevis
+1998,0.15,Saint Kitts and Nevis
+1999,0.161,Saint Kitts and Nevis
+2000,0.172,Saint Kitts and Nevis
+2001,0.176,Saint Kitts and Nevis
+2002,0.198,Saint Kitts and Nevis
+2003,0.198,Saint Kitts and Nevis
+2004,0.213,Saint Kitts and Nevis
+2005,0.198,Saint Kitts and Nevis
+2006,0.202,Saint Kitts and Nevis
+2007,0.216,Saint Kitts and Nevis
+2008,0.216,Saint Kitts and Nevis
+2009,0.224,Saint Kitts and Nevis
+2010,0.22,Saint Kitts and Nevis
+2011,0.231,Saint Kitts and Nevis
+2012,0.22,Saint Kitts and Nevis
+2013,0.224,Saint Kitts and Nevis
+2014,0.231,Saint Kitts and Nevis
+2015,0.234,Saint Kitts and Nevis
+2016,0.238,Saint Kitts and Nevis
+2017,0.242,Saint Kitts and Nevis
+2018,0.245,Saint Kitts and Nevis
+2019,0.253,Saint Kitts and Nevis
+2020,0.231,Saint Kitts and Nevis
+2021,0.231,Saint Kitts and Nevis
+2022,0.224,Saint Kitts and Nevis
+1990,0.18,Saint Lucia
+1991,0.191,Saint Lucia
+1992,0.213,Saint Lucia
+1993,0.234,Saint Lucia
+1994,0.26,Saint Lucia
+1995,0.275,Saint Lucia
+1996,0.293,Saint Lucia
+1997,0.297,Saint Lucia
+1998,0.326,Saint Lucia
+1999,0.337,Saint Lucia
+2000,0.348,Saint Lucia
+2001,0.359,Saint Lucia
+2002,0.359,Saint Lucia
+2003,0.377,Saint Lucia
+2004,0.403,Saint Lucia
+2005,0.388,Saint Lucia
+2006,0.41,Saint Lucia
+2007,0.425,Saint Lucia
+2008,0.425,Saint Lucia
+2009,0.425,Saint Lucia
+2010,0.487,Saint Lucia
+2011,0.487,Saint Lucia
+2012,0.491,Saint Lucia
+2013,0.487,Saint Lucia
+2014,0.484,Saint Lucia
+2015,0.48,Saint Lucia
+2016,0.476,Saint Lucia
+2017,0.491,Saint Lucia
+2018,0.509,Saint Lucia
+2019,0.502,Saint Lucia
+2020,0.484,Saint Lucia
+2021,0.506,Saint Lucia
+2022,0.49,Saint Lucia
+1990,0.092,Saint Pierre and Miquelon
+1991,0.103,Saint Pierre and Miquelon
+1992,0.095,Saint Pierre and Miquelon
+1993,0.073,Saint Pierre and Miquelon
+1994,0.07,Saint Pierre and Miquelon
+1995,0.07,Saint Pierre and Miquelon
+1996,0.07,Saint Pierre and Miquelon
+1997,0.048,Saint Pierre and Miquelon
+1998,0.055,Saint Pierre and Miquelon
+1999,0.055,Saint Pierre and Miquelon
+2000,0.055,Saint Pierre and Miquelon
+2001,0.055,Saint Pierre and Miquelon
+2002,0.059,Saint Pierre and Miquelon
+2003,0.062,Saint Pierre and Miquelon
+2004,0.059,Saint Pierre and Miquelon
+2005,0.062,Saint Pierre and Miquelon
+2006,0.066,Saint Pierre and Miquelon
+2007,0.066,Saint Pierre and Miquelon
+2008,0.066,Saint Pierre and Miquelon
+2009,0.066,Saint Pierre and Miquelon
+2010,0.066,Saint Pierre and Miquelon
+2011,0.066,Saint Pierre and Miquelon
+2012,0.066,Saint Pierre and Miquelon
+2013,0.066,Saint Pierre and Miquelon
+2014,0.066,Saint Pierre and Miquelon
+2015,0.066,Saint Pierre and Miquelon
+2016,0.066,Saint Pierre and Miquelon
+2017,0.066,Saint Pierre and Miquelon
+2018,0.059,Saint Pierre and Miquelon
+2019,0.066,Saint Pierre and Miquelon
+2020,0.062,Saint Pierre and Miquelon
+2021,0.055,Saint Pierre and Miquelon
+2022,0.053,Saint Pierre and Miquelon
+1990,0.081,Saint Vincent and the Grenadines
+1991,0.084,Saint Vincent and the Grenadines
+1992,0.084,Saint Vincent and the Grenadines
+1993,0.103,Saint Vincent and the Grenadines
+1994,0.121,Saint Vincent and the Grenadines
+1995,0.128,Saint Vincent and the Grenadines
+1996,0.132,Saint Vincent and the Grenadines
+1997,0.132,Saint Vincent and the Grenadines
+1998,0.161,Saint Vincent and the Grenadines
+1999,0.165,Saint Vincent and the Grenadines
+2000,0.147,Saint Vincent and the Grenadines
+2001,0.18,Saint Vincent and the Grenadines
+2002,0.187,Saint Vincent and the Grenadines
+2003,0.198,Saint Vincent and the Grenadines
+2004,0.22,Saint Vincent and the Grenadines
+2005,0.22,Saint Vincent and the Grenadines
+2006,0.216,Saint Vincent and the Grenadines
+2007,0.234,Saint Vincent and the Grenadines
+2008,0.22,Saint Vincent and the Grenadines
+2009,0.278,Saint Vincent and the Grenadines
+2010,0.22,Saint Vincent and the Grenadines
+2011,0.216,Saint Vincent and the Grenadines
+2012,0.231,Saint Vincent and the Grenadines
+2013,0.22,Saint Vincent and the Grenadines
+2014,0.253,Saint Vincent and the Grenadines
+2015,0.234,Saint Vincent and the Grenadines
+2016,0.242,Saint Vincent and the Grenadines
+2017,0.216,Saint Vincent and the Grenadines
+2018,0.242,Saint Vincent and the Grenadines
+2019,0.224,Saint Vincent and the Grenadines
+2020,0.238,Saint Vincent and the Grenadines
+2021,0.234,Saint Vincent and the Grenadines
+2022,0.227,Saint Vincent and the Grenadines
+1990,0.088,Samoa
+1991,0.095,Samoa
+1992,0.099,Samoa
+1993,0.103,Samoa
+1994,0.095,Samoa
+1995,0.114,Samoa
+1996,0.125,Samoa
+1997,0.125,Samoa
+1998,0.143,Samoa
+1999,0.136,Samoa
+2000,0.143,Samoa
+2001,0.154,Samoa
+2002,0.161,Samoa
+2003,0.158,Samoa
+2004,0.165,Samoa
+2005,0.169,Samoa
+2006,0.172,Samoa
+2007,0.18,Samoa
+2008,0.161,Samoa
+2009,0.169,Samoa
+2010,0.183,Samoa
+2011,0.191,Samoa
+2012,0.187,Samoa
+2013,0.194,Samoa
+2014,0.202,Samoa
+2015,0.227,Samoa
+2016,0.238,Samoa
+2017,0.245,Samoa
+2018,0.238,Samoa
+2019,0.271,Samoa
+2020,0.242,Samoa
+2021,0.245,Samoa
+2022,0.251,Samoa
+1990,0.048,Sao Tome and Principe
+1991,0.048,Sao Tome and Principe
+1992,0.048,Sao Tome and Principe
+1993,0.048,Sao Tome and Principe
+1994,0.048,Sao Tome and Principe
+1995,0.048,Sao Tome and Principe
+1996,0.048,Sao Tome and Principe
+1997,0.048,Sao Tome and Principe
+1998,0.048,Sao Tome and Principe
+1999,0.048,Sao Tome and Principe
+2000,0.048,Sao Tome and Principe
+2001,0.051,Sao Tome and Principe
+2002,0.059,Sao Tome and Principe
+2003,0.066,Sao Tome and Principe
+2004,0.073,Sao Tome and Principe
+2005,0.077,Sao Tome and Principe
+2006,0.084,Sao Tome and Principe
+2007,0.084,Sao Tome and Principe
+2008,0.084,Sao Tome and Principe
+2009,0.092,Sao Tome and Principe
+2010,0.103,Sao Tome and Principe
+2011,0.099,Sao Tome and Principe
+2012,0.11,Sao Tome and Principe
+2013,0.11,Sao Tome and Principe
+2014,0.128,Sao Tome and Principe
+2015,0.136,Sao Tome and Principe
+2016,0.15,Sao Tome and Principe
+2017,0.139,Sao Tome and Principe
+2018,0.139,Sao Tome and Principe
+2019,0.143,Sao Tome and Principe
+2020,0.139,Sao Tome and Principe
+2021,0.143,Sao Tome and Principe
+2022,0.16,Sao Tome and Principe
+1990,182.025,Saudi Arabia
+1991,244.587,Saudi Arabia
+1992,276.086,Saudi Arabia
+1993,297.833,Saudi Arabia
+1994,291.289,Saudi Arabia
+1995,274.692,Saudi Arabia
+1996,269.594,Saudi Arabia
+1997,227.241,Saudi Arabia
+1998,219.013,Saudi Arabia
+1999,237.822,Saudi Arabia
+2000,309.76,Saudi Arabia
+2001,324.516,Saudi Arabia
+2002,347.097,Saudi Arabia
+2003,351.405,Saudi Arabia
+2004,407.882,Saudi Arabia
+2005,412.411,Saudi Arabia
+2006,445.168,Saudi Arabia
+2007,423.532,Saudi Arabia
+2008,469.713,Saudi Arabia
+2009,504.28,Saudi Arabia
+2010,555.962,Saudi Arabia
+2011,540.579,Saudi Arabia
+2012,606.102,Saudi Arabia
+2013,583.611,Saudi Arabia
+2014,585.568,Saudi Arabia
+2015,624.999,Saudi Arabia
+2016,641.662,Saudi Arabia
+2017,613.685,Saudi Arabia
+2018,637.487,Saudi Arabia
+2019,657.588,Saudi Arabia
+2020,616.086,Saudi Arabia
+2021,695.842,Saudi Arabia
+2022,723.331,Saudi Arabia
+1990,3.139,Senegal
+1991,3.379,Senegal
+1992,3.423,Senegal
+1993,3.539,Senegal
+1994,3.837,Senegal
+1995,3.43,Senegal
+1996,3.664,Senegal
+1997,3.182,Senegal
+1998,3.334,Senegal
+1999,3.604,Senegal
+2000,3.902,Senegal
+2001,4.258,Senegal
+2002,4.437,Senegal
+2003,4.928,Senegal
+2004,5.238,Senegal
+2005,5.539,Senegal
+2006,4.422,Senegal
+2007,4.863,Senegal
+2008,4.74,Senegal
+2009,5.258,Senegal
+2010,6.862,Senegal
+2011,7.819,Senegal
+2012,7.362,Senegal
+2013,7.853,Senegal
+2014,8.724,Senegal
+2015,9.845,Senegal
+2016,10.016,Senegal
+2017,10.76,Senegal
+2018,11.33,Senegal
+2019,12.713,Senegal
+2020,10.821,Senegal
+2021,12.309,Senegal
+2022,12.275,Senegal
+1990,57.784,Serbia
+1991,40.928,Serbia
+1992,43.684,Serbia
+1993,38.096,Serbia
+1994,37.04,Serbia
+1995,39.141,Serbia
+1996,45.825,Serbia
+1997,49.265,Serbia
+1998,51.882,Serbia
+1999,35.791,Serbia
+2000,44.95,Serbia
+2001,49.308,Serbia
+2002,52.23,Serbia
+2003,55.824,Serbia
+2004,60.167,Serbia
+2005,51.634,Serbia
+2006,60.838,Serbia
+2007,59.554,Serbia
+2008,51.778,Serbia
+2009,45.895,Serbia
+2010,45.696,Serbia
+2011,48.957,Serbia
+2012,43.744,Serbia
+2013,44.569,Serbia
+2014,37.208,Serbia
+2015,43.777,Serbia
+2016,45.043,Serbia
+2017,45.53,Serbia
+2018,44.32,Serbia
+2019,44.278,Serbia
+2020,45.17,Serbia
+2021,43.684,Serbia
+2022,43.517,Serbia
+1990,0.15,Seychelles
+1991,0.172,Seychelles
+1992,0.172,Seychelles
+1993,0.183,Seychelles
+1994,0.202,Seychelles
+1995,0.198,Seychelles
+1996,0.234,Seychelles
+1997,0.275,Seychelles
+1998,0.289,Seychelles
+1999,0.304,Seychelles
+2000,0.315,Seychelles
+2001,0.344,Seychelles
+2002,0.348,Seychelles
+2003,0.341,Seychelles
+2004,0.37,Seychelles
+2005,0.381,Seychelles
+2006,0.385,Seychelles
+2007,0.403,Seychelles
+2008,0.414,Seychelles
+2009,0.44,Seychelles
+2010,0.443,Seychelles
+2011,0.407,Seychelles
+2012,0.425,Seychelles
+2013,0.414,Seychelles
+2014,0.458,Seychelles
+2015,0.498,Seychelles
+2016,0.553,Seychelles
+2017,0.575,Seychelles
+2018,0.601,Seychelles
+2019,0.594,Seychelles
+2020,0.597,Seychelles
+2021,0.612,Seychelles
+2022,0.554,Seychelles
+1990,0.498,Sierra Leone
+1991,0.557,Sierra Leone
+1992,0.282,Sierra Leone
+1993,0.264,Sierra Leone
+1994,0.275,Sierra Leone
+1995,0.224,Sierra Leone
+1996,0.231,Sierra Leone
+1997,0.205,Sierra Leone
+1998,0.22,Sierra Leone
+1999,0.176,Sierra Leone
+2000,0.271,Sierra Leone
+2001,0.37,Sierra Leone
+2002,0.502,Sierra Leone
+2003,0.535,Sierra Leone
+2004,0.52,Sierra Leone
+2005,0.425,Sierra Leone
+2006,0.579,Sierra Leone
+2007,0.487,Sierra Leone
+2008,0.506,Sierra Leone
+2009,0.502,Sierra Leone
+2010,0.542,Sierra Leone
+2011,0.711,Sierra Leone
+2012,0.832,Sierra Leone
+2013,1.048,Sierra Leone
+2014,1.129,Sierra Leone
+2015,1.085,Sierra Leone
+2016,1.143,Sierra Leone
+2017,1.088,Sierra Leone
+2018,1.026,Sierra Leone
+2019,1.004,Sierra Leone
+2020,1.026,Sierra Leone
+2021,1.257,Sierra Leone
+2022,1.278,Sierra Leone
+1990,43.536,Singapore
+1991,44.235,Singapore
+1992,47.441,Singapore
+1993,49.662,Singapore
+1994,60.086,Singapore
+1995,40.546,Singapore
+1996,48.013,Singapore
+1997,56.737,Singapore
+1998,47.412,Singapore
+1999,49.2,Singapore
+2000,37.369,Singapore
+2001,38.525,Singapore
+2002,40.208,Singapore
+2003,39.534,Singapore
+2004,41.0,Singapore
+2005,39.6,Singapore
+2006,40.6,Singapore
+2007,41.1,Singapore
+2008,40.2,Singapore
+2009,40.8,Singapore
+2010,44.4,Singapore
+2011,47.0,Singapore
+2012,46.1,Singapore
+2013,47.0,Singapore
+2014,47.6,Singapore
+2015,49.4,Singapore
+2016,49.1,Singapore
+2017,50.1,Singapore
+2018,50.3,Singapore
+2019,49.0,Singapore
+2020,46.7,Singapore
+2021,50.1,Singapore
+2022,47.873,Singapore
+1990,0.534,Sint Maarten (Dutch part)
+1991,0.426,Sint Maarten (Dutch part)
+1992,0.351,Sint Maarten (Dutch part)
+1993,0.542,Sint Maarten (Dutch part)
+1994,0.52,Sint Maarten (Dutch part)
+1995,0.514,Sint Maarten (Dutch part)
+1996,0.481,Sint Maarten (Dutch part)
+1997,0.503,Sint Maarten (Dutch part)
+1998,0.028,Sint Maarten (Dutch part)
+1999,0.208,Sint Maarten (Dutch part)
+2000,0.553,Sint Maarten (Dutch part)
+2001,0.563,Sint Maarten (Dutch part)
+2002,0.542,Sint Maarten (Dutch part)
+2003,0.543,Sint Maarten (Dutch part)
+2004,0.569,Sint Maarten (Dutch part)
+2005,0.564,Sint Maarten (Dutch part)
+2006,0.588,Sint Maarten (Dutch part)
+2007,0.662,Sint Maarten (Dutch part)
+2008,0.637,Sint Maarten (Dutch part)
+2009,0.652,Sint Maarten (Dutch part)
+2010,0.449,Sint Maarten (Dutch part)
+2011,0.573,Sint Maarten (Dutch part)
+2012,0.696,Sint Maarten (Dutch part)
+2013,0.714,Sint Maarten (Dutch part)
+2014,0.725,Sint Maarten (Dutch part)
+2015,0.744,Sint Maarten (Dutch part)
+2016,0.744,Sint Maarten (Dutch part)
+2017,0.707,Sint Maarten (Dutch part)
+2018,0.689,Sint Maarten (Dutch part)
+2019,0.689,Sint Maarten (Dutch part)
+2020,0.652,Sint Maarten (Dutch part)
+2021,0.685,Sint Maarten (Dutch part)
+2022,0.664,Sint Maarten (Dutch part)
+1990,61.526,Slovakia
+1991,53.332,Slovakia
+1992,48.928,Slovakia
+1993,46.396,Slovakia
+1994,43.805,Slovakia
+1995,44.196,Slovakia
+1996,44.077,Slovakia
+1997,44.149,Slovakia
+1998,43.879,Slovakia
+1999,43.092,Slovakia
+2000,41.192,Slovakia
+2001,43.279,Slovakia
+2002,42.095,Slovakia
+2003,42.425,Slovakia
+2004,42.92,Slovakia
+2005,42.926,Slovakia
+2006,42.751,Slovakia
+2007,41.154,Slovakia
+2008,41.551,Slovakia
+2009,37.8,Slovakia
+2010,38.462,Slovakia
+2011,38.046,Slovakia
+2012,35.963,Slovakia
+2013,35.623,Slovakia
+2014,33.708,Slovakia
+2015,34.528,Slovakia
+2016,34.963,Slovakia
+2017,36.167,Slovakia
+2018,36.16,Slovakia
+2019,33.831,Slovakia
+2020,31.154,Slovakia
+2021,35.216,Slovakia
+2022,31.55,Slovakia
+1990,15.095,Slovenia
+1991,13.973,Slovenia
+1992,13.883,Slovenia
+1993,14.251,Slovenia
+1994,14.636,Slovenia
+1995,15.354,Slovenia
+1996,15.999,Slovenia
+1997,16.507,Slovenia
+1998,16.039,Slovenia
+1999,15.412,Slovenia
+2000,15.054,Slovenia
+2001,16.303,Slovenia
+2002,16.565,Slovenia
+2003,16.272,Slovenia
+2004,16.705,Slovenia
+2005,16.936,Slovenia
+2006,17.178,Slovenia
+2007,17.343,Slovenia
+2008,18.278,Slovenia
+2009,16.204,Slovenia
+2010,16.46,Slovenia
+2011,16.359,Slovenia
+2012,15.76,Slovenia
+2013,15.128,Slovenia
+2014,13.561,Slovenia
+2015,13.645,Slovenia
+2016,14.458,Slovenia
+2017,14.617,Slovenia
+2018,14.52,Slovenia
+2019,14.039,Slovenia
+2020,12.855,Slovenia
+2021,13.059,Slovenia
+2022,12.701,Slovenia
+1990,0.147,Solomon Islands
+1991,0.158,Solomon Islands
+1992,0.161,Solomon Islands
+1993,0.172,Solomon Islands
+1994,0.183,Solomon Islands
+1995,0.191,Solomon Islands
+1996,0.198,Solomon Islands
+1997,0.205,Solomon Islands
+1998,0.216,Solomon Islands
+1999,0.216,Solomon Islands
+2000,0.224,Solomon Islands
+2001,0.234,Solomon Islands
+2002,0.245,Solomon Islands
+2003,0.256,Solomon Islands
+2004,0.275,Solomon Islands
+2005,0.282,Solomon Islands
+2006,0.289,Solomon Islands
+2007,0.3,Solomon Islands
+2008,0.308,Solomon Islands
+2009,0.319,Solomon Islands
+2010,0.33,Solomon Islands
+2011,0.344,Solomon Islands
+2012,0.348,Solomon Islands
+2013,0.374,Solomon Islands
+2014,0.33,Solomon Islands
+2015,0.293,Solomon Islands
+2016,0.289,Solomon Islands
+2017,0.286,Solomon Islands
+2018,0.289,Solomon Islands
+2019,0.293,Solomon Islands
+2020,0.289,Solomon Islands
+2021,0.289,Solomon Islands
+2022,0.296,Solomon Islands
+1990,0.782,Somalia
+1991,0.704,Somalia
+1992,0.666,Somalia
+1993,0.626,Somalia
+1994,0.618,Somalia
+1995,0.585,Somalia
+1996,0.575,Somalia
+1997,0.535,Somalia
+1998,0.506,Somalia
+1999,0.487,Somalia
+2000,0.476,Somalia
+2001,0.498,Somalia
+2002,0.557,Somalia
+2003,0.561,Somalia
+2004,0.561,Somalia
+2005,0.564,Somalia
+2006,0.564,Somalia
+2007,0.608,Somalia
+2008,0.601,Somalia
+2009,0.597,Somalia
+2010,0.612,Somalia
+2011,0.612,Somalia
+2012,0.608,Somalia
+2013,0.63,Somalia
+2014,0.63,Somalia
+2015,0.63,Somalia
+2016,0.638,Somalia
+2017,0.638,Somalia
+2018,0.638,Somalia
+2019,0.638,Somalia
+2020,0.597,Somalia
+2021,0.619,Somalia
+2022,0.56,Somalia
+1990,312.93,South Africa
+1991,326.027,South Africa
+1992,301.325,South Africa
+1993,320.345,South Africa
+1994,338.698,South Africa
+1995,361.694,South Africa
+1996,363.732,South Africa
+1997,385.223,South Africa
+1998,377.262,South Africa
+1999,374.891,South Africa
+2000,378.307,South Africa
+2001,371.624,South Africa
+2002,356.523,South Africa
+2003,404.41,South Africa
+2004,449.307,South Africa
+2005,416.201,South Africa
+2006,446.77,South Africa
+2007,465.045,South Africa
+2008,494.698,South Africa
+2009,474.523,South Africa
+2010,463.0,South Africa
+2011,465.908,South Africa
+2012,458.965,South Africa
+2013,458.647,South Africa
+2014,471.965,South Africa
+2015,446.349,South Africa
+2016,457.09,South Africa
+2017,439.996,South Africa
+2018,434.581,South Africa
+2019,464.114,South Africa
+2020,434.067,South Africa
+2021,425.918,South Africa
+2022,405.312,South Africa
+1990,598.211,South America
+1991,605.973,South America
+1992,618.012,South America
+1993,652.646,South America
+1994,655.497,South America
+1995,689.45,South America
+1996,719.745,South America
+1997,766.817,South America
+1998,791.004,South America
+1999,812.984,South America
+2000,812.434,South America
+2001,792.003,South America
+2002,819.945,South America
+2003,820.536,South America
+2004,856.859,South America
+2005,881.497,South America
+2006,909.106,South America
+2007,943.891,South America
+2008,987.699,South America
+2009,961.25,South America
+2010,1072.223,South America
+2011,1089.016,South America
+2012,1143.937,South America
+2013,1208.386,South America
+2014,1224.246,South America
+2015,1195.139,South America
+2016,1146.174,South America
+2017,1130.036,South America
+2018,1077.71,South America
+2019,1084.626,South America
+2020,979.441,South America
+2021,1079.731,South America
+2022,1096.153,South America
+1990,598.211,South America (GCP)
+1991,605.973,South America (GCP)
+1992,618.012,South America (GCP)
+1993,652.646,South America (GCP)
+1994,655.497,South America (GCP)
+1995,689.45,South America (GCP)
+1996,719.745,South America (GCP)
+1997,766.817,South America (GCP)
+1998,791.004,South America (GCP)
+1999,812.984,South America (GCP)
+2000,812.433,South America (GCP)
+2001,792.003,South America (GCP)
+2002,819.945,South America (GCP)
+2003,820.536,South America (GCP)
+2004,856.859,South America (GCP)
+2005,881.497,South America (GCP)
+2006,909.106,South America (GCP)
+2007,943.891,South America (GCP)
+2008,987.699,South America (GCP)
+2009,961.25,South America (GCP)
+2010,1072.223,South America (GCP)
+2011,1089.016,South America (GCP)
+2012,1143.937,South America (GCP)
+2013,1208.385,South America (GCP)
+2014,1224.246,South America (GCP)
+2015,1195.139,South America (GCP)
+2016,1146.174,South America (GCP)
+2017,1130.036,South America (GCP)
+2018,1077.71,South America (GCP)
+2019,1084.626,South America (GCP)
+2020,979.441,South America (GCP)
+2021,1079.731,South America (GCP)
+2022,1096.153,South America (GCP)
+1990,250.511,South Korea
+1991,275.688,South Korea
+1992,299.905,South Korea
+1993,330.174,South Korea
+1994,355.695,South Korea
+1995,383.665,South Korea
+1996,420.996,South Korea
+1997,444.968,South Korea
+1998,378.038,South Korea
+1999,410.519,South Korea
+2000,439.981,South Korea
+2001,455.631,South Korea
+2002,476.065,South Korea
+2003,485.213,South Korea
+2004,491.389,South Korea
+2005,498.688,South Korea
+2006,503.478,South Korea
+2007,521.709,South Korea
+2008,532.651,South Korea
+2009,537.82,South Korea
+2010,594.339,South Korea
+2011,623.443,South Korea
+2012,627.943,South Korea
+2013,634.581,South Korea
+2014,629.366,South Korea
+2015,634.177,South Korea
+2016,637.914,South Korea
+2017,654.537,South Korea
+2018,670.169,South Korea
+2019,646.102,South Korea
+2020,597.634,South Korea
+2021,616.075,South Korea
+2022,602.092,South Korea
+1990,0.42,South Sudan
+1991,0.393,South Sudan
+1992,0.351,South Sudan
+1993,0.242,South Sudan
+1994,0.333,South Sudan
+1995,0.344,South Sudan
+1996,0.355,South Sudan
+1997,0.435,South Sudan
+1998,0.377,South Sudan
+1999,0.409,South Sudan
+2000,0.445,South Sudan
+2001,0.512,South Sudan
+2002,0.652,South Sudan
+2003,0.728,South Sudan
+2004,0.921,South Sudan
+2005,0.882,South Sudan
+2006,0.966,South Sudan
+2007,1.134,South Sudan
+2008,1.198,South Sudan
+2009,1.248,South Sudan
+2010,1.27,South Sudan
+2011,1.239,South Sudan
+2012,1.33,South Sudan
+2013,1.444,South Sudan
+2014,1.499,South Sudan
+2015,1.913,South Sudan
+2016,1.704,South Sudan
+2017,1.455,South Sudan
+2018,1.737,South Sudan
+2019,1.781,South Sudan
+2020,1.693,South Sudan
+2021,1.755,South Sudan
+2022,1.588,South Sudan
+1990,230.174,Spain
+1991,240.009,Spain
+1992,248.412,Spain
+1993,239.809,Spain
+1994,252.047,Spain
+1995,265.779,Spain
+1996,253.237,Spain
+1997,265.567,Spain
+1998,274.318,Spain
+1999,297.773,Spain
+2000,310.072,Spain
+2001,311.809,Spain
+2002,331.95,Spain
+2003,336.333,Spain
+2004,353.011,Spain
+2005,368.339,Spain
+2006,359.654,Spain
+2007,367.401,Spain
+2008,335.889,Spain
+2009,296.501,Spain
+2010,282.938,Spain
+2011,283.801,Spain
+2012,278.061,Spain
+2013,251.942,Spain
+2014,254.181,Spain
+2015,270.74,Spain
+2016,259.625,Spain
+2017,273.58,Spain
+2018,268.59,Spain
+2019,250.596,Spain
+2020,211.843,Spain
+2021,229.069,Spain
+2022,234.657,Spain
+1990,3.831,Sri Lanka
+1991,4.138,Sri Lanka
+1992,5.106,Sri Lanka
+1993,4.975,Sri Lanka
+1994,5.435,Sri Lanka
+1995,5.814,Sri Lanka
+1996,6.971,Sri Lanka
+1997,7.52,Sri Lanka
+1998,7.736,Sri Lanka
+1999,8.517,Sri Lanka
+2000,10.134,Sri Lanka
+2001,10.326,Sri Lanka
+2002,10.948,Sri Lanka
+2003,10.953,Sri Lanka
+2004,12.147,Sri Lanka
+2005,11.935,Sri Lanka
+2006,11.793,Sri Lanka
+2007,12.152,Sri Lanka
+2008,11.987,Sri Lanka
+2009,12.945,Sri Lanka
+2010,13.051,Sri Lanka
+2011,14.886,Sri Lanka
+2012,15.798,Sri Lanka
+2013,14.511,Sri Lanka
+2014,17.42,Sri Lanka
+2015,19.687,Sri Lanka
+2016,22.987,Sri Lanka
+2017,22.873,Sri Lanka
+2018,20.097,Sri Lanka
+2019,21.236,Sri Lanka
+2020,20.625,Sri Lanka
+2021,23.015,Sri Lanka
+2022,19.903,Sri Lanka
+1990,4.783,Sudan
+1991,4.48,Sudan
+1992,4.001,Sudan
+1993,2.755,Sudan
+1994,3.838,Sudan
+1995,3.962,Sudan
+1996,4.096,Sudan
+1997,5.023,Sudan
+1998,4.372,Sudan
+1999,4.753,Sudan
+2000,5.292,Sudan
+2001,6.017,Sudan
+2002,7.633,Sudan
+2003,8.515,Sudan
+2004,10.866,Sudan
+2005,10.558,Sudan
+2006,11.545,Sudan
+2007,13.564,Sudan
+2008,14.179,Sudan
+2009,14.805,Sudan
+2010,15.07,Sudan
+2011,14.711,Sudan
+2012,15.759,Sudan
+2013,17.374,Sudan
+2014,13.095,Sudan
+2015,14.247,Sudan
+2016,19.733,Sudan
+2017,20.31,Sudan
+2018,20.516,Sudan
+2019,21.641,Sudan
+2020,21.165,Sudan
+2021,22.218,Sudan
+2022,20.24,Sudan
+1990,1.737,Suriname
+1991,2.023,Suriname
+1992,2.03,Suriname
+1993,2.038,Suriname
+1994,2.042,Suriname
+1995,2.061,Suriname
+1996,2.083,Suriname
+1997,2.104,Suriname
+1998,2.104,Suriname
+1999,2.123,Suriname
+2000,2.192,Suriname
+2001,2.363,Suriname
+2002,1.56,Suriname
+2003,1.538,Suriname
+2004,1.556,Suriname
+2005,1.589,Suriname
+2006,1.739,Suriname
+2007,1.756,Suriname
+2008,1.932,Suriname
+2009,1.991,Suriname
+2010,2.37,Suriname
+2011,2.755,Suriname
+2012,2.492,Suriname
+2013,3.147,Suriname
+2014,3.201,Suriname
+2015,2.713,Suriname
+2016,2.921,Suriname
+2017,2.426,Suriname
+2018,2.089,Suriname
+2019,2.636,Suriname
+2020,2.918,Suriname
+2021,2.643,Suriname
+2022,2.64,Suriname
+1990,57.52,Sweden
+1991,57.751,Sweden
+1992,57.578,Sweden
+1993,57.572,Sweden
+1994,60.026,Sweden
+1995,59.512,Sweden
+1996,63.381,Sweden
+1997,58.383,Sweden
+1998,58.802,Sweden
+1999,55.982,Sweden
+2000,54.93,Sweden
+2001,55.838,Sweden
+2002,56.685,Sweden
+2003,57.292,Sweden
+2004,56.517,Sweden
+2005,53.875,Sweden
+2006,53.738,Sweden
+2007,52.994,Sweden
+2008,50.866,Sweden
+2009,47.238,Sweden
+2010,53.12,Sweden
+2011,49.211,Sweden
+2012,46.712,Sweden
+2013,45.202,Sweden
+2014,43.473,Sweden
+2015,43.418,Sweden
+2016,43.414,Sweden
+2017,42.438,Sweden
+2018,42.058,Sweden
+2019,40.834,Sweden
+2020,36.703,Sweden
+2021,38.634,Sweden
+2022,37.474,Sweden
+1990,44.149,Switzerland
+1991,46.132,Switzerland
+1992,46.018,Switzerland
+1993,43.61,Switzerland
+1994,42.67,Switzerland
+1995,43.414,Switzerland
+1996,44.108,Switzerland
+1997,43.046,Switzerland
+1998,44.623,Switzerland
+1999,44.446,Switzerland
+2000,43.621,Switzerland
+2001,45.087,Switzerland
+2002,43.467,Switzerland
+2003,44.65,Switzerland
+2004,45.233,Switzerland
+2005,45.777,Switzerland
+2006,45.365,Switzerland
+2007,43.358,Switzerland
+2008,44.699,Switzerland
+2009,43.523,Switzerland
+2010,45.034,Switzerland
+2011,40.973,Switzerland
+2012,42.241,Switzerland
+2013,43.171,Switzerland
+2014,39.221,Switzerland
+2015,38.719,Switzerland
+2016,39.172,Switzerland
+2017,38.165,Switzerland
+2018,36.859,Switzerland
+2019,36.721,Switzerland
+2020,34.228,Switzerland
+2021,35.78,Switzerland
+2022,32.819,Switzerland
+1990,37.045,Syria
+1991,42.201,Syria
+1992,42.562,Syria
+1993,45.222,Syria
+1994,45.65,Syria
+1995,46.083,Syria
+1996,47.128,Syria
+1997,49.257,Syria
+1998,53.158,Syria
+1999,55.151,Syria
+2000,54.171,Syria
+2001,50.951,Syria
+2002,40.35,Syria
+2003,54.978,Syria
+2004,51.287,Syria
+2005,50.751,Syria
+2006,53.664,Syria
+2007,66.66,Syria
+2008,67.756,Syria
+2009,62.968,Syria
+2010,61.722,Syria
+2011,58.836,Syria
+2012,45.85,Syria
+2013,34.043,Syria
+2014,30.943,Syria
+2015,28.603,Syria
+2016,26.947,Syria
+2017,31.591,Syria
+2018,29.376,Syria
+2019,27.402,Syria
+2020,26.313,Syria
+2021,26.034,Syria
+2022,25.314,Syria
+1990,124.258,Taiwan
+1991,133.631,Taiwan
+1992,142.432,Taiwan
+1993,154.046,Taiwan
+1994,161.564,Taiwan
+1995,170.064,Taiwan
+1996,178.059,Taiwan
+1997,190.782,Taiwan
+1998,200.546,Taiwan
+1999,208.023,Taiwan
+2000,226.934,Taiwan
+2001,231.431,Taiwan
+2002,238.567,Taiwan
+2003,249.129,Taiwan
+2004,259.367,Taiwan
+2005,266.888,Taiwan
+2006,276.536,Taiwan
+2007,280.076,Taiwan
+2008,266.885,Taiwan
+2009,253.033,Taiwan
+2010,270.715,Taiwan
+2011,276.774,Taiwan
+2012,273.282,Taiwan
+2013,274.576,Taiwan
+2014,276.96,Taiwan
+2015,276.263,Taiwan
+2016,280.188,Taiwan
+2017,285.73,Taiwan
+2018,283.897,Taiwan
+2019,274.445,Taiwan
+2020,272.202,Taiwan
+2021,283.571,Taiwan
+2022,273.669,Taiwan
+1990,12.037,Tajikistan
+1991,9.758,Tajikistan
+1992,7.308,Tajikistan
+1993,5.171,Tajikistan
+1994,2.355,Tajikistan
+1995,2.445,Tajikistan
+1996,2.824,Tajikistan
+1997,2.15,Tajikistan
+1998,2.497,Tajikistan
+1999,2.517,Tajikistan
+2000,2.234,Tajikistan
+2001,2.288,Tajikistan
+2002,1.877,Tajikistan
+2003,2.071,Tajikistan
+2004,2.56,Tajikistan
+2005,2.439,Tajikistan
+2006,2.655,Tajikistan
+2007,3.227,Tajikistan
+2008,2.896,Tajikistan
+2009,2.444,Tajikistan
+2010,2.536,Tajikistan
+2011,2.341,Tajikistan
+2012,2.933,Tajikistan
+2013,2.907,Tajikistan
+2014,4.6,Tajikistan
+2015,5.302,Tajikistan
+2016,5.693,Tajikistan
+2017,6.858,Tajikistan
+2018,8.06,Tajikistan
+2019,8.692,Tajikistan
+2020,9.404,Tajikistan
+2021,9.228,Tajikistan
+2022,8.966,Tajikistan
+1990,2.112,Tanzania
+1991,2.255,Tanzania
+1992,2.178,Tanzania
+1993,2.426,Tanzania
+1994,2.063,Tanzania
+1995,2.434,Tanzania
+1996,2.527,Tanzania
+1997,2.824,Tanzania
+1998,2.481,Tanzania
+1999,2.459,Tanzania
+2000,2.572,Tanzania
+2001,3.041,Tanzania
+2002,3.486,Tanzania
+2003,3.687,Tanzania
+2004,4.221,Tanzania
+2005,5.356,Tanzania
+2006,5.876,Tanzania
+2007,5.706,Tanzania
+2008,5.989,Tanzania
+2009,5.807,Tanzania
+2010,7.194,Tanzania
+2011,8.503,Tanzania
+2012,10.401,Tanzania
+2013,11.273,Tanzania
+2014,11.086,Tanzania
+2015,12.911,Tanzania
+2016,13.647,Tanzania
+2017,13.682,Tanzania
+2018,14.41,Tanzania
+2019,16.377,Tanzania
+2020,16.25,Tanzania
+2021,18.267,Tanzania
+2022,17.736,Tanzania
+1990,86.563,Thailand
+1991,95.045,Thailand
+1992,105.513,Thailand
+1993,121.855,Thailand
+1994,136.87,Thailand
+1995,153.65,Thailand
+1996,173.566,Thailand
+1997,181.203,Thailand
+1998,159.704,Thailand
+1999,167.235,Thailand
+2000,167.352,Thailand
+2001,172.267,Thailand
+2002,184.665,Thailand
+2003,191.088,Thailand
+2004,207.331,Thailand
+2005,214.325,Thailand
+2006,215.825,Thailand
+2007,224.083,Thailand
+2008,224.249,Thailand
+2009,228.836,Thailand
+2010,241.019,Thailand
+2011,244.878,Thailand
+2012,262.348,Thailand
+2013,263.754,Thailand
+2014,272.488,Thailand
+2015,277.099,Thailand
+2016,284.045,Thailand
+2017,283.348,Thailand
+2018,288.305,Thailand
+2019,281.877,Thailand
+2020,271.923,Thailand
+2021,267.142,Thailand
+2022,272.573,Thailand
+1990,0.978,Togo
+1991,1.05,Togo
+1992,1.03,Togo
+1993,1.069,Togo
+1994,1.007,Togo
+1995,1.175,Togo
+1996,1.265,Togo
+1997,0.879,Togo
+1998,1.29,Togo
+1999,1.85,Togo
+2000,1.331,Togo
+2001,1.159,Togo
+2002,1.322,Togo
+2003,1.805,Togo
+2004,1.744,Togo
+2005,1.722,Togo
+2006,1.501,Togo
+2007,1.517,Togo
+2008,1.523,Togo
+2009,2.536,Togo
+2010,2.596,Togo
+2011,2.504,Togo
+2012,2.216,Togo
+2013,1.643,Togo
+2014,1.542,Togo
+2015,1.863,Togo
+2016,2.312,Togo
+2017,1.991,Togo
+2018,2.125,Togo
+2019,2.319,Togo
+2020,2.439,Togo
+2021,2.67,Togo
+2022,2.682,Togo
+1990,0.084,Tonga
+1991,0.088,Tonga
+1992,0.07,Tonga
+1993,0.084,Tonga
+1994,0.092,Tonga
+1995,0.095,Tonga
+1996,0.077,Tonga
+1997,0.099,Tonga
+1998,0.088,Tonga
+1999,0.11,Tonga
+2000,0.095,Tonga
+2001,0.088,Tonga
+2002,0.103,Tonga
+2003,0.117,Tonga
+2004,0.11,Tonga
+2005,0.114,Tonga
+2006,0.128,Tonga
+2007,0.114,Tonga
+2008,0.121,Tonga
+2009,0.132,Tonga
+2010,0.117,Tonga
+2011,0.103,Tonga
+2012,0.106,Tonga
+2013,0.114,Tonga
+2014,0.114,Tonga
+2015,0.117,Tonga
+2016,0.125,Tonga
+2017,0.136,Tonga
+2018,0.136,Tonga
+2019,0.161,Tonga
+2020,0.183,Tonga
+2021,0.191,Tonga
+2022,0.195,Tonga
+1990,16.981,Trinidad and Tobago
+1991,16.968,Trinidad and Tobago
+1992,19.103,Trinidad and Tobago
+1993,17.411,Trinidad and Tobago
+1994,15.349,Trinidad and Tobago
+1995,14.733,Trinidad and Tobago
+1996,18.458,Trinidad and Tobago
+1997,18.911,Trinidad and Tobago
+1998,19.905,Trinidad and Tobago
+1999,22.594,Trinidad and Tobago
+2000,24.366,Trinidad and Tobago
+2001,26.756,Trinidad and Tobago
+2002,28.702,Trinidad and Tobago
+2003,32.391,Trinidad and Tobago
+2004,32.711,Trinidad and Tobago
+2005,38.227,Trinidad and Tobago
+2006,42.727,Trinidad and Tobago
+2007,45.582,Trinidad and Tobago
+2008,44.465,Trinidad and Tobago
+2009,44.439,Trinidad and Tobago
+2010,47.112,Trinidad and Tobago
+2011,47.064,Trinidad and Tobago
+2012,46.176,Trinidad and Tobago
+2013,45.824,Trinidad and Tobago
+2014,46.892,Trinidad and Tobago
+2015,45.56,Trinidad and Tobago
+2016,39.893,Trinidad and Tobago
+2017,40.318,Trinidad and Tobago
+2018,40.324,Trinidad and Tobago
+2019,40.783,Trinidad and Tobago
+2020,35.066,Trinidad and Tobago
+2021,36.413,Trinidad and Tobago
+2022,36.306,Trinidad and Tobago
+1990,13.553,Tunisia
+1991,16.006,Tunisia
+1992,15.158,Tunisia
+1993,16.419,Tunisia
+1994,16.135,Tunisia
+1995,16.272,Tunisia
+1996,16.619,Tunisia
+1997,17.215,Tunisia
+1998,17.791,Tunisia
+1999,18.64,Tunisia
+2000,19.552,Tunisia
+2001,20.43,Tunisia
+2002,20.68,Tunisia
+2003,21.142,Tunisia
+2004,22.095,Tunisia
+2005,22.546,Tunisia
+2006,22.97,Tunisia
+2007,24.591,Tunisia
+2008,25.538,Tunisia
+2009,25.425,Tunisia
+2010,28.138,Tunisia
+2011,26.436,Tunisia
+2012,28.459,Tunisia
+2013,28.333,Tunisia
+2014,29.692,Tunisia
+2015,31.418,Tunisia
+2016,30.595,Tunisia
+2017,31.272,Tunisia
+2018,31.134,Tunisia
+2019,30.353,Tunisia
+2020,28.49,Tunisia
+2021,31.167,Tunisia
+2022,31.948,Tunisia
+1990,151.615,Turkey
+1991,158.126,Turkey
+1992,164.065,Turkey
+1993,171.139,Turkey
+1994,167.566,Turkey
+1995,181.355,Turkey
+1996,199.647,Turkey
+1997,212.108,Turkey
+1998,212.135,Turkey
+1999,207.928,Turkey
+2000,229.937,Turkey
+2001,213.581,Turkey
+2002,221.226,Turkey
+2003,236.766,Turkey
+2004,244.769,Turkey
+2005,264.871,Turkey
+2006,282.368,Turkey
+2007,313.693,Turkey
+2008,310.622,Turkey
+2009,316.412,Turkey
+2010,316.193,Turkey
+2011,342.057,Turkey
+2012,356.107,Turkey
+2013,347.332,Turkey
+2014,364.028,Turkey
+2015,384.93,Turkey
+2016,405.95,Turkey
+2017,430.901,Turkey
+2018,422.059,Turkey
+2019,402.692,Turkey
+2020,412.927,Turkey
+2021,452.703,Turkey
+2022,437.305,Turkey
+1990,33.344,Turkmenistan
+1991,30.425,Turkmenistan
+1992,31.994,Turkmenistan
+1993,27.516,Turkmenistan
+1994,34.216,Turkmenistan
+1995,34.569,Turkmenistan
+1996,31.654,Turkmenistan
+1997,31.196,Turkmenistan
+1998,33.446,Turkmenistan
+1999,39.797,Turkmenistan
+2000,39.361,Turkmenistan
+2001,34.034,Turkmenistan
+2002,30.131,Turkmenistan
+2003,40.568,Turkmenistan
+2004,49.355,Turkmenistan
+2005,47.929,Turkmenistan
+2006,49.5,Turkmenistan
+2007,49.183,Turkmenistan
+2008,59.438,Turkmenistan
+2009,52.462,Turkmenistan
+2010,59.184,Turkmenistan
+2011,65.155,Turkmenistan
+2012,66.939,Turkmenistan
+2013,64.34,Turkmenistan
+2014,62.799,Turkmenistan
+2015,64.323,Turkmenistan
+2016,63.49,Turkmenistan
+2017,63.44,Turkmenistan
+2018,62.756,Turkmenistan
+2019,63.178,Turkmenistan
+2020,64.26,Turkmenistan
+2021,63.435,Turkmenistan
+2022,64.154,Turkmenistan
+1990,0.062,Turks and Caicos Islands
+1991,0.062,Turks and Caicos Islands
+1992,0.066,Turks and Caicos Islands
+1993,0.066,Turks and Caicos Islands
+1994,0.07,Turks and Caicos Islands
+1995,0.07,Turks and Caicos Islands
+1996,0.07,Turks and Caicos Islands
+1997,0.084,Turks and Caicos Islands
+1998,0.088,Turks and Caicos Islands
+1999,0.099,Turks and Caicos Islands
+2000,0.11,Turks and Caicos Islands
+2001,0.114,Turks and Caicos Islands
+2002,0.15,Turks and Caicos Islands
+2003,0.158,Turks and Caicos Islands
+2004,0.161,Turks and Caicos Islands
+2005,0.191,Turks and Caicos Islands
+2006,0.216,Turks and Caicos Islands
+2007,0.253,Turks and Caicos Islands
+2008,0.264,Turks and Caicos Islands
+2009,0.275,Turks and Caicos Islands
+2010,0.282,Turks and Caicos Islands
+2011,0.282,Turks and Caicos Islands
+2012,0.282,Turks and Caicos Islands
+2013,0.286,Turks and Caicos Islands
+2014,0.308,Turks and Caicos Islands
+2015,0.311,Turks and Caicos Islands
+2016,0.33,Turks and Caicos Islands
+2017,0.352,Turks and Caicos Islands
+2018,0.363,Turks and Caicos Islands
+2019,0.363,Turks and Caicos Islands
+2020,0.359,Turks and Caicos Islands
+2021,0.366,Turks and Caicos Islands
+2022,0.355,Turks and Caicos Islands
+1990,0.004,Tuvalu
+1991,0.004,Tuvalu
+1992,0.004,Tuvalu
+1993,0.004,Tuvalu
+1994,0.004,Tuvalu
+1995,0.004,Tuvalu
+1996,0.004,Tuvalu
+1997,0.004,Tuvalu
+1998,0.011,Tuvalu
+1999,0.011,Tuvalu
+2000,0.007,Tuvalu
+2001,0.011,Tuvalu
+2002,0.011,Tuvalu
+2003,0.011,Tuvalu
+2004,0.011,Tuvalu
+2005,0.011,Tuvalu
+2006,0.011,Tuvalu
+2007,0.011,Tuvalu
+2008,0.011,Tuvalu
+2009,0.011,Tuvalu
+2010,0.011,Tuvalu
+2011,0.011,Tuvalu
+2012,0.011,Tuvalu
+2013,0.011,Tuvalu
+2014,0.011,Tuvalu
+2015,0.011,Tuvalu
+2016,0.011,Tuvalu
+2017,0.011,Tuvalu
+2018,0.011,Tuvalu
+2019,0.011,Tuvalu
+2020,0.011,Tuvalu
+2021,0.011,Tuvalu
+2022,0.011,Tuvalu
+1990,0.761,Uganda
+1991,0.78,Uganda
+1992,0.798,Uganda
+1993,0.797,Uganda
+1994,0.708,Uganda
+1995,0.925,Uganda
+1996,1.018,Uganda
+1997,1.062,Uganda
+1998,1.209,Uganda
+1999,1.255,Uganda
+2000,1.361,Uganda
+2001,1.417,Uganda
+2002,1.446,Uganda
+2003,1.513,Uganda
+2004,1.607,Uganda
+2005,2.018,Uganda
+2006,2.383,Uganda
+2007,2.71,Uganda
+2008,2.78,Uganda
+2009,3.0,Uganda
+2010,3.57,Uganda
+2011,3.824,Uganda
+2012,3.627,Uganda
+2013,3.755,Uganda
+2014,4.09,Uganda
+2015,4.526,Uganda
+2016,4.817,Uganda
+2017,5.409,Uganda
+2018,5.549,Uganda
+2019,5.761,Uganda
+2020,5.571,Uganda
+2021,6.167,Uganda
+2022,5.638,Uganda
+1990,706.227,Ukraine
+1991,632.924,Ukraine
+1992,589.283,Ukraine
+1993,510.32,Ukraine
+1994,419.492,Ukraine
+1995,390.072,Ukraine
+1996,351.77,Ukraine
+1997,340.514,Ukraine
+1998,328.808,Ukraine
+1999,298.579,Ukraine
+2000,285.674,Ukraine
+2001,303.891,Ukraine
+2002,295.901,Ukraine
+2003,307.245,Ukraine
+2004,310.626,Ukraine
+2005,313.531,Ukraine
+2006,333.062,Ukraine
+2007,336.82,Ukraine
+2008,325.983,Ukraine
+2009,277.593,Ukraine
+2010,294.366,Ukraine
+2011,308.376,Ukraine
+2012,304.424,Ukraine
+2013,297.479,Ukraine
+2014,257.639,Ukraine
+2015,223.788,Ukraine
+2016,233.961,Ukraine
+2017,223.081,Ukraine
+2018,231.664,Ukraine
+2019,221.943,Ukraine
+2020,206.824,Ukraine
+2021,210.153,Ukraine
+2022,141.126,Ukraine
+1990,51.704,United Arab Emirates
+1991,56.673,United Arab Emirates
+1992,57.757,United Arab Emirates
+1993,65.566,United Arab Emirates
+1994,75.011,United Arab Emirates
+1995,72.464,United Arab Emirates
+1996,75.412,United Arab Emirates
+1997,72.92,United Arab Emirates
+1998,80.106,United Arab Emirates
+1999,77.316,United Arab Emirates
+2000,111.813,United Arab Emirates
+2001,101.418,United Arab Emirates
+2002,84.649,United Arab Emirates
+2003,106.443,United Arab Emirates
+2004,111.703,United Arab Emirates
+2005,114.399,United Arab Emirates
+2006,121.705,United Arab Emirates
+2007,133.125,United Arab Emirates
+2008,153.684,United Arab Emirates
+2009,168.013,United Arab Emirates
+2010,184.842,United Arab Emirates
+2011,197.573,United Arab Emirates
+2012,207.392,United Arab Emirates
+2013,213.335,United Arab Emirates
+2014,209.98,United Arab Emirates
+2015,225.684,United Arab Emirates
+2016,226.605,United Arab Emirates
+2017,212.913,United Arab Emirates
+2018,209.702,United Arab Emirates
+2019,219.776,United Arab Emirates
+2020,217.38,United Arab Emirates
+2021,216.232,United Arab Emirates
+2022,225.977,United Arab Emirates
+1990,601.945,United Kingdom
+1991,609.413,United Kingdom
+1992,593.846,United Kingdom
+1993,579.613,United Kingdom
+1994,574.017,United Kingdom
+1995,566.159,United Kingdom
+1996,586.761,United Kingdom
+1997,562.708,United Kingdom
+1998,568.544,United Kingdom
+1999,561.65,United Kingdom
+2000,569.034,United Kingdom
+2001,577.971,United Kingdom
+2002,560.273,United Kingdom
+2003,571.619,United Kingdom
+2004,573.43,United Kingdom
+2005,570.338,United Kingdom
+2006,567.846,United Kingdom
+2007,559.566,United Kingdom
+2008,544.932,United Kingdom
+2009,494.108,United Kingdom
+2010,511.905,United Kingdom
+2011,469.713,United Kingdom
+2012,487.477,United Kingdom
+2013,477.611,United Kingdom
+2014,438.807,United Kingdom
+2015,422.461,United Kingdom
+2016,399.43,United Kingdom
+2017,387.367,United Kingdom
+2018,379.73,United Kingdom
+2019,364.753,United Kingdom
+2020,326.263,United Kingdom
+2021,344.51,United Kingdom
+2022,313.835,United Kingdom
+1990,5120.957,United States
+1991,5062.957,United States
+1992,5174.228,United States
+1993,5272.851,United States
+1994,5364.279,United States
+1995,5425.259,United States
+1996,5612.983,United States
+1997,5688.142,United States
+1998,5733.281,United States
+1999,5803.918,United States
+2000,6010.136,United States
+2001,5907.74,United States
+2002,5946.308,United States
+2003,6010.146,United States
+2004,6112.655,United States
+2005,6132.183,United States
+2006,6052.686,United States
+2007,6130.123,United States
+2008,5915.119,United States
+2009,5480.726,United States
+2010,5679.715,United States
+2011,5546.116,United States
+2012,5344.086,United States
+2013,5480.157,United States
+2014,5528.681,United States
+2015,5376.473,United States
+2016,5252.932,United States
+2017,5212.162,United States
+2018,5377.797,United States
+2019,5262.145,United States
+2020,4714.628,United States
+2021,5032.213,United States
+2022,5078.871,United States
+1990,5887.481,Upper-middle-income countries
+1991,5983.565,Upper-middle-income countries
+1992,6074.665,Upper-middle-income countries
+1993,6236.975,Upper-middle-income countries
+1994,6379.54,Upper-middle-income countries
+1995,6700.975,Upper-middle-income countries
+1996,6911.432,Upper-middle-income countries
+1997,7020.316,Upper-middle-income countries
+1998,6895.056,Upper-middle-income countries
+1999,7133.178,Upper-middle-income countries
+2000,7286.903,Upper-middle-income countries
+2001,7442.479,Upper-middle-income countries
+2002,7866.023,Upper-middle-income countries
+2003,8829.109,Upper-middle-income countries
+2004,9402.838,Upper-middle-income countries
+2005,10172.082,Upper-middle-income countries
+2006,10940.672,Upper-middle-income countries
+2007,11531.098,Upper-middle-income countries
+2008,12181.279,Upper-middle-income countries
+2009,12519.018,Upper-middle-income countries
+2010,13498.407,Upper-middle-income countries
+2011,14586.628,Upper-middle-income countries
+2012,15021.875,Upper-middle-income countries
+2013,15276.198,Upper-middle-income countries
+2014,15373.059,Upper-middle-income countries
+2015,15227.755,Upper-middle-income countries
+2016,15141.622,Upper-middle-income countries
+2017,15479.511,Upper-middle-income countries
+2018,15855.511,Upper-middle-income countries
+2019,16352.597,Upper-middle-income countries
+2020,16202.027,Upper-middle-income countries
+2021,16980.641,Upper-middle-income countries
+2022,16989.541,Upper-middle-income countries
+1990,3.967,Uruguay
+1991,4.528,Uruguay
+1992,5.143,Uruguay
+1993,4.439,Uruguay
+1994,4.03,Uruguay
+1995,4.557,Uruguay
+1996,5.405,Uruguay
+1997,5.514,Uruguay
+1998,5.639,Uruguay
+1999,6.682,Uruguay
+2000,5.268,Uruguay
+2001,5.03,Uruguay
+2002,4.558,Uruguay
+2003,4.527,Uruguay
+2004,5.565,Uruguay
+2005,5.727,Uruguay
+2006,6.597,Uruguay
+2007,5.948,Uruguay
+2008,8.202,Uruguay
+2009,7.947,Uruguay
+2010,6.298,Uruguay
+2011,7.653,Uruguay
+2012,8.592,Uruguay
+2013,7.489,Uruguay
+2014,6.681,Uruguay
+2015,6.738,Uruguay
+2016,6.518,Uruguay
+2017,6.159,Uruguay
+2018,6.567,Uruguay
+2019,6.409,Uruguay
+2020,6.474,Uruguay
+2021,7.833,Uruguay
+2022,7.82,Uruguay
+1990,103.087,Uzbekistan
+1991,102.287,Uzbekistan
+1992,110.984,Uzbekistan
+1993,115.617,Uzbekistan
+1994,109.785,Uzbekistan
+1995,104.803,Uzbekistan
+1996,108.184,Uzbekistan
+1997,109.028,Uzbekistan
+1998,120.975,Uzbekistan
+1999,123.587,Uzbekistan
+2000,123.477,Uzbekistan
+2001,126.221,Uzbekistan
+2002,132.575,Uzbekistan
+2003,130.294,Uzbekistan
+2004,129.098,Uzbekistan
+2005,121.6,Uzbekistan
+2006,124.901,Uzbekistan
+2007,123.821,Uzbekistan
+2008,128.388,Uzbekistan
+2009,109.227,Uzbekistan
+2010,107.666,Uzbekistan
+2011,116.756,Uzbekistan
+2012,118.858,Uzbekistan
+2013,112.286,Uzbekistan
+2014,107.4,Uzbekistan
+2015,103.696,Uzbekistan
+2016,110.139,Uzbekistan
+2017,108.931,Uzbekistan
+2018,102.288,Uzbekistan
+2019,108.429,Uzbekistan
+2020,109.632,Uzbekistan
+2021,120.241,Uzbekistan
+2022,125.039,Uzbekistan
+1990,0.066,Vanuatu
+1991,0.066,Vanuatu
+1992,0.066,Vanuatu
+1993,0.066,Vanuatu
+1994,0.066,Vanuatu
+1995,0.066,Vanuatu
+1996,0.073,Vanuatu
+1997,0.077,Vanuatu
+1998,0.077,Vanuatu
+1999,0.084,Vanuatu
+2000,0.084,Vanuatu
+2001,0.081,Vanuatu
+2002,0.081,Vanuatu
+2003,0.081,Vanuatu
+2004,0.073,Vanuatu
+2005,0.077,Vanuatu
+2006,0.073,Vanuatu
+2007,0.073,Vanuatu
+2008,0.084,Vanuatu
+2009,0.121,Vanuatu
+2010,0.121,Vanuatu
+2011,0.136,Vanuatu
+2012,0.117,Vanuatu
+2013,0.11,Vanuatu
+2014,0.158,Vanuatu
+2015,0.136,Vanuatu
+2016,0.15,Vanuatu
+2017,0.143,Vanuatu
+2018,0.18,Vanuatu
+2019,0.165,Vanuatu
+2020,0.202,Vanuatu
+2021,0.216,Vanuatu
+2022,0.221,Vanuatu
+1990,120.764,Venezuela
+1991,114.107,Venezuela
+1992,104.628,Venezuela
+1993,122.944,Venezuela
+1994,118.956,Venezuela
+1995,124.731,Venezuela
+1996,118.253,Venezuela
+1997,129.667,Venezuela
+1998,134.907,Venezuela
+1999,143.05,Venezuela
+2000,142.835,Venezuela
+2001,130.534,Venezuela
+2002,164.153,Venezuela
+2003,154.262,Venezuela
+2004,142.767,Venezuela
+2005,148.311,Venezuela
+2006,155.597,Venezuela
+2007,153.962,Venezuela
+2008,155.505,Venezuela
+2009,151.848,Venezuela
+2010,189.317,Venezuela
+2011,168.413,Venezuela
+2012,175.72,Venezuela
+2013,198.427,Venezuela
+2014,175.961,Venezuela
+2015,166.3,Venezuela
+2016,152.711,Venezuela
+2017,139.073,Venezuela
+2018,111.225,Venezuela
+2019,105.287,Venezuela
+2020,80.927,Venezuela
+2021,78.46,Venezuela
+2022,87.515,Venezuela
+1990,21.299,Vietnam
+1991,21.376,Vietnam
+1992,21.466,Vietnam
+1993,22.853,Vietnam
+1994,27.362,Vietnam
+1995,30.089,Vietnam
+1996,35.482,Vietnam
+1997,45.502,Vietnam
+1998,47.866,Vietnam
+1999,48.548,Vietnam
+2000,53.935,Vietnam
+2001,60.984,Vietnam
+2002,69.528,Vietnam
+2003,77.262,Vietnam
+2004,88.939,Vietnam
+2005,95.846,Vietnam
+2006,99.652,Vietnam
+2007,101.43,Vietnam
+2008,114.303,Vietnam
+2009,124.493,Vietnam
+2010,139.564,Vietnam
+2011,152.56,Vietnam
+2012,144.28,Vietnam
+2013,151.438,Vietnam
+2014,179.971,Vietnam
+2015,213.311,Vietnam
+2016,220.98,Vietnam
+2017,227.613,Vietnam
+2018,255.319,Vietnam
+2019,339.147,Vietnam
+2020,362.46,Vietnam
+2021,313.973,Vietnam
+2022,297.634,Vietnam
+1990,0.018,Wallis and Futuna
+1991,0.018,Wallis and Futuna
+1992,0.018,Wallis and Futuna
+1993,0.018,Wallis and Futuna
+1994,0.018,Wallis and Futuna
+1995,0.018,Wallis and Futuna
+1996,0.022,Wallis and Futuna
+1997,0.022,Wallis and Futuna
+1998,0.022,Wallis and Futuna
+1999,0.026,Wallis and Futuna
+2000,0.026,Wallis and Futuna
+2001,0.026,Wallis and Futuna
+2002,0.026,Wallis and Futuna
+2003,0.026,Wallis and Futuna
+2004,0.026,Wallis and Futuna
+2005,0.029,Wallis and Futuna
+2006,0.029,Wallis and Futuna
+2007,0.029,Wallis and Futuna
+2008,0.022,Wallis and Futuna
+2009,0.029,Wallis and Futuna
+2010,0.029,Wallis and Futuna
+2011,0.026,Wallis and Futuna
+2012,0.026,Wallis and Futuna
+2013,0.022,Wallis and Futuna
+2014,0.022,Wallis and Futuna
+2015,0.022,Wallis and Futuna
+2016,0.026,Wallis and Futuna
+2017,0.026,Wallis and Futuna
+2018,0.026,Wallis and Futuna
+2019,0.026,Wallis and Futuna
+2020,0.026,Wallis and Futuna
+2021,0.029,Wallis and Futuna
+2022,0.03,Wallis and Futuna
+1990,22728.988,World
+1991,23186.102,World
+1992,22528.172,World
+1993,22755.787,World
+1994,22992.947,World
+1995,23532.084,World
+1996,24258.168,World
+1997,24401.906,World
+1998,24303.777,World
+1999,24853.729,World
+2000,25510.553,World
+2001,25706.293,World
+2002,26276.869,World
+2003,27669.49,World
+2004,28632.506,World
+2005,29614.395,World
+2006,30628.396,World
+2007,31534.645,World
+2008,32074.199,World
+2009,31541.922,World
+2010,33355.902,World
+2011,34504.539,World
+2012,35000.02,World
+2013,35301.656,World
+2014,35450.094,World
+2015,35404.898,World
+2016,35416.656,World
+2017,35989.898,World
+2018,36730.426,World
+2019,37104.273,World
+2020,35126.527,World
+2021,36991.734,World
+2022,37293.836,World
+1990,9.52,Yemen
+1991,9.127,Yemen
+1992,9.874,Yemen
+1993,8.625,Yemen
+1994,9.91,Yemen
+1995,11.062,Yemen
+1996,11.303,Yemen
+1997,12.171,Yemen
+1998,12.843,Yemen
+1999,14.688,Yemen
+2000,15.725,Yemen
+2001,17.077,Yemen
+2002,16.581,Yemen
+2003,18.482,Yemen
+2004,19.977,Yemen
+2005,21.662,Yemen
+2006,23.791,Yemen
+2007,23.571,Yemen
+2008,24.407,Yemen
+2009,26.777,Yemen
+2010,25.713,Yemen
+2011,22.515,Yemen
+2012,20.355,Yemen
+2013,27.16,Yemen
+2014,26.48,Yemen
+2015,14.08,Yemen
+2016,10.007,Yemen
+2017,9.695,Yemen
+2018,11.595,Yemen
+2019,11.837,Yemen
+2020,10.884,Yemen
+2021,10.871,Yemen
+2022,10.296,Yemen
+1990,2.407,Zambia
+1991,2.382,Zambia
+1992,2.425,Zambia
+1993,2.466,Zambia
+1994,2.393,Zambia
+1995,2.142,Zambia
+1996,1.838,Zambia
+1997,2.354,Zambia
+1998,2.278,Zambia
+1999,1.778,Zambia
+2000,1.784,Zambia
+2001,1.886,Zambia
+2002,1.961,Zambia
+2003,2.074,Zambia
+2004,2.104,Zambia
+2005,2.243,Zambia
+2006,2.231,Zambia
+2007,2.294,Zambia
+2008,2.553,Zambia
+2009,2.94,Zambia
+2010,3.12,Zambia
+2011,3.372,Zambia
+2012,4.166,Zambia
+2013,4.416,Zambia
+2014,4.877,Zambia
+2015,5.065,Zambia
+2016,5.864,Zambia
+2017,6.85,Zambia
+2018,7.419,Zambia
+2019,7.751,Zambia
+2020,8.144,Zambia
+2021,7.786,Zambia
+2022,7.522,Zambia
+1990,15.537,Zimbabwe
+1991,15.491,Zimbabwe
+1992,16.702,Zimbabwe
+1993,16.032,Zimbabwe
+1994,17.383,Zimbabwe
+1995,15.017,Zimbabwe
+1996,14.894,Zimbabwe
+1997,13.901,Zimbabwe
+1998,14.127,Zimbabwe
+1999,15.724,Zimbabwe
+2000,13.815,Zimbabwe
+2001,12.509,Zimbabwe
+2002,11.896,Zimbabwe
+2003,10.61,Zimbabwe
+2004,9.429,Zimbabwe
+2005,10.698,Zimbabwe
+2006,10.365,Zimbabwe
+2007,9.835,Zimbabwe
+2008,7.72,Zimbabwe
+2009,8.25,Zimbabwe
+2010,8.754,Zimbabwe
+2011,10.363,Zimbabwe
+2012,11.254,Zimbabwe
+2013,11.671,Zimbabwe
+2014,11.946,Zimbabwe
+2015,12.017,Zimbabwe
+2016,10.581,Zimbabwe
+2017,9.827,Zimbabwe
+2018,11.205,Zimbabwe
+2019,10.263,Zimbabwe
+2020,8.495,Zimbabwe
+2021,10.204,Zimbabwe
+2022,10.425,Zimbabwe

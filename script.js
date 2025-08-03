@@ -198,29 +198,90 @@ function drawScene1() {
     ]));
 }
 
+// function drawScene2() {
+//     const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+//     const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
+
+//     const x = d3.scaleLinear()
+//         .domain([selectedStartYear, selectedEndYear])
+//         .range([margin.left, width - margin.right])
+//         .nice();
+//     const y = d3.scaleLinear()
+//         .domain([20000, d3.max(filtered, d => +d.co2)])
+//         .range([height - margin.bottom, margin.top])
+//         .nice();
+
+//     svg.append("g")
+//         .attr("transform", `translate(0,${height - margin.bottom})`)
+//         .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(Math.max(2, selectedEndYear - selectedStartYear + 1)));
+
+//     svg.append("g")
+//         .attr("transform", `translate(${margin.left},0)`)
+//         .call(d3.axisLeft(y));
+
+//     svg.append("path")
+//         .datum(filtered)
+//         .attr("fill", "none")
+//         .attr("stroke", "red")
+//         .attr("stroke-width", 2)
+//         .attr("d", d3.line()
+//             .x(d => x(+d.year))
+//             .y(d => y(+d.co2)));
+
+//     const annotations = [];
+//     if (selectedStartYear <= 1997 && selectedEndYear >= 1997) {
+//         const kyoto = filtered.find(d => d.year == 1997);
+//         if (kyoto) annotations.push({ note: { label: "Kyoto Protocol (1997)" }, x: x(1997), y: y(kyoto.co2), dy: -30, dx: 0 });
+//     }
+//     if (selectedStartYear <= 2015 && selectedEndYear >= 2015) {
+//         const paris = filtered.find(d => d.year == 2015);
+//         if (paris) annotations.push({ note: { label: "Paris Agreement (2015)" }, x: x(2015), y: y(paris.co2), dy: -30, dx: 0 });
+//     }
+//     svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
+// }
+
 function drawScene2() {
     const margin = { top: 20, right: 20, bottom: 50, left: 60 };
-    const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
 
+    // Filter data within selected year range
+    const filtered = dataGlobal.filter(d => {
+        const year = +d.year;
+        return year >= selectedStartYear && year <= selectedEndYear;
+    });
+
+    // Split data: world vs selected country
+    const worldData = filtered.filter(d => d.country.toLowerCase() === "world");
+    const countryData = selectedCountry
+        ? filtered.filter(d => d.country === selectedCountry)
+        : [];
+
+    // Define scales
     const x = d3.scaleLinear()
         .domain([selectedStartYear, selectedEndYear])
         .range([margin.left, width - margin.right])
         .nice();
+
     const y = d3.scaleLinear()
-        .domain([20000, d3.max(filtered, d => +d.co2)])
+        .domain([
+            0,
+            d3.max([...worldData, ...countryData], d => +d.co2)
+        ])
         .range([height - margin.bottom, margin.top])
         .nice();
 
+    // X Axis
     svg.append("g")
         .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(Math.max(2, selectedEndYear - selectedStartYear + 1)));
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
 
+    // Y Axis
     svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
 
+    // Draw Global line
     svg.append("path")
-        .datum(filtered)
+        .datum(worldData)
         .attr("fill", "none")
         .attr("stroke", "red")
         .attr("stroke-width", 2)
@@ -228,17 +289,60 @@ function drawScene2() {
             .x(d => x(+d.year))
             .y(d => y(+d.co2)));
 
+    // Draw selected country line if available
+    if (countryData.length > 0) {
+        svg.append("path")
+            .datum(countryData)
+            .attr("fill", "none")
+            .attr("stroke", "blue")
+            .attr("stroke-width", 2)
+            .attr("d", d3.line()
+                .x(d => x(+d.year))
+                .y(d => y(+d.co2)));
+
+        // Label for selected country
+        svg.append("text")
+            .attr("x", width - 220)
+            .attr("y", margin.top + 20)
+            .attr("fill", "blue")
+            .style("font-size", "14px")
+            .text(`Selected: ${selectedCountry}`);
+    }
+
+    // Legend for global line
+    svg.append("text")
+        .attr("x", width - 220)
+        .attr("y", margin.top + 40)
+        .attr("fill", "red")
+        .style("font-size", "14px")
+        .text("Global CO₂");
+
+    // Annotations (Kyoto and Paris)
     const annotations = [];
     if (selectedStartYear <= 1997 && selectedEndYear >= 1997) {
-        const kyoto = filtered.find(d => d.year == 1997);
-        if (kyoto) annotations.push({ note: { label: "Kyoto Protocol (1997)" }, x: x(1997), y: y(kyoto.co2), dy: -30, dx: 0 });
+        const kyoto = worldData.find(d => d.year == 1997);
+        if (kyoto) annotations.push({
+            note: { label: "Kyoto Protocol (1997)" },
+            x: x(1997),
+            y: y(+kyoto.co2),
+            dy: -30,
+            dx: 0
+        });
     }
     if (selectedStartYear <= 2015 && selectedEndYear >= 2015) {
-        const paris = filtered.find(d => d.year == 2015);
-        if (paris) annotations.push({ note: { label: "Paris Agreement (2015)" }, x: x(2015), y: y(paris.co2), dy: -30, dx: 0 });
+        const paris = worldData.find(d => d.year == 2015);
+        if (paris) annotations.push({
+            note: { label: "Paris Agreement (2015)" },
+            x: x(2015),
+            y: y(+paris.co2),
+            dy: -30,
+            dx: 0
+        });
     }
-    svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
+    svg.append("g")
+        .call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
+
 
 function drawScene3() {
     const margin = { top: 40, right: 20, bottom: 50, left: 60 };
