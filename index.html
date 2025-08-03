@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO2 Emissions Narrative Visualization</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
-    <script src="https://unpkg.com/topojson@3"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global CO2 Emissions Narrative</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
 </head>
 <body>
-    <h1>Global CO2 Emissions: A Narrative Visualization</h1>
-    <div id="controls">
-        <button id="prevButton" disabled>Previous</button>
-        <button id="nextButton">Next</button>
-    </div>
-    <svg id="viz" width="960" height="500"></svg>
-    <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
-    <script src="script.js"></script>
+  <h1>Global CO2 Emissions: A Narrative Visualization</h1>
+  <h2 id="sceneTitle"></h2>
+  <div id="controls">
+    <button id="prevButton" disabled>Previous</button>
+    <span id="stepIndicator">Step 1 of 3</span>
+    <button id="nextButton">Next</button>
+  </div>
+  <div id="yearSlider" style="display: none;">
+    <input type="range" id="yearInput" min="1990" max="2022" value="2022">
+    <span id="yearValue">2022</span>
+  </div>
+  <svg id="viz" width="960" height="500"></svg>
+  <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+  <script src="script.js"></script>
 </body>
 </html>
