@@ -49,34 +49,34 @@ document.addEventListener("keydown", e => {
 });
 
 function validateYearRangeAndUpdate() {
-  svg.selectAll(".year-error-text").remove();
+    svg.selectAll(".year-error-text").remove();
 
-  if (selectedStartYear >= selectedEndYear) {
-    svg.append("text")
-      .attr("class", "year-error-text")
-      .attr("x", width / 2)
-      .attr("y", height / 2)
-      .attr("text-anchor", "middle")
-      .attr("fill", "red")
-      .attr("font-size", "24px")
-      .attr("font-weight", "bold")
-      .text("Error: Start year must be earlier than end year");
-    return;
-  }
+    if (selectedStartYear >= selectedEndYear) {
+        svg.append("text")
+            .attr("class", "year-error-text")
+            .attr("x", width / 2)
+            .attr("y", height / 2)
+            .attr("text-anchor", "middle")
+            .attr("fill", "red")
+            .attr("font-size", "24px")
+            .attr("font-weight", "bold")
+            .text("Error: Start year must be earlier than end year");
+        return;
+    }
 
-  updateVisualization();
+    updateVisualization();
 }
 
 d3.select("#startYearInput").on("input", function () {
-  selectedStartYear = +this.value;
-  d3.select("#startYearValue").text(selectedStartYear);
-  validateYearRangeAndUpdate();
+    selectedStartYear = +this.value;
+    d3.select("#startYearValue").text(selectedStartYear);
+    validateYearRangeAndUpdate();
 });
 
 d3.select("#endYearInput").on("input", function () {
-  selectedEndYear = +this.value;
-  d3.select("#endYearValue").text(selectedEndYear);
-  validateYearRangeAndUpdate();
+    selectedEndYear = +this.value;
+    d3.select("#endYearValue").text(selectedEndYear);
+    validateYearRangeAndUpdate();
 });
 
 
@@ -115,10 +115,10 @@ function hideTooltip() {
 }
 
 function updateProgressBar() {
-  d3.selectAll(".step-circle")
-    .classed("active", function () {
-      return +this.dataset.step === currentScene;
-    });
+    d3.selectAll(".step-circle")
+        .classed("active", function () {
+            return +this.dataset.step === currentScene;
+        });
 }
 
 
@@ -241,74 +241,90 @@ function drawScene2() {
 }
 
 function drawScene3() {
-  const margin = { top: 40, right: 20, bottom: 50, left: 60 };
+    const margin = { top: 40, right: 20, bottom: 50, left: 60 };
 
-  svg.selectAll(".annotation-group").remove();
+    svg.selectAll(".annotation-group").remove();
 
-  const x = d3.scaleLog()
-    .domain([1000, d3.max(dataScatter, d => +d.gdp)])
-    .range([margin.left, width - margin.right]);
+    const x = d3.scaleLog()
+        .domain([1000, d3.max(dataScatter, d => +d.gdp)])
+        .range([margin.left, width - margin.right]);
 
-  const y = d3.scaleLinear()
-    .domain([0, d3.max(dataScatter, d => +d.co2_per_capita)])
-    .range([height - margin.bottom, margin.top]);
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(dataScatter, d => +d.co2_per_capita)])
+        .range([height - margin.bottom, margin.top]);
 
-  const r = d3.scaleSqrt()
-    .domain([0, d3.max(dataScatter, d => +d.population)])
-    .range([2, 20]);
+    const r = d3.scaleSqrt()
+        .domain([0, d3.max(dataScatter, d => +d.population)])
+        .range([2, 20]);
 
-  const formatGDP = d3.format("$.2s");
-  const formatCO2 = d3.format(".1f");
+    const formatGDP = d => {
+        const num = +d;
+        if (num >= 1e12) return `$${(num / 1e12).toFixed(1)}T`;
+        if (num >= 1e9) return `$${(num / 1e9).toFixed(1)}B`;
+        if (num >= 1e6) return `$${(num / 1e6).toFixed(1)}M`;
+        return `$${num.toLocaleString()}`;
+    };
 
-
-  svg.append("g")
-    .attr("transform", `translate(0,${height - margin.bottom})`)
-    .call(d3.axisBottom(x).tickFormat(d3.format("$.2s")));
-
-  svg.append("g")
-    .attr("transform", `translate(${margin.left},0)`)
-    .call(d3.axisLeft(y));
+    const formatCO2 = d3.format(".1f");
 
 
-  svg.append("g")
-    .selectAll("circle")
-    .data(dataScatter)
-    .enter().append("circle")
-    .attr("cx", d => x(+d.gdp))
-    .attr("cy", d => y(+d.co2_per_capita))
-    .attr("r", d => r(+d.population))
-    .attr("fill", d => d.country === selectedCountry ? "blue" : "red")
-    .attr("opacity", 0.5)
-    .on("mouseover", (event, d) => {
-      formatTooltip(event,
-        `${d.country}<br>CO₂/Capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
-      );
-    })
-    .on("mouseout", hideTooltip);
-
-  
-  const qatar = dataScatter.find(d => d.country === "Qatar");
-  if (qatar) {
     svg.append("g")
-      .call(d3.annotation().type(d3.annotationLabel).annotations([
-        {
-          note: {
-            label: "High GDP, High Emissions",
-            title: "Qatar"
-          },
-          x: x(+qatar.gdp),
-          y: y(+qatar.co2_per_capita),
-          dy: 40,
-          dx: 40
-        }
-      ]));
-  }
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("$.2s")));
+
+    svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+
+
+    svg.append("g")
+        .selectAll("circle")
+        .data(dataScatter)
+        .enter().append("circle")
+        .attr("cx", d => x(+d.gdp))
+        .attr("cy", d => y(+d.co2_per_capita))
+        .attr("r", d => r(+d.population))
+        .attr("fill", d => d.country === selectedCountry ? "blue" : "red")
+        .attr("opacity", 0.5)
+        .on("mouseover", (event, d) => {
+            formatTooltip(event,
+                `${d.country}<br>CO₂/Capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
+            );
+        })
+        .on("mouseout", hideTooltip);
+
+
+    const qatar = dataScatter.find(d => d.country === "Qatar");
+    if (qatar) {
+        const xPos = x(+qatar.gdp);
+        const yPos = y(+qatar.co2_per_capita);
+
+        // Adjust dx/dy based on proximity to edges
+        const padding = 50;
+        const dx = xPos > width - padding ? -60 : 40;
+        const dy = yPos < padding ? 50 : -40;
+
+        svg.append("g")
+            .call(d3.annotation().type(d3.annotationLabel).annotations([
+                {
+                    note: {
+                        label: "High GDP, High Emissions",
+                        title: "Qatar"
+                    },
+                    x: xPos,
+                    y: yPos,
+                    dx: dx,
+                    dy: dy
+                }
+            ]));
+    }
+
 }
 
 d3.selectAll(".step-circle").on("click", function () {
-  const step = +this.dataset.step;
-  if (step !== currentScene) {
-    currentScene = step;
-    updateVisualization();
-  }
+    const step = +this.dataset.step;
+    if (step !== currentScene) {
+        currentScene = step;
+        updateVisualization();
+    }
 });
