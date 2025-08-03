@@ -17,20 +17,10 @@
     <span id="stepIndicator">Step 1 of 3</span>
     <button id="nextButton">Next</button>
   </div>
-
-  <div id="yearSlider" style="display: none; text-align: center;">
-    <div style="margin-bottom: 10px;">
-      <label for="yearRangeStart">Start Year:</label>
-      <input type="range" id="yearRangeStart" min="1990" max="2022" value="1990" step="1">
-      <span id="startYearValue">1990</span>
-    </div>
-    <div>
-      <label for="yearRangeEnd">End Year:</label>
-      <input type="range" id="yearRangeEnd" min="1990" max="2022" value="2022" step="1">
-      <span id="endYearValue">2022</span>
-    </div>
+  <div id="yearSlider" style="display: none;">
+    <label>Start Year: <input type="range" id="startYearInput" min="1990" max="2022" value="1990"> <span id="startYearValue">1990</span></label>
+    <label>End Year: <input type="range" id="endYearInput" min="1990" max="2022" value="2022"> <span id="endYearValue">2022</span></label>
   </div>
-
   <svg id="viz" width="960" height="500"></svg>
   <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
   <script src="script.js"></script>
