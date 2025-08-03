@@ -91,6 +91,9 @@ function drawScene1() {
 
   // Filter valid CO2 data and calculate max value
   const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0 && d.iso_code);
+  console.log("=============");
+  console.log(validCO2)
+  console.log("=============");
   const maxVal = d3.max(validCO2, d => d.co2);
   const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd)
     .domain([1, maxVal])
@@ -102,6 +105,7 @@ function drawScene1() {
     .enter().append("path")
     .attr("d", path)
     .attr("fill", d => {
+      console.log(d.properties);
       const countryData = validCO2.find(e => e.iso_code === d.id);
       return countryData ? colorScale(countryData.co2) : "#eee"; // Default to light gray if no data
     })
