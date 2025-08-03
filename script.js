@@ -53,25 +53,36 @@ document.addEventListener("keydown", e => {
 });
 
 function validateYearRangeAndUpdate() {
-    if (selectedStartYear >= selectedEndYear) {
-        d3.select("#yearError").style("display", "block");
-        return; // Don't update chart
-    } else {
-        d3.select("#yearError").style("display", "none");
-        updateVisualization();
-    }
+  // Clear existing error text
+  svg.selectAll(".year-error-text").remove();
+
+  if (selectedStartYear >= selectedEndYear) {
+    // Draw error text inside canvas
+    svg.append("text")
+      .attr("class", "year-error-text")
+      .attr("x", width / 2)
+      .attr("y", height / 2)
+      .attr("text-anchor", "middle")
+      .attr("fill", "red")
+      .attr("font-size", "24px")
+      .attr("font-weight", "bold")
+      .text("Error: Start year must be earlier than end year");
+    return;
+  }
+
+  updateVisualization();
 }
 
 d3.select("#startYearInput").on("input", function () {
-    selectedStartYear = +this.value;
-    d3.select("#startYearValue").text(selectedStartYear);
-    validateYearRangeAndUpdate();
+  selectedStartYear = +this.value;
+  d3.select("#startYearValue").text(selectedStartYear);
+  validateYearRangeAndUpdate();
 });
 
 d3.select("#endYearInput").on("input", function () {
-    selectedEndYear = +this.value;
-    d3.select("#endYearValue").text(selectedEndYear);
-    validateYearRangeAndUpdate();
+  selectedEndYear = +this.value;
+  d3.select("#endYearValue").text(selectedEndYear);
+  validateYearRangeAndUpdate();
 });
 
 
