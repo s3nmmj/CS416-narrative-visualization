@@ -89,17 +89,21 @@ function drawScene1() {
   const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
   const path = d3.geoPath().projection(projection);
 
-  const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0);
+  // Filter valid CO2 data and calculate max value
+  const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0 && d.iso_code);
   const maxVal = d3.max(validCO2, d => d.co2);
-  const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd).domain([1, maxVal]);
+  const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd)
+    .domain([1, maxVal])
+    .clamp(true); // Ensure values outside domain are clamped to min/max
 
+  // Draw countries with color based on CO2 emissions
   svg.selectAll("path")
     .data(topojson.feature(dataWorld, dataWorld.objects.countries).features)
     .enter().append("path")
     .attr("d", path)
     .attr("fill", d => {
-      const c = data2022.find(e => e.iso_code === d.id);
-      return c && !isNaN(c.co2) && c.co2 > 0 ? colorScale(c.co2) : "#eee";
+      const countryData = validCO2.find(e => e.iso_code === d.id);
+      return countryData ? colorScale(countryData.co2) : "#eee"; // Default to light gray if no data
     })
     .attr("stroke", "#333")
     .on("click", (event, d) => {
@@ -107,21 +111,22 @@ function drawScene1() {
       if (currentScene === 3) updateVisualization();
     })
     .on("mouseover", (event, d) => {
-      const c = data2022.find(c => c.iso_code === d.id);
-      if (c && !isNaN(c.co2)) formatTooltip(event, `${c.country}<br>CO2: ${Math.round(c.co2)} Mt`);
+      const countryData = validCO2.find(c => c.iso_code === d.id);
+      if (countryData && !isNaN(countryData.co2)) {
+        formatTooltip(event, `${countryData.country}<br>CO2: ${Math.round(countryData.co2)} Mt`);
+      }
     })
     .on("mouseout", hideTooltip);
 
+  // Legend setup
   const legendWidth = 200, legendHeight = 10;
   const legendScale = d3.scaleLog().domain([1, maxVal]).range([0, legendWidth]);
   const legendAxis = d3.axisBottom(legendScale).ticks(5, ".0s");
 
   const defs = svg.append("defs");
   const linearGradient = defs.append("linearGradient").attr("id", "legendGradient");
-  linearGradient.append("stop").attr("offset", "0%")
-    .attr("stop-color", colorScale(1));
-  linearGradient.append("stop").attr("offset", "100%")
-    .attr("stop-color", colorScale(maxVal));
+  linearGradient.append("stop").attr("offset", "0%").attr("stop-color", colorScale(1));
+  linearGradient.append("stop").attr("offset", "100%").attr("stop-color", colorScale(maxVal));
 
   const legend = svg.append("g").attr("transform", `translate(${width - legendWidth - 40}, ${height - 40})`);
   legend.append("rect")
@@ -131,6 +136,7 @@ function drawScene1() {
   legend.append("g").attr("transform", `translate(0, ${legendHeight})`).call(legendAxis);
   legend.append("text").attr("x", 0).attr("y", -5).text("CO2 Emissions (Mt)");
 
+  // Annotations
   svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
     {
       note: { label: "China: Highest Emitter", title: `${Math.round(data2022.find(c => c.country === "China")?.co2 || 0)} Mt` },
