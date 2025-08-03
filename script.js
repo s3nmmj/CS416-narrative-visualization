@@ -53,25 +53,25 @@ document.addEventListener("keydown", e => {
 });
 
 function validateYearRangeAndUpdate() {
-  if (selectedStartYear >= selectedEndYear) {
-    d3.select("#yearError").style("display", "block");
-    return; // Don't update chart
-  } else {
-    d3.select("#yearError").style("display", "none");
-    updateVisualization();
-  }
+    if (selectedStartYear >= selectedEndYear) {
+        d3.select("#yearError").style("display", "block");
+        return; // Don't update chart
+    } else {
+        d3.select("#yearError").style("display", "none");
+        updateVisualization();
+    }
 }
 
 d3.select("#startYearInput").on("input", function () {
-  selectedStartYear = +this.value;
-  d3.select("#startYearValue").text(selectedStartYear);
-  validateYearRangeAndUpdate();
+    selectedStartYear = +this.value;
+    d3.select("#startYearValue").text(selectedStartYear);
+    validateYearRangeAndUpdate();
 });
 
 d3.select("#endYearInput").on("input", function () {
-  selectedEndYear = +this.value;
-  d3.select("#endYearValue").text(selectedEndYear);
-  validateYearRangeAndUpdate();
+    selectedEndYear = +this.value;
+    d3.select("#endYearValue").text(selectedEndYear);
+    validateYearRangeAndUpdate();
 });
 
 
@@ -257,7 +257,7 @@ function drawScene3() {
             note: { label: "High GDP, High Emissions", title: "Qatar" },
             x: x(dataScatter.find(d => d.country === "Qatar")?.gdp || 0),
             y: y(dataScatter.find(d => d.country === "Qatar")?.co2_per_capita || 0),
-            dy: -40, dx: 40
+            dy: 20, dx: 40
         }
     ]));
 }
