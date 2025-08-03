@@ -16,7 +16,7 @@ Promise.all([
   d3.csv("data/co2_scatter_2022.csv"),
   d3.json("data/world.topojson")
 ]).then(([co2_2022, co2_global, co2_scatter, world]) => {
-  data2022 = co2_2022;
+  data2022 = co2_2022.map(d => ({ ...d, co2: +d.co2 }));
   dataGlobal = co2_global;
   dataScatter = co2_scatter;
   dataWorld = world;
@@ -69,7 +69,7 @@ function updateVisualization() {
   d3.select("#sceneTitle").text(
     currentScene === 1 ? "Scene 1: CO2 Emissions by Country (2022)" :
     currentScene === 2 ? "Scene 2: Global CO2 Emissions Over Time" :
-    "Scene 3: CO2 vs GDP per Capita"
+    "Scene 3: CO2 vs GDP per Capita (2022)"
   );
   d3.select("#yearSlider").style("display", currentScene === 2 ? "flex" : "none");
 }
@@ -88,7 +88,9 @@ function hideTooltip() {
 function drawScene1() {
   const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
   const path = d3.geoPath().projection(projection);
-  const maxVal = d3.max(data2022, d => +d.co2);
+
+  const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0);
+  const maxVal = d3.max(validCO2, d => d.co2);
   const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd).domain([1, maxVal]);
 
   svg.selectAll("path")
@@ -97,7 +99,7 @@ function drawScene1() {
     .attr("d", path)
     .attr("fill", d => {
       const c = data2022.find(e => e.iso_code === d.id);
-      return c ? colorScale(+c.co2) : "#eee";
+      return c && !isNaN(c.co2) && c.co2 > 0 ? colorScale(c.co2) : "#eee";
     })
     .attr("stroke", "#333")
     .on("click", (event, d) => {
@@ -106,37 +108,28 @@ function drawScene1() {
     })
     .on("mouseover", (event, d) => {
       const c = data2022.find(c => c.iso_code === d.id);
-      if (c) formatTooltip(event, `${c.country}<br>CO2: ${Math.round(c.co2)} Mt`);
+      if (c && !isNaN(c.co2)) formatTooltip(event, `${c.country}<br>CO2: ${Math.round(c.co2)} Mt`);
     })
     .on("mouseout", hideTooltip);
-
-  const defs = svg.append("defs");
-  const linearGradient = defs.append("linearGradient")
-    .attr("id", "legendGradient");
-  linearGradient.append("stop")
-    .attr("offset", "0%")
-    .attr("stop-color", colorScale(1));
-  linearGradient.append("stop")
-    .attr("offset", "100%")
-    .attr("stop-color", colorScale(maxVal));
 
   const legendWidth = 200, legendHeight = 10;
   const legendScale = d3.scaleLog().domain([1, maxVal]).range([0, legendWidth]);
   const legendAxis = d3.axisBottom(legendScale).ticks(5, ".0s");
 
-  const legend = svg.append("g")
-    .attr("transform", `translate(${width - legendWidth - 40}, ${height - 40})`);
+  const defs = svg.append("defs");
+  const linearGradient = defs.append("linearGradient").attr("id", "legendGradient");
+  linearGradient.append("stop").attr("offset", "0%")
+    .attr("stop-color", colorScale(1));
+  linearGradient.append("stop").attr("offset", "100%")
+    .attr("stop-color", colorScale(maxVal));
+
+  const legend = svg.append("g").attr("transform", `translate(${width - legendWidth - 40}, ${height - 40})`);
   legend.append("rect")
     .attr("width", legendWidth)
     .attr("height", legendHeight)
     .style("fill", "url(#legendGradient)");
-  legend.append("g")
-    .attr("transform", `translate(0, ${legendHeight})`)
-    .call(legendAxis);
-  legend.append("text")
-    .attr("x", 0)
-    .attr("y", -5)
-    .text("CO2 Emissions (Mt)");
+  legend.append("g").attr("transform", `translate(0, ${legendHeight})`).call(legendAxis);
+  legend.append("text").attr("x", 0).attr("y", -5).text("CO2 Emissions (Mt)");
 
   svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
     {
