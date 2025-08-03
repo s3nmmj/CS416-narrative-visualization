@@ -1,4 +1,3 @@
-// Global Variables
 const width = 1200;
 const height = 650;
 const svg = d3.select("#viz");
@@ -21,7 +20,6 @@ const countryNameMap = {
 };
 
 
-// Load data
 Promise.all([
     d3.csv("data/co2_2022.csv"),
     d3.csv("data/co2_global_1990_2022.csv"),
@@ -35,7 +33,6 @@ Promise.all([
     updateVisualization();
 });
 
-// Navigation Triggers
 d3.select("#prevButton").on("click", () => {
     if (currentScene > 1) currentScene--;
     updateVisualization();
@@ -45,7 +42,6 @@ d3.select("#nextButton").on("click", () => {
     updateVisualization();
 });
 
-// Keyboard Support
 document.addEventListener("keydown", e => {
     if (e.key === "ArrowRight" && currentScene < 3) currentScene++;
     if (e.key === "ArrowLeft" && currentScene > 1) currentScene--;
@@ -53,11 +49,9 @@ document.addEventListener("keydown", e => {
 });
 
 function validateYearRangeAndUpdate() {
-  // Clear existing error text
   svg.selectAll(".year-error-text").remove();
 
   if (selectedStartYear >= selectedEndYear) {
-    // Draw error text inside canvas
     svg.append("text")
       .attr("class", "year-error-text")
       .attr("x", width / 2)
@@ -123,7 +117,6 @@ function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
     const path = d3.geoPath().projection(projection);
 
-    // Filter valid CO2 data and calculate max value
     const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0 && d.country);
     // console.log("=============");
     // console.log(validCO2);
@@ -131,9 +124,8 @@ function drawScene1() {
     const maxVal = d3.max(validCO2, d => d.co2);
     const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd)
         .domain([1, maxVal])
-        .clamp(true); // Ensure values outside domain are clamped to min/max
+        .clamp(true);
 
-    // Draw countries with color based on CO2 emissions
     svg.selectAll("path")
         .data(topojson.feature(dataWorld, dataWorld.objects.countries).features)
         .enter().append("path")
@@ -144,7 +136,7 @@ function drawScene1() {
                 name = countryNameMap[name];
             }
             const countryData = validCO2.find(e => e.country.toLowerCase() === name.toLowerCase());
-            return countryData ? colorScale(countryData.co2) : "#eee"; // Default to light gray if no data
+            return countryData ? colorScale(countryData.co2) : "#eee";
         })
         .attr("stroke", "#333")
         .on("click", (event, d) => {
@@ -167,7 +159,7 @@ function drawScene1() {
         })
         .on("mouseout", hideTooltip);
 
-    // Legend setup
+
     const legendWidth = 200, legendHeight = 10;
     const legendScale = d3.scaleLog().domain([1, maxVal]).range([0, legendWidth]);
     const legendAxis = d3.axisBottom(legendScale).ticks(5, ".0s");
@@ -185,7 +177,6 @@ function drawScene1() {
     legend.append("g").attr("transform", `translate(0, ${legendHeight})`).call(legendAxis);
     legend.append("text").attr("x", 0).attr("y", -5).text("CO2 Emissions (Mt)");
 
-    // Annotations
     svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
         {
             note: { label: "China: Highest Emitter", title: `${Math.round(data2022.find(c => c.country === "China")?.co2 || 0)} Mt` },
@@ -241,34 +232,66 @@ function drawScene2() {
 }
 
 function drawScene3() {
-    const margin = { top: 40, right: 20, bottom: 50, left: 60 };
-    const x = d3.scaleLog().domain([1000, d3.max(dataScatter, d => +d.gdp)]).range([margin.left, width - margin.right]);
-    const y = d3.scaleLinear().domain([0, d3.max(dataScatter, d => +d.co2_per_capita)]).range([height - margin.bottom, margin.top]);
-    const r = d3.scaleSqrt().domain([0, d3.max(dataScatter, d => +d.population)]).range([2, 20]);
+  const margin = { top: 40, right: 20, bottom: 50, left: 60 };
 
-    svg.append("g").attr("transform", `translate(0,${height - margin.bottom})`).call(d3.axisBottom(x).tickFormat(d3.format(".0s")));
-    svg.append("g").attr("transform", `translate(${margin.left},0)`).call(d3.axisLeft(y));
+  svg.selectAll(".annotation-group").remove();
 
+  const x = d3.scaleLog()
+    .domain([1000, d3.max(dataScatter, d => +d.gdp)])
+    .range([margin.left, width - margin.right]);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(dataScatter, d => +d.co2_per_capita)])
+    .range([height - margin.bottom, margin.top]);
+
+  const r = d3.scaleSqrt()
+    .domain([0, d3.max(dataScatter, d => +d.population)])
+    .range([2, 20]);
+
+  const formatGDP = d3.format("$.2s");
+  const formatCO2 = d3.format(".1f");
+
+
+  svg.append("g")
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("$.2s")));
+
+  svg.append("g")
+    .attr("transform", `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y));
+
+
+  svg.append("g")
+    .selectAll("circle")
+    .data(dataScatter)
+    .enter().append("circle")
+    .attr("cx", d => x(+d.gdp))
+    .attr("cy", d => y(+d.co2_per_capita))
+    .attr("r", d => r(+d.population))
+    .attr("fill", d => d.country === selectedCountry ? "blue" : "red")
+    .attr("opacity", 0.5)
+    .on("mouseover", (event, d) => {
+      formatTooltip(event,
+        `${d.country}<br>CO₂/capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
+      );
+    })
+    .on("mouseout", hideTooltip);
+
+  
+  const qatar = dataScatter.find(d => d.country === "Qatar");
+  if (qatar) {
     svg.append("g")
-        .selectAll("circle")
-        .data(dataScatter)
-        .enter().append("circle")
-        .attr("cx", d => x(+d.gdp))
-        .attr("cy", d => y(+d.co2_per_capita))
-        .attr("r", d => r(+d.population))
-        .attr("fill", d => d.country === selectedCountry ? "blue" : "red")
-        .attr("opacity", 0.5)
-        .on("mouseover", (event, d) => {
-            formatTooltip(event, `${d.country}<br>CO2/capita: ${d.co2_per_capita} t<br>GDP: $${Math.round(d.gdp)}`);
-        })
-        .on("mouseout", hideTooltip);
-
-    svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
+      .call(d3.annotation().type(d3.annotationLabel).annotations([
         {
-            note: { label: "High GDP, High Emissions", title: "Qatar" },
-            x: x(dataScatter.find(d => d.country === "Qatar")?.gdp || 0),
-            y: y(dataScatter.find(d => d.country === "Qatar")?.co2_per_capita || 0),
-            dy: 20, dx: 40
+          note: {
+            label: "High GDP, High Emissions",
+            title: "Qatar"
+          },
+          x: x(+qatar.gdp),
+          y: y(+qatar.co2_per_capita),
+          dy: 40,
+          dx: 40
         }
-    ]));
+      ]));
+  }
 }
