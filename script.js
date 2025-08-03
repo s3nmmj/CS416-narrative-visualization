@@ -304,3 +304,11 @@ function drawScene3() {
       ]));
   }
 }
+
+d3.selectAll(".step-circle").on("click", function () {
+  const step = +this.dataset.step;
+  if (step !== currentScene) {
+    currentScene = step;
+    updateVisualization();
+  }
+});
