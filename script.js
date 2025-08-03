@@ -40,19 +40,18 @@ document.addEventListener("keydown", e => {
   updateVisualization();
 });
 
-// Year sliders for Scene 2
 d3.select("#startYearInput").on("input", function () {
   selectedStartYear = +this.value;
   d3.select("#startYearValue").text(selectedStartYear);
   updateVisualization();
 });
+
 d3.select("#endYearInput").on("input", function () {
   selectedEndYear = +this.value;
   d3.select("#endYearValue").text(selectedEndYear);
   updateVisualization();
 });
 
-// Scene Update Function
 function updateVisualization() {
   svg.transition().duration(200).style("opacity", 0).on("end", () => {
     svg.html("");
@@ -72,11 +71,9 @@ function updateVisualization() {
     currentScene === 2 ? "Scene 2: Global CO2 Emissions Over Time" :
     "Scene 3: CO2 vs GDP per Capita"
   );
-
   d3.select("#yearSlider").style("display", currentScene === 2 ? "flex" : "none");
 }
 
-// Tooltip helpers
 function formatTooltip(event, html) {
   d3.select("#tooltip")
     .style("opacity", 1)
@@ -88,12 +85,11 @@ function hideTooltip() {
   d3.select("#tooltip").style("opacity", 0);
 }
 
-// Scene 1: World Map
 function drawScene1() {
   const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
   const path = d3.geoPath().projection(projection);
-  const colorScale = d3.scaleSequentialLog(d3.interpolateReds)
-    .domain([1, d3.max(data2022, d => +d.co2)]);
+  const maxVal = d3.max(data2022, d => +d.co2);
+  const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd).domain([1, maxVal]);
 
   svg.selectAll("path")
     .data(topojson.feature(dataWorld, dataWorld.objects.countries).features)
@@ -101,7 +97,7 @@ function drawScene1() {
     .attr("d", path)
     .attr("fill", d => {
       const c = data2022.find(e => e.iso_code === d.id);
-      return c ? colorScale(+c.co2) : "#ccc";
+      return c ? colorScale(+c.co2) : "#eee";
     })
     .attr("stroke", "#333")
     .on("click", (event, d) => {
@@ -113,6 +109,34 @@ function drawScene1() {
       if (c) formatTooltip(event, `${c.country}<br>CO2: ${Math.round(c.co2)} Mt`);
     })
     .on("mouseout", hideTooltip);
+
+  const defs = svg.append("defs");
+  const linearGradient = defs.append("linearGradient")
+    .attr("id", "legendGradient");
+  linearGradient.append("stop")
+    .attr("offset", "0%")
+    .attr("stop-color", colorScale(1));
+  linearGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", colorScale(maxVal));
+
+  const legendWidth = 200, legendHeight = 10;
+  const legendScale = d3.scaleLog().domain([1, maxVal]).range([0, legendWidth]);
+  const legendAxis = d3.axisBottom(legendScale).ticks(5, ".0s");
+
+  const legend = svg.append("g")
+    .attr("transform", `translate(${width - legendWidth - 40}, ${height - 40})`);
+  legend.append("rect")
+    .attr("width", legendWidth)
+    .attr("height", legendHeight)
+    .style("fill", "url(#legendGradient)");
+  legend.append("g")
+    .attr("transform", `translate(0, ${legendHeight})`)
+    .call(legendAxis);
+  legend.append("text")
+    .attr("x", 0)
+    .attr("y", -5)
+    .text("CO2 Emissions (Mt)");
 
   svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
     {
@@ -126,13 +150,12 @@ function drawScene1() {
   ]));
 }
 
-// Scene 2: Line Chart (Dynamic Years)
 function drawScene2() {
   const margin = { top: 20, right: 20, bottom: 50, left: 60 };
   const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
 
   const x = d3.scaleLinear().domain([selectedStartYear, selectedEndYear]).range([margin.left, width - margin.right]);
-  const y = d3.scaleLinear().domain([0, d3.max(filtered, d => +d.co2)]).range([height - margin.bottom, margin.top]);
+  const y = d3.scaleLinear().domain([20000, d3.max(filtered, d => +d.co2)]).range([height - margin.bottom, margin.top]);
 
   svg.append("g").attr("transform", `translate(0,${height - margin.bottom})`).call(d3.axisBottom(x).tickFormat(d3.format("d")));
   svg.append("g").attr("transform", `translate(${margin.left},0)`).call(d3.axisLeft(y));
@@ -155,13 +178,11 @@ function drawScene2() {
     const paris = filtered.find(d => d.year == 2015);
     if (paris) annotations.push({ note: { label: "Paris Agreement (2015)" }, x: x(2015), y: y(paris.co2), dy: -30, dx: 0 });
   }
-
   svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
 
-// Scene 3: Scatterplot
 function drawScene3() {
-  const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+  const margin = { top: 40, right: 20, bottom: 50, left: 60 };
   const x = d3.scaleLog().domain([1000, d3.max(dataScatter, d => +d.gdp)]).range([margin.left, width - margin.right]);
   const y = d3.scaleLinear().domain([0, d3.max(dataScatter, d => +d.co2_per_capita)]).range([height - margin.bottom, margin.top]);
   const r = d3.scaleSqrt().domain([0, d3.max(dataScatter, d => +d.population)]).range([2, 20]);
@@ -188,7 +209,7 @@ function drawScene3() {
       note: { label: "High GDP, High Emissions", title: "Qatar" },
       x: x(dataScatter.find(d => d.country === "Qatar")?.gdp || 0),
       y: y(dataScatter.find(d => d.country === "Qatar")?.co2_per_capita || 0),
-      dy: -30, dx: 30
+      dy: -40, dx: 40
     }
   ]));
 }
