@@ -52,17 +52,28 @@ document.addEventListener("keydown", e => {
     updateVisualization();
 });
 
-d3.select("#startYearInput").on("input", function () {
-    selectedStartYear = +this.value;
-    d3.select("#startYearValue").text(selectedStartYear);
+function validateYearRangeAndUpdate() {
+  if (selectedStartYear >= selectedEndYear) {
+    d3.select("#yearError").style("display", "block");
+    return; // Don't update chart
+  } else {
+    d3.select("#yearError").style("display", "none");
     updateVisualization();
+  }
+}
+
+d3.select("#startYearInput").on("input", function () {
+  selectedStartYear = +this.value;
+  d3.select("#startYearValue").text(selectedStartYear);
+  validateYearRangeAndUpdate();
 });
 
 d3.select("#endYearInput").on("input", function () {
-    selectedEndYear = +this.value;
-    d3.select("#endYearValue").text(selectedEndYear);
-    updateVisualization();
+  selectedEndYear = +this.value;
+  d3.select("#endYearValue").text(selectedEndYear);
+  validateYearRangeAndUpdate();
 });
+
 
 function updateVisualization() {
     svg.transition().duration(200).style("opacity", 0).on("end", () => {

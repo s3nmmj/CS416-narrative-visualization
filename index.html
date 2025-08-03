@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global CO2 Emissions Narrative</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
-  <script src="https://unpkg.com/topojson@3"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global CO2 Emissions Narrative</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
 </head>
+
 <body>
-  <h1>Global CO2 Emissions: A Narrative Visualization</h1>
-  <h2 id="sceneTitle"></h2>
-  <div id="controls">
-    <button id="prevButton" disabled>Previous</button>
-    <span id="stepIndicator">Step 1 of 3</span>
-    <button id="nextButton">Next</button>
-  </div>
-  <div id="yearSlider" style="display: none;">
-    <label>Start Year: <input type="range" id="startYearInput" min="1990" max="2022" value="1990"> <span id="startYearValue">1990</span></label>
-    <label>End Year: <input type="range" id="endYearInput" min="1990" max="2022" value="2022"> <span id="endYearValue">2022</span></label>
-  </div>
-  <svg id="viz" width="1200" height="650"></svg>
-  <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
-  <script src="script.js"></script>
+    <h1>Global CO2 Emissions: A Narrative Visualization</h1>
+    <h2 id="sceneTitle"></h2>
+    <div id="controls">
+        <button id="prevButton" disabled>Previous</button>
+        <span id="stepIndicator">Step 1 of 3</span>
+        <button id="nextButton">Next</button>
+    </div>
+    <div id="yearSlider" style="display: none;">
+        <label>Start Year: <input type="range" id="startYearInput" min="1990" max="2022" value="1990"> <span
+                id="startYearValue">1990</span></label>
+        <label>End Year: <input type="range" id="endYearInput" min="1990" max="2022" value="2022"> <span
+                id="endYearValue">2022</span></label>
+    </div>
+    <div id="yearError" style="color: red; margin-top: 10px; display: none;">
+        Start year must be earlier than end year.
+    </div>
+    <svg id="viz" width="1200" height="650"></svg>
+    <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>
