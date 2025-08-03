@@ -4,18 +4,18 @@ const svg = d3.select("#viz");
 
 // Parameters
 let currentScene = 1;
-let selectedYear = 2023; // Updated to 2023
+let selectedYear = 2022; // Updated to 2022
 let selectedCountry = null; // For highlighting in Scene 3
-let data2023, dataGlobal, dataScatter, dataWorld;
+let data2022, dataGlobal, dataScatter, dataWorld;
 
 // Load data
 Promise.all([
-    d3.csv("data/co2_2023.csv"),
-    d3.csv("data/co2_global_1990_2023.csv"),
-    d3.csv("data/co2_scatter_2023.csv"),
+    d3.csv("data/co2_2022.csv"),
+    d3.csv("data/co2_global_1990_2022.csv"),
+    d3.csv("data/co2_scatter_2022.csv"),
     d3.json("data/world.topojson")
-]).then(([co2_2023, co2_global, co2_scatter, world]) => {
-    data2023 = co2_2023;
+]).then(([co2_2022, co2_global, co2_scatter, world]) => {
+    data2022 = co2_2022;
     dataGlobal = co2_global;
     dataScatter = co2_scatter;
     dataWorld = world;
@@ -52,7 +52,7 @@ function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
     const path = d3.geoPath().projection(projection);
     const colorScale = d3.scaleSequentialLog(d3.interpolateReds)
-        .domain([1, d3.max(data2023, d => +d.co2)]);
+        .domain([1, d3.max(data2022, d => +d.co2)]);
 
     // Render map
     svg.append("g")
@@ -62,17 +62,17 @@ function drawScene1() {
         .append("path")
         .attr("d", path)
         .attr("fill", d => {
-            const country = data2023.find(c => c.iso_code === d.id);
+            const country = data2022.find(c => c.iso_code === d.id);
             return country ? colorScale(+country.co2) : "#ccc";
         })
         .attr("stroke", "#333")
         .style("cursor", "pointer")
         .on("click", (event, d) => {
-            selectedCountry = data2023.find(c => c.iso_code === d.id)?.country || null;
+            selectedCountry = data2022.find(c => c.iso_code === d.id)?.country || null;
             if (currentScene === 3) updateVisualization();
         })
         .on("mouseover", (event, d) => {
-            const country = data2023.find(c => c.iso_code === d.id);
+            const country = data2022.find(c => c.iso_code === d.id);
             if (country) {
                 d3.select("#tooltip")
                     .style("opacity", 1)
@@ -111,12 +111,12 @@ function drawScene1() {
     // Annotations
     const annotations = [
         {
-            note: { label: "China: Highest Emitter", title: `${Math.round(data2023.find(c => c.country === "China")?.co2 || 0)} Mt` },
+            note: { label: "China: Highest Emitter", title: `${Math.round(data2022.find(c => c.country === "China")?.co2 || 0)} Mt` },
             x: projection([105, 35])[0], y: projection([105, 35])[1],
             dy: -30, dx: 30
         },
         {
-            note: { label: "USA: Second Highest", title: `${Math.round(data2023.find(c => c.country === "United States")?.co2 || 0)} Mt` },
+            note: { label: "USA: Second Highest", title: `${Math.round(data2022.find(c => c.country === "United States")?.co2 || 0)} Mt` },
             x: projection([-100, 40])[0], y: projection([-100, 40])[1],
             dy: -30, dx: -30
         }
@@ -128,7 +128,7 @@ function drawScene1() {
 // Scene 2: Line Chart
 function drawScene2() {
     const margin = { top: 20, right: 20, bottom: 50, left: 60 };
-    const x = d3.scaleLinear().domain([1990, 2023]).range([margin.left, width - margin.right]); // Extended to 2023
+    const x = d3.scaleLinear().domain([1990, 2022]).range([margin.left, width - margin.right]); // Extended to 2022
     const y = d3.scaleLinear().domain([0, d3.max(dataGlobal, d => +d.co2)]).range([height - margin.bottom, margin.top]);
 
     svg.append("g")
