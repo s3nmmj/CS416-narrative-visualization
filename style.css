@@ -54,9 +54,17 @@ button:disabled {
 
 #yearSlider {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .grid line {
   stroke: #ddd;
   stroke-opacity: 0.7;
+}
+
+input[type=range] {
+  width: 200px;
 }

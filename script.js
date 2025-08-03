@@ -118,32 +118,143 @@ function drawScene1() {
 }
 
 // Scene 2: Line Chart
+// Global Variables
+const width = 960;
+const height = 500;
+const svg = d3.select("#viz");
+
+let currentScene = 1;
+let selectedStartYear = 1990;
+let selectedEndYear = 2022;
+let selectedCountry = null;
+let data2022, dataGlobal, dataScatter, dataWorld;
+
+// Load data
+Promise.all([
+  d3.csv("data/co2_2022.csv"),
+  d3.csv("data/co2_global_1990_2022.csv"),
+  d3.csv("data/co2_scatter_2022.csv"),
+  d3.json("data/world.topojson")
+]).then(([co2_2022, co2_global, co2_scatter, world]) => {
+  data2022 = co2_2022;
+  dataGlobal = co2_global;
+  dataScatter = co2_scatter;
+  dataWorld = world;
+  updateVisualization();
+});
+
+// Navigation Triggers
+d3.select("#prevButton").on("click", () => {
+  if (currentScene > 1) currentScene--;
+  updateVisualization();
+});
+d3.select("#nextButton").on("click", () => {
+  if (currentScene < 3) currentScene++;
+  updateVisualization();
+});
+
+// Keyboard Support
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight" && currentScene < 3) currentScene++;
+  if (e.key === "ArrowLeft" && currentScene > 1) currentScene--;
+  updateVisualization();
+});
+
+d3.select("#startYearInput").on("input", function () {
+  selectedStartYear = +this.value;
+  d3.select("#startYearValue").text(selectedStartYear);
+  updateVisualization();
+});
+
+d3.select("#endYearInput").on("input", function () {
+  selectedEndYear = +this.value;
+  d3.select("#endYearValue").text(selectedEndYear);
+  updateVisualization();
+});
+
+// Update Scene
+function updateVisualization() {
+  svg.transition().duration(200).style("opacity", 0).on("end", () => {
+    svg.html("");
+    d3.select("#prevButton").property("disabled", currentScene === 1);
+    d3.select("#nextButton").property("disabled", currentScene === 3);
+    d3.select("#stepIndicator").text(`Step ${currentScene} of 3`);
+
+    if (currentScene === 1) drawScene1();
+    else if (currentScene === 2) drawScene2();
+    else if (currentScene === 3) drawScene3();
+
+    svg.transition().duration(200).style("opacity", 1);
+  });
+
+  d3.select("#sceneTitle").text(
+    currentScene === 1 ? "Scene 1: CO2 Emissions by Country (2022)" :
+    currentScene === 2 ? "Scene 2: Global CO2 Emissions Over Time" :
+    "Scene 3: CO2 vs GDP per Capita"
+  );
+  d3.select("#yearSlider").style("display", currentScene === 2 ? "block" : "none");
+}
+
+// Utility
+function formatTooltip(event, html) {
+  d3.select("#tooltip")
+    .style("opacity", 1)
+    .html(html)
+    .style("left", `${event.pageX + 10}px`)
+    .style("top", `${event.pageY - 10}px`);
+}
+function hideTooltip() {
+  d3.select("#tooltip").style("opacity", 0);
+}
+
+// Scene 2: Line Chart (Dynamic Time Span)
 function drawScene2() {
   const margin = { top: 20, right: 20, bottom: 50, left: 60 };
-  const x = d3.scaleLinear().domain([1990, 2022]).range([margin.left, width - margin.right]);
-  const y = d3.scaleLinear().domain([0, d3.max(dataGlobal, d => +d.co2)]).range([height - margin.bottom, margin.top]);
+  const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
 
-  svg.append("g").attr("transform", `translate(0,${height - margin.bottom})`).call(d3.axisBottom(x).tickFormat(d3.format("d")));
-  svg.append("g").attr("transform", `translate(${margin.left},0)`).call(d3.axisLeft(y));
+  const x = d3.scaleLinear()
+    .domain([selectedStartYear, selectedEndYear])
+    .range([margin.left, width - margin.right]);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(filtered, d => +d.co2)])
+    .range([height - margin.bottom, margin.top]);
+
+  svg.append("g")
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+  svg.append("g")
+    .attr("transform", `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y));
 
   svg.append("path")
-    .datum(dataGlobal)
+    .datum(filtered)
     .attr("fill", "none")
     .attr("stroke", "red")
     .attr("stroke-width", 2)
-    .attr("d", d3.line().x(d => x(+d.year)).y(d => y(+d.co2)));
+    .attr("d", d3.line()
+      .x(d => x(+d.year))
+      .y(d => y(+d.co2)));
 
-  svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
-    {
+  const annotations = [];
+  if (selectedStartYear <= 1997 && selectedEndYear >= 1997) {
+    const kyoto = filtered.find(d => d.year == 1997);
+    if (kyoto) annotations.push({
       note: { label: "Kyoto Protocol (1997)" },
-      x: x(1997), y: y(dataGlobal.find(d => d.year == 1997).co2), dy: -30, dx: 0
-    },
-    {
+      x: x(1997), y: y(kyoto.co2), dy: -30, dx: 0
+    });
+  }
+  if (selectedStartYear <= 2015 && selectedEndYear >= 2015) {
+    const paris = filtered.find(d => d.year == 2015);
+    if (paris) annotations.push({
       note: { label: "Paris Agreement (2015)" },
-      x: x(2015), y: y(dataGlobal.find(d => d.year == 2015).co2), dy: -30, dx: 0
-    }
-  ]));
+      x: x(2015), y: y(paris.co2), dy: -30, dx: 0
+    });
+  }
+  svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
+
 
 // Scene 3: Scatterplot
 function drawScene3() {
