@@ -18,15 +18,18 @@
     <button id="nextButton">Next</button>
   </div>
 
-  <!-- Dual-handle slider simulation with overlapping range inputs -->
-  <div id="yearSlider" style="display: none; position: relative; width: 400px; margin: auto;">
-    <input type="range" id="yearRangeStart" min="1990" max="2022" value="1990" step="1" style="position: absolute; width: 100%;">
-    <input type="range" id="yearRangeEnd" min="1990" max="2022" value="2022" step="1" style="position: absolute; width: 100%;">
-    <div style="margin-top: 40px; text-align: center;">
-      <span>Start Year: <span id="startYearValue">1990</span></span> —
-      <span>End Year: <span id="endYearValue">2022</span></span>
-    </div>
+<div id="yearSlider" style="display: none; position: relative; width: 400px; margin: auto; height: 60px;">
+  <div id="rangeTrack" style="position: absolute; top: 18px; left: 0; width: 100%; height: 4px; background-color: #ccc;"></div>
+  <div id="rangeHighlight" style="position: absolute; top: 18px; height: 4px; background-color: #2196f3;"></div>
+
+  <input type="range" id="yearRangeStart" min="1990" max="2022" value="1990" step="1" class="slider slider-left">
+  <input type="range" id="yearRangeEnd" min="1990" max="2022" value="2022" step="1" class="slider slider-right">
+
+  <div style="margin-top: 40px; text-align: center;">
+    <span>Start Year: <span id="startYearValue">1990</span></span> —
+    <span>End Year: <span id="endYearValue">2022</span></span>
   </div>
+</div>
 
   <svg id="viz" width="960" height="500"></svg>
   <div id="tooltip" class="tooltip" style="opacity: 0;"></div>

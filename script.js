@@ -36,12 +36,24 @@ document.addEventListener("keydown", e => {
   updateVisualization();
 });
 
-// Custom dual range logic
+function updateSliderVisuals() {
+  const rangeStart = +d3.select("#yearRangeStart").property("value");
+  const rangeEnd = +d3.select("#yearRangeEnd").property("value");
+  const track = document.getElementById("rangeHighlight");
+
+  const percentStart = ((rangeStart - 1990) / (2022 - 1990)) * 100;
+  const percentEnd = ((rangeEnd - 1990) / (2022 - 1990)) * 100;
+
+  track.style.left = percentStart + "%";
+  track.style.width = (percentEnd - percentStart) + "%";
+}
+
 d3.select("#yearRangeStart").on("input", function () {
   const val = +this.value;
   if (val <= selectedEndYear) {
     selectedStartYear = val;
     d3.select("#startYearValue").text(val);
+    updateSliderVisuals();
     updateVisualization();
   } else {
     this.value = selectedStartYear;
@@ -53,11 +65,13 @@ d3.select("#yearRangeEnd").on("input", function () {
   if (val >= selectedStartYear) {
     selectedEndYear = val;
     d3.select("#endYearValue").text(val);
+    updateSliderVisuals();
     updateVisualization();
   } else {
     this.value = selectedEndYear;
   }
 });
+
 
 function updateVisualization() {
   svg.transition().duration(200).style("opacity", 0).on("end", () => {
