@@ -1,4 +1,3 @@
-// Global Variables
 const width = 960;
 const height = 500;
 const svg = d3.select("#viz");
@@ -9,7 +8,6 @@ let selectedEndYear = 2022;
 let selectedCountry = null;
 let data2022, dataGlobal, dataScatter, dataWorld;
 
-// Load data
 Promise.all([
   d3.csv("data/co2_2022.csv"),
   d3.csv("data/co2_global_1990_2022.csv"),
@@ -23,7 +21,7 @@ Promise.all([
   updateVisualization();
 });
 
-// Navigation Triggers
+// Navigation
 d3.select("#prevButton").on("click", () => {
   if (currentScene > 1) currentScene--;
   updateVisualization();
@@ -32,24 +30,33 @@ d3.select("#nextButton").on("click", () => {
   if (currentScene < 3) currentScene++;
   updateVisualization();
 });
-
-// Keyboard Support
 document.addEventListener("keydown", e => {
   if (e.key === "ArrowRight" && currentScene < 3) currentScene++;
   if (e.key === "ArrowLeft" && currentScene > 1) currentScene--;
   updateVisualization();
 });
 
-d3.select("#startYearInput").on("input", function () {
-  selectedStartYear = +this.value;
-  d3.select("#startYearValue").text(selectedStartYear);
-  updateVisualization();
+// Custom dual range logic
+d3.select("#yearRangeStart").on("input", function () {
+  const val = +this.value;
+  if (val <= selectedEndYear) {
+    selectedStartYear = val;
+    d3.select("#startYearValue").text(val);
+    updateVisualization();
+  } else {
+    this.value = selectedStartYear;
+  }
 });
 
-d3.select("#endYearInput").on("input", function () {
-  selectedEndYear = +this.value;
-  d3.select("#endYearValue").text(selectedEndYear);
-  updateVisualization();
+d3.select("#yearRangeEnd").on("input", function () {
+  const val = +this.value;
+  if (val >= selectedStartYear) {
+    selectedEndYear = val;
+    d3.select("#endYearValue").text(val);
+    updateVisualization();
+  } else {
+    this.value = selectedEndYear;
+  }
 });
 
 function updateVisualization() {
@@ -74,6 +81,7 @@ function updateVisualization() {
   d3.select("#yearSlider").style("display", currentScene === 2 ? "flex" : "none");
 }
 
+// Tooltip helpers
 function formatTooltip(event, html) {
   d3.select("#tooltip")
     .style("opacity", 1)
@@ -85,6 +93,7 @@ function hideTooltip() {
   d3.select("#tooltip").style("opacity", 0);
 }
 
+// Scene 1: World map
 function drawScene1() {
   const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
   const path = d3.geoPath().projection(projection);
@@ -99,7 +108,7 @@ function drawScene1() {
     .attr("d", path)
     .attr("fill", d => {
       const c = data2022.find(e => e.iso_code === d.id);
-      return c && !isNaN(c.co2) && c.co2 > 0 ? colorScale(c.co2) : "#eee";
+      return c && !isNaN(c.co2) ? colorScale(c.co2) : "#eee";
     })
     .attr("stroke", "#333")
     .on("click", (event, d) => {
@@ -118,10 +127,8 @@ function drawScene1() {
 
   const defs = svg.append("defs");
   const linearGradient = defs.append("linearGradient").attr("id", "legendGradient");
-  linearGradient.append("stop").attr("offset", "0%")
-    .attr("stop-color", colorScale(1));
-  linearGradient.append("stop").attr("offset", "100%")
-    .attr("stop-color", colorScale(maxVal));
+  linearGradient.append("stop").attr("offset", "0%").attr("stop-color", colorScale(1));
+  linearGradient.append("stop").attr("offset", "100%").attr("stop-color", colorScale(maxVal));
 
   const legend = svg.append("g").attr("transform", `translate(${width - legendWidth - 40}, ${height - 40})`);
   legend.append("rect")
@@ -143,6 +150,7 @@ function drawScene1() {
   ]));
 }
 
+// Scene 2: Line chart
 function drawScene2() {
   const margin = { top: 20, right: 20, bottom: 50, left: 60 };
   const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
@@ -174,6 +182,7 @@ function drawScene2() {
   svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
 
+// Scene 3: Scatterplot
 function drawScene3() {
   const margin = { top: 40, right: 20, bottom: 50, left: 60 };
   const x = d3.scaleLog().domain([1000, d3.max(dataScatter, d => +d.gdp)]).range([margin.left, width - margin.right]);

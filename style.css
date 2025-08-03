@@ -65,6 +65,10 @@ button:disabled {
   stroke-opacity: 0.7;
 }
 
-input[type=range] {
-  width: 200px;
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  pointer-events: all;
+  height: 40px;
 }
