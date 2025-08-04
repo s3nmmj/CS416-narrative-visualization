@@ -141,8 +141,8 @@ const annotationStyle = {
     note: {
         align: "middle",
         orientation: "topBottom",
-        titleFontSize: "12px",   
-        labelFontSize: "11px",   
+        titleFontSize: "12px",
+        labelFontSize: "11px",
         padding: 4
     }
 };
@@ -255,8 +255,8 @@ function drawScene1() {
             },
             x: projection([105, 35])[0],
             y: projection([105, 35])[1],
-            dx: 120,
-            dy: 60
+            dx: 150,
+            dy: 40
         },
         {
             note: {
@@ -453,13 +453,30 @@ function drawScene3() {
         .call(d3.axisLeft(y));
 
 
+    // svg.append("g")
+    //     .selectAll("circle")
+    //     .data(dataScatter)
+    //     .enter().append("circle")
+    //     .attr("cx", d => x(+d.gdp))
+    //     .attr("cy", d => y(+d.co2_per_capita))
+    //     .attr("r", d => r(+d.population))
+    //     .attr("fill", d => d.country === selectedCountry ? "blue" : "red")
+    //     .attr("opacity", 0.5)
+    //     .on("mouseover", (event, d) => {
+    //         formatTooltip(event,
+    //             `${d.country}<br>CO₂/Capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
+    //         );
+    //     })
+    //     .on("mouseout", hideTooltip);
+
     svg.append("g")
         .selectAll("circle")
         .data(dataScatter)
-        .enter().append("circle")
+        .enter()
+        .append("circle")
         .attr("cx", d => x(+d.gdp))
         .attr("cy", d => y(+d.co2_per_capita))
-        .attr("r", d => r(+d.population))
+        .attr("r", 0)
         .attr("fill", d => d.country === selectedCountry ? "blue" : "red")
         .attr("opacity", 0.5)
         .on("mouseover", (event, d) => {
@@ -467,8 +484,11 @@ function drawScene3() {
                 `${d.country}<br>CO₂/Capita: ${formatCO2(d.co2_per_capita)} t<br>GDP: ${formatGDP(d.gdp)}`
             );
         })
-        .on("mouseout", hideTooltip);
-
+        .on("mouseout", hideTooltip)
+        .transition()
+        .duration(800)
+        .delay((d, i) => i * 3)
+        .attr("r", d => r(+d.population));
 
     const qatar = dataScatter.find(d => d.country === "Qatar");
     if (qatar) {
