@@ -1,3 +1,7 @@
+/**
+ * Name: Jie Zhang
+ * ID: jiez12@illinois.edu
+ */
 const width = 1200;
 const height = 650;
 const svg = d3.select("#viz");
