@@ -168,15 +168,23 @@ function drawScene0() {
         .text("Use the Next button or → key to begin.");
 }
 
-
 function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
     const path = d3.geoPath().projection(projection);
 
+    // ✅ Display selected country at the top of the map
+    if (selectedCountry) {
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", 30)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "18px")
+            .attr("fill", "#333")
+            .attr("font-weight", "bold")
+            .text(`Selected Country: ${selectedCountry}`);
+    }
+
     const validCO2 = data2022.filter(d => !isNaN(d.co2) && d.co2 > 0 && d.country);
-    // console.log("=============");
-    // console.log(validCO2);
-    // console.log("=============");
     const maxVal = d3.max(validCO2, d => d.co2);
     const colorScale = d3.scaleSequentialLog(d3.interpolateYlOrRd)
         .domain([1, maxVal])
@@ -201,7 +209,7 @@ function drawScene1() {
                 name = countryNameMap[name];
             }
             selectedCountry = data2022.find(e => e.country.toLowerCase() === name.toLowerCase())?.country || null;
-            if (currentScene === 3) updateVisualization();
+            updateVisualization(); // This will re-render with the label
         })
         .on("mouseover", (event, d) => {
             let name = d.properties.name;
@@ -215,7 +223,7 @@ function drawScene1() {
         })
         .on("mouseout", hideTooltip);
 
-
+    // Draw legend
     const legendWidth = 200, legendHeight = 10;
     const legendScale = d3.scaleLog().domain([1, maxVal]).range([0, legendWidth]);
     const legendAxis = d3.axisBottom(legendScale).ticks(5, ".0s");
@@ -233,6 +241,7 @@ function drawScene1() {
     legend.append("g").attr("transform", `translate(0, ${legendHeight})`).call(legendAxis);
     legend.append("text").attr("x", 0).attr("y", -5).text("CO2 Emissions (Mt)");
 
+    // Annotations for China and USA
     const scene1Annotations = [
         {
             note: {
@@ -241,8 +250,8 @@ function drawScene1() {
             },
             x: projection([105, 35])[0],
             y: projection([105, 35])[1],
-            dx: 30,
-            dy: -30
+            dx: 50,
+            dy: -80
         },
         {
             note: {
@@ -251,8 +260,8 @@ function drawScene1() {
             },
             x: projection([-100, 40])[0],
             y: projection([-100, 40])[1],
-            dx: -30,
-            dy: -30
+            dx: -50,
+            dy: -80
         }
     ];
 
@@ -262,51 +271,7 @@ function drawScene1() {
             .annotations(scene1Annotations)
             .accessors({ x: d => d.x, y: d => d.y })
             .accessorsInverse({ x: d => d.x, y: d => d.y }));
-
-
 }
-
-// function drawScene2() {
-//     const margin = { top: 20, right: 20, bottom: 50, left: 60 };
-//     const filtered = dataGlobal.filter(d => +d.year >= selectedStartYear && +d.year <= selectedEndYear);
-
-//     const x = d3.scaleLinear()
-//         .domain([selectedStartYear, selectedEndYear])
-//         .range([margin.left, width - margin.right])
-//         .nice();
-//     const y = d3.scaleLinear()
-//         .domain([20000, d3.max(filtered, d => +d.co2)])
-//         .range([height - margin.bottom, margin.top])
-//         .nice();
-
-//     svg.append("g")
-//         .attr("transform", `translate(0,${height - margin.bottom})`)
-//         .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(Math.max(2, selectedEndYear - selectedStartYear + 1)));
-
-//     svg.append("g")
-//         .attr("transform", `translate(${margin.left},0)`)
-//         .call(d3.axisLeft(y));
-
-//     svg.append("path")
-//         .datum(filtered)
-//         .attr("fill", "none")
-//         .attr("stroke", "red")
-//         .attr("stroke-width", 2)
-//         .attr("d", d3.line()
-//             .x(d => x(+d.year))
-//             .y(d => y(+d.co2)));
-
-//     const annotations = [];
-//     if (selectedStartYear <= 1997 && selectedEndYear >= 1997) {
-//         const kyoto = filtered.find(d => d.year == 1997);
-//         if (kyoto) annotations.push({ note: { label: "Kyoto Protocol (1997)" }, x: x(1997), y: y(kyoto.co2), dy: -30, dx: 0 });
-//     }
-//     if (selectedStartYear <= 2015 && selectedEndYear >= 2015) {
-//         const paris = filtered.find(d => d.year == 2015);
-//         if (paris) annotations.push({ note: { label: "Paris Agreement (2015)" }, x: x(2015), y: y(paris.co2), dy: -30, dx: 0 });
-//     }
-//     svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
-// }
 
 function drawScene2() {
     const margin = { top: 20, right: 20, bottom: 50, left: 60 };
