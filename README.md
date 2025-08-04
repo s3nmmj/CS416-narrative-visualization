@@ -28,19 +28,23 @@ Even after the Kyoto Protocol and Paris Agreement, emissions remain concentrated
 The site works like a guided tour with three stops, plus a short orientation: the classic **interactive slideshow** pattern. The order is fixed, but every slide offers hands-on exploration.
 
 ### Orientation (Scene 0)  
-A welcome screen explains why CO₂ matters and shows the controls: **Next**, **Prev**, arrow keys, and clickable step dots.  
+A welcome screen explains why CO₂ matters and shows the controls: **Next**, **Prev**, arrow keys, and clickable step dots. 
+![Figure 1— Introduction showing the welcome text and navigation prompt](https://github.com/s3nmmj/CS416-narrative-visualization/blob/main/images/1.png?raw=true) 
 *Figure 1— Introduction showing the welcome text and navigation prompt*
 
 ### Scene 1 · Where emissions happen  
 Choropleth world map (pale yellow → dark red). Hover reveals exact numbers; a click locks a country for the rest of the tour.  
-*Figure 2— Scene 1 showing the world map with China and USA annotations *
+![Figure 2— Scene 1 showing the world map with China and USA annotations](https://github.com/s3nmmj/CS416-narrative-visualization/blob/main/images/2.png?raw=true)
+*Figure 2— Scene 1 showing the world map with China and USA annotations*
 
 ### Scene 2 · How emissions have changed  
 Dual-line chart: global curve in red, your chosen country in blue (1990-2022). A dual-handle slider zooms any period; vertical rules flag Kyoto (1997) and Paris (2015).  
+![Figure 3— Scene 2 with global and United States emission lines](https://github.com/s3nmmj/CS416-narrative-visualization/blob/main/images/3.png?raw=true)
 *Figure 3— Scene 2 with global and United States emission lines*
 
 ### Scene 3 · Economic context  
 Scatterplot of **CO₂ per capita (y)** vs **GDP per capita (x)**, 2022. Bubble size = population; the selected country stays blue. Outliers like Qatar are annotated.  
+![Figure 4— Scene 3 with Qatar annotation and United States highlight](https://github.com/s3nmmj/CS416-narrative-visualization/blob/main/images/4.png?raw=true)
 *Figure 4— Scene 3 with Qatar annotation and United States highlight*
 
 **Why not martini-glass or drill-down?**  
