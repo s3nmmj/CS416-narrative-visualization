@@ -96,6 +96,9 @@ function updateVisualization() {
         else if (currentScene === 3) drawScene3();
 
         svg.transition().duration(200).style("opacity", 1);
+        const showReset = currentScene >= 1 && currentScene <= 3 && selectedCountry !== null;
+        d3.select("#reset-container").style("display", showReset ? "block" : "none");
+
     });
 
     d3.select("#sceneTitle").text(
@@ -172,7 +175,6 @@ function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
     const path = d3.geoPath().projection(projection);
 
-    // ✅ Display selected country at the top of the map
     if (selectedCountry) {
         svg.append("text")
             .attr("x", width / 2)
@@ -504,3 +506,9 @@ d3.selectAll(".step-circle").on("click", function () {
         updateVisualization();
     }
 });
+
+d3.select("#resetButton").on("click", () => {
+    selectedCountry = null;
+    updateVisualization();
+});
+
