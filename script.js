@@ -101,11 +101,14 @@ function updateVisualization() {
 
     });
 
-    d3.select("#sceneTitle").text(
-        currentScene === 1 ? "Scene 1: CO2 Emissions by Country (2022)" :
-            currentScene === 2 ? "Scene 2: Global CO2 Emissions Over Time" :
-                "Scene 3: CO2 vs GDP per Capita (2022)"
-    );
+    const sceneTitles = {
+        1: "Scene 1: CO₂ Emissions by Country (2022)",
+        2: "Scene 2: Global CO₂ Emissions Over Time",
+        3: "Scene 3: CO₂ vs GDP per Capita (2022)"
+    };
+
+    d3.select("#sceneTitle").text(sceneTitles[currentScene] || "");
+    
     updateProgressBar();
     d3.select("#yearSlider").style("display", currentScene === 2 ? "flex" : "none");
 }
