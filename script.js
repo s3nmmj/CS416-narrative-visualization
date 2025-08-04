@@ -2,7 +2,7 @@ const width = 1200;
 const height = 650;
 const svg = d3.select("#viz");
 
-let currentScene = 1;
+let currentScene = 0;
 let selectedStartYear = 1990;
 let selectedEndYear = 2022;
 let selectedCountry = null;
@@ -34,19 +34,19 @@ Promise.all([
 });
 
 d3.select("#prevButton").on("click", () => {
-    if (currentScene > 1) currentScene--;
+    if (currentScene > 0) currentScene--;
     updateVisualization();
 });
 d3.select("#nextButton").on("click", () => {
     if (currentScene < 3) currentScene++;
     updateVisualization();
 });
-
 document.addEventListener("keydown", e => {
     if (e.key === "ArrowRight" && currentScene < 3) currentScene++;
-    if (e.key === "ArrowLeft" && currentScene > 1) currentScene--;
+    if (e.key === "ArrowLeft" && currentScene > 0) currentScene--;
     updateVisualization();
 });
+
 
 function validateYearRangeAndUpdate() {
     svg.selectAll(".year-error-text").remove();
@@ -83,11 +83,15 @@ d3.select("#endYearInput").on("input", function () {
 function updateVisualization() {
     svg.transition().duration(200).style("opacity", 0).on("end", () => {
         svg.html("");
-        d3.select("#prevButton").property("disabled", currentScene === 1);
+        d3.select("#prevButton").property("disabled", currentScene === 0);
         d3.select("#nextButton").property("disabled", currentScene === 3);
-        d3.select("#stepIndicator").text(`Step ${currentScene} of 3`);
+        d3.select("#stepIndicator").text(
+            currentScene === 0 ? "Introduction" :
+                `Step ${currentScene} of 3`
+        );
 
-        if (currentScene === 1) drawScene1();
+        if (currentScene === 0) drawScene0();
+        else if (currentScene === 1) drawScene1();
         else if (currentScene === 2) drawScene2();
         else if (currentScene === 3) drawScene3();
 
@@ -122,20 +126,47 @@ function updateProgressBar() {
 }
 
 const annotationStyle = {
-  type: d3.annotationLabel,
-  connector: {
-    end: "dot",
-    type: "line",
-    lineType: "horizontal"
-  },
-  note: {
-    align: "middle",
-    orientation: "topBottom",
-    titleFontSize: "12px",   // ⬅️ smaller title
-    labelFontSize: "11px",   // ⬅️ smaller body text
-    padding: 4
-  }
+    type: d3.annotationLabel,
+    connector: {
+        end: "dot",
+        type: "line",
+        lineType: "horizontal"
+    },
+    note: {
+        align: "middle",
+        orientation: "topBottom",
+        titleFontSize: "12px",   // ⬅️ smaller title
+        labelFontSize: "11px",   // ⬅️ smaller body text
+        padding: 4
+    }
 };
+
+function drawScene0() {
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 150)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "32px")
+        .attr("fill", "#333")
+        .attr("font-weight", "bold")
+        .text("Welcome to the Global CO₂ Emissions Visualization");
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 200)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "18px")
+        .attr("fill", "#666")
+        .text("Explore emissions by country, over time, and by GDP correlation.");
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 260)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "16px")
+        .attr("fill", "#444")
+        .text("Use the Next button or → key to begin.");
+}
 
 
 function drawScene1() {
@@ -318,7 +349,13 @@ function drawScene2() {
         .attr("stroke-width", 2)
         .attr("d", d3.line()
             .x(d => x(+d.year))
+            .y(d => y(0)))
+        .transition()
+        .duration(1000)
+        .attr("d", d3.line()
+            .x(d => x(+d.year))
             .y(d => y(+d.co2)));
+
 
     if (countryData.length > 0) {
         svg.append("path")
