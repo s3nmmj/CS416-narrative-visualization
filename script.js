@@ -337,10 +337,21 @@ function drawScene2() {
                 .x(d => x(+d.year))
                 .y(d => y(+d.co2)));
 
-        const lastPoint = countryData[countryData.length - 1];
+        // const lastPoint = countryData[countryData.length - 1];
+        // svg.append("text")
+        //     .attr("x", x(+lastPoint.year) + 6)
+        //     .attr("y", y(+lastPoint.co2))
+        //     .attr("fill", "blue")
+        //     .style("font-size", "14px")
+        //     .text(`Selected: ${selectedCountry}`);
+        const midIndex = Math.floor(countryData.length / 2);
+        const midYear = +countryData[midIndex].year;
+        const midCO2 = +countryData[midIndex].co2;
+
         svg.append("text")
-            .attr("x", x(+lastPoint.year) + 6)
-            .attr("y", y(+lastPoint.co2))
+            .attr("x", x(midYear))
+            .attr("y", y(midCO2) - 10)
+            .attr("text-anchor", "middle")
             .attr("fill", "blue")
             .style("font-size", "14px")
             .text(`Selected: ${selectedCountry}`);
