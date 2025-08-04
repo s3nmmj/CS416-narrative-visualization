@@ -177,9 +177,9 @@ function drawScene1() {
 
     if (selectedCountry) {
         svg.append("text")
-            .attr("x", width / 2)
+            .attr("x", width - 20)
             .attr("y", 30)
-            .attr("text-anchor", "middle")
+            .attr("text-anchor", "end")
             .attr("font-size", "18px")
             .attr("fill", "#333")
             .attr("font-weight", "bold")
@@ -252,8 +252,8 @@ function drawScene1() {
             },
             x: projection([105, 35])[0],
             y: projection([105, 35])[1],
-            dx: 50,
-            dy: -80
+            dx: 80,
+            dy: 60
         },
         {
             note: {
@@ -262,8 +262,8 @@ function drawScene1() {
             },
             x: projection([-100, 40])[0],
             y: projection([-100, 40])[1],
-            dx: -50,
-            dy: -80
+            dx: -120,
+            dy: 80
         }
     ];
 
