@@ -19,16 +19,6 @@
         Despite major international agreements, emissions remain uneven and closely tied to GDP per capita.
     </p>
     <p style="font-size: 14px; color: #666;">Use ← and → arrow keys or buttons to navigate through the story.</p>
-    <div id="controls">
-        <button id="prevButton" disabled>Previous</button>
-        <span id="stepIndicator">Step 1 of 3</span>
-        <button id="nextButton">Next</button>
-    </div>
-    <div id="progressBar">
-        <div class="step-circle active" data-step="1">1</div>
-        <div class="step-circle" data-step="2">2</div>
-        <div class="step-circle" data-step="3">3</div>
-    </div>
     <div id="yearSlider" style="display: none;">
         <label>Start Year: <input type="range" id="startYearInput" min="1990" max="2022" value="1990"> <span
                 id="startYearValue">1990</span></label>
@@ -41,7 +31,16 @@
     <div id="viz-container">
         <svg id="viz" viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid meet"></svg>
     </div>
-
+        <div id="controls">
+        <button id="prevButton" disabled>Previous</button>
+        <span id="stepIndicator">Step 1 of 3</span>
+        <button id="nextButton">Next</button>
+    </div>
+    <div id="progressBar">
+        <div class="step-circle active" data-step="1">1</div>
+        <div class="step-circle" data-step="2">2</div>
+        <div class="step-circle" data-step="3">3</div>
+    </div>
     <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
     <script src="script.js"></script>
 </body>
