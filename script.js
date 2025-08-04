@@ -122,16 +122,21 @@ function updateProgressBar() {
 }
 
 const annotationStyle = {
-    type: d3.annotationLabel,
-    connector: { end: "dot", type: "line", lineType: "horizontal" },
-    note: {
-        align: "middle",
-        orientation: "topBottom",
-        titleFontSize: 14,
-        labelFontSize: 12,
-        padding: 5
-    }
+  type: d3.annotationLabel,
+  connector: {
+    end: "dot",
+    type: "line",
+    lineType: "horizontal"
+  },
+  note: {
+    align: "middle",
+    orientation: "topBottom",
+    titleFontSize: "12px",   // ⬅️ smaller title
+    labelFontSize: "11px",   // ⬅️ smaller body text
+    padding: 4
+  }
 };
+
 
 function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
@@ -361,7 +366,7 @@ function drawScene2() {
         if (paris) annotations.push({
             note: {
                 title: "Paris Agreement (2015)",
-                label: "A global pledge to curb climate change and reduce emissions."
+                label: "A global pledge to curb climate\nchange and reduce emissions."
             },
             x: x(2015),
             y: y(+paris.co2),
@@ -369,6 +374,7 @@ function drawScene2() {
             dy: -30
         });
     }
+
 
     svg.append("g")
         .call(d3.annotation()
@@ -391,6 +397,8 @@ function drawScene2() {
 
 
 function drawScene3() {
+    const margin = { top: 40, right: 20, bottom: 50, left: 60 };
+
     svg.append("text")
         .attr("x", margin.left + 10)
         .attr("y", margin.top + 20)
@@ -403,7 +411,6 @@ function drawScene3() {
                 : "Tip: Click a country in Scene 1 to explore it here."
         );
 
-    const margin = { top: 40, right: 20, bottom: 50, left: 60 };
 
     svg.selectAll(".annotation-group").remove();
 
