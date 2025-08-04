@@ -108,7 +108,7 @@ function updateVisualization() {
     };
 
     d3.select("#sceneTitle").text(sceneTitles[currentScene] || "");
-    
+
     updateProgressBar();
     d3.select("#yearSlider").style("display", currentScene === 2 ? "flex" : "none");
 }
@@ -141,8 +141,8 @@ const annotationStyle = {
     note: {
         align: "middle",
         orientation: "topBottom",
-        titleFontSize: "12px",   // ⬅️ smaller title
-        labelFontSize: "11px",   // ⬅️ smaller body text
+        titleFontSize: "12px",   
+        labelFontSize: "11px",   
         padding: 4
     }
 };
@@ -255,7 +255,7 @@ function drawScene1() {
             },
             x: projection([105, 35])[0],
             y: projection([105, 35])[1],
-            dx: 80,
+            dx: 120,
             dy: 60
         },
         {
