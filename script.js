@@ -121,6 +121,17 @@ function updateProgressBar() {
         });
 }
 
+const annotationStyle = {
+    type: d3.annotationLabel,
+    connector: { end: "dot", type: "line", lineType: "horizontal" },
+    note: {
+        align: "middle",
+        orientation: "topBottom",
+        titleFontSize: 14,
+        labelFontSize: 12,
+        padding: 5
+    }
+};
 
 function drawScene1() {
     const projection = d3.geoMercator().scale(150).translate([width / 2, height / 1.5]);
@@ -186,16 +197,37 @@ function drawScene1() {
     legend.append("g").attr("transform", `translate(0, ${legendHeight})`).call(legendAxis);
     legend.append("text").attr("x", 0).attr("y", -5).text("CO2 Emissions (Mt)");
 
-    svg.append("g").call(d3.annotation().type(d3.annotationLabel).annotations([
+    const scene1Annotations = [
         {
-            note: { label: "China: Highest Emitter", title: `${Math.round(data2022.find(c => c.country === "China")?.co2 || 0)} Mt` },
-            x: projection([105, 35])[0], y: projection([105, 35])[1], dy: -30, dx: 30
+            note: {
+                title: "China: Highest Emitter",
+                label: "China leads all countries in CO₂ emissions — a key global policy focus."
+            },
+            x: projection([105, 35])[0],
+            y: projection([105, 35])[1],
+            dx: 30,
+            dy: -30
         },
         {
-            note: { label: "USA: Second Highest", title: `${Math.round(data2022.find(c => c.country === "United States")?.co2 || 0)} Mt` },
-            x: projection([-100, 40])[0], y: projection([-100, 40])[1], dy: -30, dx: -30
+            note: {
+                title: "USA: Second Highest",
+                label: "Despite efforts, the U.S. remains one of the largest CO₂ contributors."
+            },
+            x: projection([-100, 40])[0],
+            y: projection([-100, 40])[1],
+            dx: -30,
+            dy: -30
         }
-    ]));
+    ];
+
+    svg.append("g")
+        .call(d3.annotation()
+            .type(annotationStyle.type)
+            .annotations(scene1Annotations)
+            .accessors({ x: d => d.x, y: d => d.y })
+            .accessorsInverse({ x: d => d.x, y: d => d.y }));
+
+
 }
 
 // function drawScene2() {
@@ -314,23 +346,38 @@ function drawScene2() {
     if (selectedStartYear <= 1997 && selectedEndYear >= 1997) {
         const kyoto = worldData.find(d => d.year == 1997);
         if (kyoto) annotations.push({
-            note: { label: "Kyoto Protocol (1997)" },
+            note: {
+                title: "Kyoto Protocol (1997)",
+                label: "The first major international treaty to limit CO₂ emissions."
+            },
             x: x(1997),
             y: y(+kyoto.co2),
-            dy: -30,
-            dx: 0
+            dx: 0,
+            dy: -30
         });
     }
     if (selectedStartYear <= 2015 && selectedEndYear >= 2015) {
         const paris = worldData.find(d => d.year == 2015);
         if (paris) annotations.push({
-            note: { label: "Paris Agreement (2015)" },
+            note: {
+                title: "Paris Agreement (2015)",
+                label: "A global pledge to curb climate change and reduce emissions."
+            },
             x: x(2015),
             y: y(+paris.co2),
-            dy: -30,
-            dx: 0
+            dx: 0,
+            dy: -30
         });
     }
+
+    svg.append("g")
+        .call(d3.annotation()
+            .type(annotationStyle.type)
+            .annotations(annotations)
+            .accessors({ x: d => d.x, y: d => d.y })
+            .accessorsInverse({ x: d => d.x, y: d => d.y }));
+
+
     if (!selectedCountry) {
         svg.append("text")
             .attr("x", margin.left + 10)
@@ -340,19 +387,16 @@ function drawScene2() {
             .attr("fill", "#666")
             .text("Tip: Click a country in Scene 1 to compare it with global trends.");
     }
-
-    svg.append("g")
-        .call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
 
 
 function drawScene3() {
     svg.append("text")
-        .attr("x", width / 2)
-        .attr("y", 30)
-        .attr("text-anchor", "middle")
-        .attr("font-size", "18px")
-        .attr("fill", "#333")
+        .attr("x", margin.left + 10)
+        .attr("y", margin.top + 20)
+        .attr("text-anchor", "start")
+        .attr("font-size", "14px")
+        .attr("fill", "#666")
         .text(
             selectedCountry
                 ? `Highlighted Country: ${selectedCountry}`
@@ -423,18 +467,23 @@ function drawScene3() {
         const dy = yPos < padding ? 50 : -40;
 
         svg.append("g")
-            .call(d3.annotation().type(d3.annotationLabel).annotations([
-                {
-                    note: {
-                        label: "High GDP, High Emissions",
-                        title: "Qatar"
-                    },
-                    x: xPos,
-                    y: yPos,
-                    dx: dx,
-                    dy: dy
-                }
-            ]));
+            .call(d3.annotation()
+                .type(annotationStyle.type)
+                .annotations([
+                    {
+                        note: {
+                            title: "Qatar",
+                            label: "Wealthiest emitter per capita — an outlier in carbon intensity."
+                        },
+                        x: xPos,
+                        y: yPos,
+                        dx: dx,
+                        dy: dy
+                    }
+                ])
+                .accessors({ x: d => d.x, y: d => d.y })
+                .accessorsInverse({ x: d => d.x, y: d => d.y }));
+
     }
 
 }
