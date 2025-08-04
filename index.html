@@ -14,9 +14,6 @@
 <body>
     <h1>Global CO2 Emissions: A Narrative Visualization</h1>
     <h2 id="sceneTitle"></h2>
-    <div id="reset-container" style="text-align: center; margin-top: 10px; display: none;">
-        <button id="resetButton" style="padding: 6px 12px; font-size: 14px;">Reset Selection</button>
-    </div>
     <p id="intro" style="max-width: 900px; margin: 0 auto; font-size: 16px; color: #555;">
         This visualization explores global CO₂ emissions from three perspectives: geography, history, and economics.
         Despite major international agreements, emissions remain uneven and closely tied to GDP per capita.
@@ -38,9 +35,9 @@
         <label>End Year: <input type="range" id="endYearInput" min="1990" max="2022" value="2022"> <span
                 id="endYearValue">2022</span></label>
     </div>
-    <!-- <div id="yearError" style="color: red; margin-top: 10px; display: none;">
-        Start year must be earlier than end year.
-    </div> -->
+    <div id="reset-container" style="text-align: center; margin-top: 10px; display: none;">
+        <button id="resetButton" style="padding: 6px 12px; font-size: 14px;">Reset Selection</button>
+    </div>
     <div id="viz-container">
         <svg id="viz" viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid meet"></svg>
     </div>

@@ -361,8 +361,8 @@ function drawScene2() {
             },
             x: x(1997),
             y: y(+kyoto.co2),
-            dx: 0,
-            dy: -30
+            dx: -10,
+            dy: 40
         });
     }
     if (selectedStartYear <= 2015 && selectedEndYear >= 2015) {
@@ -374,8 +374,8 @@ function drawScene2() {
             },
             x: x(2015),
             y: y(+paris.co2),
-            dx: 0,
-            dy: -30
+            dx: 10,
+            dy: 40
         });
     }
 
