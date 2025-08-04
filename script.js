@@ -255,8 +255,8 @@ function drawScene1() {
             },
             x: projection([105, 35])[0],
             y: projection([105, 35])[1],
-            dx: 150,
-            dy: 40
+            dx: 180,
+            dy: 30
         },
         {
             note: {
