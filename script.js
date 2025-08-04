@@ -293,9 +293,10 @@ function drawScene2() {
                 .x(d => x(+d.year))
                 .y(d => y(+d.co2)));
 
+        const lastPoint = countryData[countryData.length - 1];
         svg.append("text")
-            .attr("x", width - 220)
-            .attr("y", margin.top + 20)
+            .attr("x", x(+lastPoint.year) + 6)
+            .attr("y", y(+lastPoint.co2))
             .attr("fill", "blue")
             .style("font-size", "14px")
             .text(`Selected: ${selectedCountry}`);
@@ -332,13 +333,14 @@ function drawScene2() {
     }
     if (!selectedCountry) {
         svg.append("text")
-            .attr("x", width / 2)
-            .attr("y", margin.top + 10)
-            .attr("text-anchor", "middle")
-            .attr("font-size", "16px")
+            .attr("x", margin.left + 10)
+            .attr("y", margin.top + 20)
+            .attr("text-anchor", "start")
+            .attr("font-size", "14px")
             .attr("fill", "#666")
             .text("Tip: Click a country in Scene 1 to compare it with global trends.");
     }
+
     svg.append("g")
         .call(d3.annotation().type(d3.annotationLabel).annotations(annotations));
 }
