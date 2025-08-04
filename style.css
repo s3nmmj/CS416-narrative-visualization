@@ -66,11 +66,12 @@ button:disabled {
 
 #viz-container {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 0;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
+
 
 #viz {
     width: 100%;
